@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"jeffrey1994.github.io","root":"/HexoBlog/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"jeffrey1994.github.io","root":"/HexoBlog/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="个人博客">
@@ -102,6 +102,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -136,11 +137,38 @@
     <a href="/HexoBlog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -238,7 +266,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/wait%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%AD%89%E5%BE%85%E6%8C%87%E4%BB%A4/">
+    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/rmmod%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E6%A8%A1%E5%9D%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/HexoBlog/images/avatar.png">
@@ -252,7 +280,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/wait%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%AD%89%E5%BE%85%E6%8C%87%E4%BB%A4/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/rmmod%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E6%A8%A1%E5%9D%97/" class="post-title-link" itemprop="url">rmmod命令 – 删除模块</a>
         </h2>
 
         <div class="post-meta">
@@ -263,7 +291,16 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-09-16 15:32:04 / 修改时间：16:53:33" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
+              <time title="创建时间：2021-09-16 17:19:18 / 修改时间：16:56:41" itemprop="dateCreated datePublished" datetime="2021-09-16T17:19:18+08:00">2021-09-16</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/HexoBlog/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
+                </span>
             </span>
 
           
@@ -277,10 +314,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="wait命令-–-等待指令"><a href="#wait命令-–-等待指令" class="headerlink" title="wait命令 – 等待指令"></a>wait命令 – 等待指令</h1><p>wait命令用来等待指令的指令，直到其执行完毕后返回终端。该指令常用于shell脚本编程中，待指定的指令执行完成后，才会继续执行后面的任务。该指令等待作业时，在作业标识号前必须添加备份号”%”。</p>
+          <h1 id="rmmod命令-–-删除模块"><a href="#rmmod命令-–-删除模块" class="headerlink" title="rmmod命令 – 删除模块"></a>rmmod命令 – 删除模块</h1><p>rmmod即“remove module”的简称,rmmod命令用于删除模块。 执行rmmod命令，可删除不需要的模块。Linux操作系统的核心具有模块化的特性，因此在编译核心时，不需要吧全部功能都放入核心，可以将这些功能编译成一个个单独的模块，待有需要时再分别载入它们。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/wait%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%AD%89%E5%BE%85%E6%8C%87%E4%BB%A4/#more" rel="contents">
+              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/rmmod%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E6%A8%A1%E5%9D%97/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -304,7 +341,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/rmmod%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E6%A8%A1%E5%9D%97/">
+    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/wait%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%AD%89%E5%BE%85%E6%8C%87%E4%BB%A4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/HexoBlog/images/avatar.png">
@@ -318,7 +355,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/rmmod%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E6%A8%A1%E5%9D%97/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/wait%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%AD%89%E5%BE%85%E6%8C%87%E4%BB%A4/" class="post-title-link" itemprop="url">wait命令 – 等待指令</a>
         </h2>
 
         <div class="post-meta">
@@ -329,7 +366,16 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-09-16 15:32:04 / 修改时间：16:53:24" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
+              <time title="创建时间：2021-09-16 17:19:18 / 修改时间：16:56:20" itemprop="dateCreated datePublished" datetime="2021-09-16T17:19:18+08:00">2021-09-16</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/HexoBlog/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
+                </span>
             </span>
 
           
@@ -343,10 +389,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="rmmod命令-–-删除模块"><a href="#rmmod命令-–-删除模块" class="headerlink" title="rmmod命令 – 删除模块"></a>rmmod命令 – 删除模块</h1><p>rmmod即“remove module”的简称,rmmod命令用于删除模块。 执行rmmod命令，可删除不需要的模块。Linux操作系统的核心具有模块化的特性，因此在编译核心时，不需要吧全部功能都放入核心，可以将这些功能编译成一个个单独的模块，待有需要时再分别载入它们。</p>
+          <h1 id="wait命令-–-等待指令"><a href="#wait命令-–-等待指令" class="headerlink" title="wait命令 – 等待指令"></a>wait命令 – 等待指令</h1><p>wait命令用来等待指令的指令，直到其执行完毕后返回终端。该指令常用于shell脚本编程中，待指定的指令执行完成后，才会继续执行后面的任务。该指令等待作业时，在作业标识号前必须添加备份号”%”。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/rmmod%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E6%A8%A1%E5%9D%97/#more" rel="contents">
+              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/wait%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%AD%89%E5%BE%85%E6%8C%87%E4%BB%A4/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -651,6 +697,10 @@
   
 
 
+
+
+  
+<script src="/HexoBlog/js/local-search.js"></script>
 
 
 

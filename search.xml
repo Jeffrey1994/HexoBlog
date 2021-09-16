@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>linux常用命令</title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1：文件管理"><a href="#1：文件管理" class="headerlink" title="1：文件管理"></a>1：文件管理</h2><p>ls命令 – 显示指定工作目录下的内容及属性信息<br>mkdir命令 – 创建目录<br>cp命令 – 复制文件或目录<br>mv命令 – 移动或改名文件<br>pwd命令 – 显示当前路径  </p><h2 id="2：文档编辑"><a href="#2：文档编辑" class="headerlink" title="2：文档编辑"></a>2：文档编辑</h2><p>cat命令 – 在终端设备上显示文件内容<br>echo命令 – 输出字符串或提取Shell变量的值<br>rm命令 – 移除文件或目录<br>tail命令 – 查看文件尾部内容<br>rmdir命令 – 删除空目录</p><h2 id="3：系统管理"><a href="#3：系统管理" class="headerlink" title="3：系统管理"></a>3：系统管理</h2><p>startx命令 – 初始化X-windows<br>rpm命令 – RPM软件包管理器<br>find命令 – 查找和搜索文件<br>vmstat命令 – 显示虚拟内存状态<br>uname命令 – 显示系统信息</p><h2 id="4：磁盘管理"><a href="#4：磁盘管理" class="headerlink" title="4：磁盘管理"></a>4：磁盘管理</h2><p>df命令 – 显示磁盘空间使用情况<br>fdisk命令 – 磁盘分区<br>hdparm命令 – 显示与设定硬盘参数<br>lsblk命令 – 查看系统的磁盘<br>vgextend命令 – 扩展卷组 </p><h2 id="5：文件传输"><a href="#5：文件传输" class="headerlink" title="5：文件传输"></a>5：文件传输</h2><p>tftp命令 – 上传及下载文件<br>curl命令 – 文件传输工具<br>fsck命令 – 检查并修复Linux文件系统<br>ftpwho命令 – 显示ftp会话信息<br>lprm命令 – 删除打印队列中的打印任务 </p><h2 id="6：网络通讯"><a href="#6：网络通讯" class="headerlink" title="6：网络通讯"></a>6：网络通讯</h2><p>ssh命令 – 安全连接客户端<br>ping命令 – 测试主机间网络连通性<br>netstat命令 – 显示网络状态<br>ifconfig命令 – 显示或设置网络设备<br>dhclient命令 – 动态获取或释放IP地址 </p><h2 id="7：设备管理"><a href="#7：设备管理" class="headerlink" title="7：设备管理"></a>7：设备管理</h2><p>mount命令 – 文件系统挂载<br>MAKEDEV命令 – 建立设备<br>setleds命令 – 设定键盘上方三个 LED 的状态<br>lspci命令 – 显示当前设备所有PCI总线信息<br>sensors命令 – 检测服务器内部温度及电压 </p><h2 id="8：备份压缩"><a href="#8：备份压缩" class="headerlink" title="8：备份压缩"></a>8：备份压缩</h2><p>zipinfo命令 – 查看压缩文件信息<br>gzip命令 – 压缩和解压文件<br>unarj命令 – 解压.arj文件<br>zip命令 – 压缩文件<br>unzip命令 – 解压缩zip文件</p><h2 id="9：其他命令"><a href="#9：其他命令" class="headerlink" title="9：其他命令"></a>9：其他命令</h2><p>hash命令 – 显示与清除命令运行时查询的哈希表</p><p>wait命令 – 等待指令</p><p>bc命令 – 浮点运算</p><p>rmmod命令 – 删除模块</p><p>history命令 – 显示与操纵历史命令</p><h2 id="扩展：知识干货"><a href="#扩展：知识干货" class="headerlink" title="扩展：知识干货"></a>扩展：知识干货</h2><p>Red Hat Enterprise Linux 8/7/6/5/4 合集下载地址：</p><p><a href="https://www.linuxcool.com/rhel-download">https://www.linuxcool.com/rhel-download</a></p><p>中国程序员最容易读错的单词汇总（带正确发音示范）</p><p><a href="https://www.linuxcool.com/pronunciation">https://www.linuxcool.com/pronunciation</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cp命令 – 复制文件或目录</title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/cp%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/cp%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="cp命令-–-复制文件或目录"><a href="#cp命令-–-复制文件或目录" class="headerlink" title="cp命令 – 复制文件或目录"></a>cp命令 – 复制文件或目录</h1><p>cp命令可以理解为英文单词copy的缩写，其功能为复制文件或目录。</p><p>cp命令可以将多个文件复制到一个具体的文件名或一个已经存在的目录下，也可以同时复制多个文件到一个指定的目录中。</p><p><strong>语法格式：</strong>cp [参数] [文件]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-f</th><th>若目标文件已存在，则会直接覆盖原文件</th></tr></thead><tbody><tr><td>-i</td><td>若目标文件已存在，则会询问是否覆盖</td></tr><tr><td>-p</td><td>保留源文件或目录的所有属性</td></tr><tr><td>-r</td><td>递归复制文件和目录</td></tr><tr><td>-d</td><td>当复制符号连接时，把目标文件或目录也建立为符号连接，并指向与源文件或目录连接的原始文件或目录</td></tr><tr><td>-l</td><td>对源文件建立硬连接，而非复制文件</td></tr><tr><td>-s</td><td>对源文件建立符号连接，而非复制文件</td></tr><tr><td>-b</td><td>覆盖已存在的文件目标前将目标文件备份</td></tr><tr><td>-v</td><td>详细显示cp命令执行的操作过程</td></tr><tr><td>-a</td><td>等价于“dpr”选项</td></tr></tbody></table><p><strong>参考实例</strong></p><p>复制目录：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cp -R dir1 dir2/</span><br></pre></td></tr></table></figure><p>将文件test1改名为test2：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cp -f test1 test2</span><br></pre></td></tr></table></figure><p>复制多个文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cp -r file1 file2 file3 dir</span><br></pre></td></tr></table></figure><p>交互式地将目录 /usr/linuxcool 中的所有.c文件复制到目录 dir 中：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cp -r /usr/linuxcool/*.c dir</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>mkdir命令 – 创建目录</title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/mkdir%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%9B%E5%BB%BA%E7%9B%AE%E5%BD%95/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/mkdir%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%9B%E5%BB%BA%E7%9B%AE%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="mkdir命令-–-创建目录"><a href="#mkdir命令-–-创建目录" class="headerlink" title="mkdir命令 – 创建目录"></a>mkdir命令 – 创建目录</h1><p>mkdir命令是“make directories”的缩写，用来创建目录。</p><p>注意：默认状态下，如果要创建的目录已经存在，则提示已存在，而不会继续创建目录。 所以在创建目录时，应保证新建的目录与它所在目录下的文件没有重名。 mkdir命令还可以同时创建多个目录，是不是很强大呢？</p><p><strong>语法格式 :</strong> mkdir [参数] [目录]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-p</th><th>递归创建多级目录</th></tr></thead><tbody><tr><td>-m</td><td>建立目录的同时设置目录的权限</td></tr><tr><td>-z</td><td>设置安全上下文</td></tr><tr><td>-v</td><td>显示目录的创建过程</td></tr></tbody></table><p><strong>参考实例</strong></p><p>在工作目录下，建立一个名为 dir 的子目录：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# mkdir dir</span><br></pre></td></tr></table></figure><p>在目录/usr/linuxcool下建立子目录dir，并且设置文件属主有读、写和执行权限，其他人无权访问</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# mkdir -m 700 /usr/linuxcool/dir</span><br></pre></td></tr></table></figure><p>同时创建子目录dir1，dir2，dir3：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# mkdir dir1 dir2 dir3</span><br></pre></td></tr></table></figure><p>递归创建目录：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# mkdir -p linuxcool/dir</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ls命令 – 显示指定工作目录下的内容及属性信息</title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/ls%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E6%8C%87%E5%AE%9A%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%E5%86%85%E5%AE%B9%E5%8F%8A%E5%B1%9E%E6%80%A7%E4%BF%A1%E6%81%AF/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/ls%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E6%8C%87%E5%AE%9A%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%E5%86%85%E5%AE%B9%E5%8F%8A%E5%B1%9E%E6%80%A7%E4%BF%A1%E6%81%AF/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ls命令-–-显示指定工作目录下的内容及属性信息"><a href="#ls命令-–-显示指定工作目录下的内容及属性信息" class="headerlink" title="ls命令 – 显示指定工作目录下的内容及属性信息"></a>ls命令 – 显示指定工作目录下的内容及属性信息</h1><p>ls命令是Linux下最常用的指令之一。ls命令为英文单词 list 的缩写，正如英文单词 list 的意思，其功能是列出指定目录下的内容及其相关属性信息。</p><p>默认状态下，ls命令会列出当前目录的内容。而带上参数后，我们可以用ls做更多的事情。作为最基础同时又是使用频率很高的命令，我们很有必要搞清楚ls命令的用法，那么接下来一起看看吧！</p><p><strong>语法格式:</strong> ls [选项] [文件]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-a</th><th>显示所有文件及目录 (包括以“.”开头的隐藏文件)</th></tr></thead><tbody><tr><td>-l</td><td>使用长格式列出文件及目录信息</td></tr><tr><td>-r</td><td>将文件以相反次序显示(默认依英文字母次序)</td></tr><tr><td>-t</td><td>根据最后的修改时间排序</td></tr><tr><td>-A</td><td>同 -a ，但不列出 “.” (当前目录) 及 “..” (父目录)</td></tr><tr><td>-S</td><td>根据文件大小排序</td></tr><tr><td>-R</td><td>递归列出所有子目录</td></tr></tbody></table><p><strong>参考实例</strong></p><p>列出所有文件(包括隐藏文件)：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ls -a</span><br></pre></td></tr></table></figure><p>列出文件的详细信息：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ls -l</span><br></pre></td></tr></table></figure><p>列出根目录(/)下的所有目录：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ls / </span><br></pre></td></tr></table></figure><p>列出当前工作目录下所有名称是 “s” 开头的文件 :</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ls -ltr s*</span><br></pre></td></tr></table></figure><p>列出 /bin 目录下的所有目录及文件的详细信息 :</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ls -lR /bin</span><br></pre></td></tr></table></figure><p>列出当前工作目录下所有文件及目录并以文件的大小进行排序 :</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ls -AS</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>mv命令 – 移动或改名文件</title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/mv%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%A7%BB%E5%8A%A8%E6%88%96%E6%94%B9%E5%90%8D%E6%96%87%E4%BB%B6/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/mv%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%A7%BB%E5%8A%A8%E6%88%96%E6%94%B9%E5%90%8D%E6%96%87%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="mv命令-–-移动或改名文件"><a href="#mv命令-–-移动或改名文件" class="headerlink" title="mv命令 – 移动或改名文件"></a>mv命令 – 移动或改名文件</h1><p>mv命令是“move”单词的缩写，其功能大致和英文含义一样，可以移动文件或对其改名。</p><p>这是一个使用频率超高的文件管理命令，我们需要特别留意它与复制的区别：mv与cp的结果不同。mv命令好像文件“搬家”，文件名称发生改变，但个数并未增加。而cp命令是对文件进行复制操作，文件个数是有增加的。</p><p><strong>语法格式：</strong>mv [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-i</th><th>若存在同名文件，则向用户询问是否覆盖</th></tr></thead><tbody><tr><td>-f</td><td>覆盖已有文件时，不进行任何提示</td></tr><tr><td>-b</td><td>当文件存在时，覆盖前为其创建一个备份</td></tr><tr><td>-u</td><td>当源文件比目标文件新，或者目标文件不存在时，才执行移动此操作</td></tr></tbody></table><p><strong>参考实例</strong></p><p>将文件file_1重命名为file_2：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# mv file_1 file_2</span><br></pre></td></tr></table></figure><p>将文件file移动到目录dir中 ：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# mv file /dir</span><br></pre></td></tr></table></figure><p>将目录dir1移动目录dir2中（前提是目录dir2已存在，若不存在则改名)：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# mv /dir1 /dir2</span><br></pre></td></tr></table></figure><p>将目录dir1下的文件移动到当前目录下：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# mv /dir1/* .</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>pwd命令 – 显示当前路径</title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/pwd%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E5%BD%93%E5%89%8D%E8%B7%AF%E5%BE%84/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/pwd%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E5%BD%93%E5%89%8D%E8%B7%AF%E5%BE%84/</url>
+      
+        <content type="html"><![CDATA[<h1 id="pwd命令-–-显示当前路径"><a href="#pwd命令-–-显示当前路径" class="headerlink" title="pwd命令 – 显示当前路径"></a>pwd命令 – 显示当前路径</h1><p>pwd命令是“print working directory”中每个单词的首字母缩写，其功能正如所示单词一样，为打印工作目录，即显示当前工作目录的绝对路径。</p><p>在实际工作中，我们经常会在不同目录之间进行切换，为了防止“迷路”，我们可以使用pwd命令快速查看当前我们所在的目录路径。</p><p><strong>语法格式:</strong> pwd [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-L</th><th>显示逻辑路径</th></tr></thead><tbody><tr><td></td><td></td></tr></tbody></table><p><strong>参考实例</strong></p><p>查看当前工作目录路径：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# pwd</span><br><span class="line">/home/linuxcool</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>cat命令 – 在终端设备上显示文件内容</title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/2.%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91/#%20cat%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%9C%A8%E7%BB%88%E7%AB%AF%E8%AE%BE%E5%A4%87%E4%B8%8A%E6%98%BE%E7%A4%BA%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/2.%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91/#%20cat%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%9C%A8%E7%BB%88%E7%AB%AF%E8%AE%BE%E5%A4%87%E4%B8%8A%E6%98%BE%E7%A4%BA%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9/</url>
+      
+        <content type="html"><![CDATA[<h1 id="cat命令-–-在终端设备上显示文件内容"><a href="#cat命令-–-在终端设备上显示文件内容" class="headerlink" title="cat命令 – 在终端设备上显示文件内容"></a>cat命令 – 在终端设备上显示文件内容</h1><p>Linux系统中有很多个用于查看文件内容的命令，每个命令又都有自己的特点，比如这个cat命令就是用于查看内容较少的纯文本文件的。cat这个命令也很好记，因为cat在英语中是“猫”的意思，小猫咪是不是给您一种娇小、可爱的感觉呢？</p><p>注意：当文件内容较大时，文本内容会在屏幕上快速闪动（滚屏），用户往往看不清所显示的具体内容。因此对于较长文件内容可以按Ctrl+S键，停止滚屏；以及Ctrl+Q键可以恢复滚屏；而按Ctrl+C（中断）键则可以终止该命令的执行。或者对于大文件，干脆用more命令吧！</p><span id="more"></span><p><strong>语法格式：</strong>cat [参数] [文件]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-n</th><th>显示行数（空行也编号）</th></tr></thead><tbody><tr><td>-s</td><td>显示行数（多个空行算一个编号）</td></tr><tr><td>-b</td><td>显示行数（空行不编号）</td></tr><tr><td>-E</td><td>每行结束处显示$符号</td></tr><tr><td>-T</td><td>将TAB字符显示为 ^I符号</td></tr><tr><td>-v</td><td>使用 ^ 和 M- 引用，除了 LFD 和 TAB 之外</td></tr><tr><td>-e</td><td>等价于”-vE”组合</td></tr><tr><td>-t</td><td>等价于”-vT”组合</td></tr><tr><td>-A</td><td>等价于 -vET组合</td></tr><tr><td>–help</td><td>显示帮助信息</td></tr><tr><td>–version</td><td>显示版本信息</td></tr></tbody></table><p><strong>参考实例</strong></p><p>查看文件的内容：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cat filename.txt</span><br></pre></td></tr></table></figure><p>查看文件的内容，并显示行数编号：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cat -n filename.txt</span><br></pre></td></tr></table></figure><p>查看文件的内容，并添加行数编号后输出到另外一个文件中：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cat -n linuxcool.log &gt; linuxprobe.log </span><br></pre></td></tr></table></figure><p>清空文件的内容：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cat /dev/null &gt; /root/filename.txt</span><br></pre></td></tr></table></figure><p>持续写入文件内容，碰到EOF符后结束并保存：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cat &gt; filename.txt &lt;&lt;EOF</span><br><span class="line">&gt; Hello, World </span><br><span class="line">&gt; Linux!</span><br><span class="line">&gt; EOF</span><br></pre></td></tr></table></figure><p>将软盘设备制作成镜像文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cat /dev/fd0 &gt; fdisk.iso</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>tail命令 – 查看文件尾部内容</title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/2.%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91/#%20tail%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%B0%BE%E9%83%A8%E5%86%85%E5%AE%B9/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/2.%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91/#%20tail%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%B0%BE%E9%83%A8%E5%86%85%E5%AE%B9/</url>
+      
+        <content type="html"><![CDATA[<h1 id="tail命令-–-查看文件尾部内容"><a href="#tail命令-–-查看文件尾部内容" class="headerlink" title="tail命令 – 查看文件尾部内容"></a>tail命令 – 查看文件尾部内容</h1><p>tail用于显示文件尾部的内容，默认在屏幕上显示指定文件的末尾10行。如果给定的文件不止一个，则在显示的每个文件前面加一个文件名标题。如果没有指定文件或者文件名为“-”，则读取标准输入。</p><span id="more"></span><p><strong>语法格式：</strong>tail [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>–retry</th><th>即是在tail命令启动时，文件不可访问或者文件稍后变得不可访问，都始终尝试打开文件。使用此选项时需要与选项“——follow=name”连用</th></tr></thead><tbody><tr><td>-c<N>或——bytes=<N></td><td>输出文件尾部的N（N为整数）个字节内容</td></tr><tr><td>-f&lt;name/descriptor&gt;</td><td>–follow<nameldescript>：显示文件最新追加的内容</td></tr><tr><td>-F</td><td>与选项“-follow=name”和“–retry”连用时功能相同</td></tr><tr><td>-n<N>或——line=<N></td><td>输出文件的尾部N（N位数字）行内容</td></tr><tr><td>–pid=&lt;进程号&gt;</td><td>与“-f”选项连用，当指定的进程号的进程终止后，自动退出tail命令</td></tr><tr><td>–help</td><td>显示指令的帮助信息</td></tr><tr><td>–version</td><td>显示指令的版本信息</td></tr></tbody></table><p><strong>参考实例</strong></p><p>显示文件file的最后10行：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~ ]  tail file</span><br></pre></td></tr></table></figure><p>显示文件file的内容，从第20行至文件末尾：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~ ]  tail +20 file </span><br></pre></td></tr></table></figure><p>显示文件file的最后10个字符：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~ ]  tail -c 10 file </span><br></pre></td></tr></table></figure><p>一直变化的文件总是显示后10行：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~ ]  tail -f 10 file</span><br></pre></td></tr></table></figure><p>显示帮助信息：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~ ]  tail --help</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>echo命令 – 输出字符串或提取Shell变量的值</title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/2.%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91/echo%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E8%BE%93%E5%87%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%96%E6%8F%90%E5%8F%96Shell%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/2.%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91/echo%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E8%BE%93%E5%87%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%96%E6%8F%90%E5%8F%96Shell%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC/</url>
+      
+        <content type="html"><![CDATA[<h1 id="echo命令-–-输出字符串或提取Shell变量的值"><a href="#echo命令-–-输出字符串或提取Shell变量的值" class="headerlink" title="echo命令 – 输出字符串或提取Shell变量的值"></a>echo命令 – 输出字符串或提取Shell变量的值</h1><p>echo命令用于在终端设备上输出字符串或变量提取后的值，这是在Linux系统中最常用的几个命令之一，但操作却非常简单。</p><p>人们一般使用在变量前加上$符号的方式提取出变量的值，例如：$PATH，然后再用echo命令予以输出。或者直接使用echo命令输出一段字符串到屏幕上，起到给用户提示的作用。</p><span id="more"></span><p><strong>语法格式：</strong>echo [参数] [字符串]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-n</th><th>不输出结尾的换行符</th></tr></thead><tbody><tr><td>-e “\a”</td><td>发出警告音</td></tr><tr><td>-e “\b”</td><td>删除前面的一个字符</td></tr><tr><td>-e “\c”</td><td>结尾不加换行符</td></tr><tr><td>-e “\f”</td><td>换行，光标扔停留在原来的坐标位置</td></tr><tr><td>-e “\n”</td><td>换行，光标移至行首</td></tr><tr><td>-e “\r”</td><td>光标移至行首，但不换行</td></tr><tr><td>-E</td><td>禁止反斜杠转移，与-e参数功能相反</td></tr><tr><td>—version</td><td>查看版本信息</td></tr><tr><td>–help</td><td>查看帮助信息</td></tr></tbody></table><p><strong>参考实例</strong></p><p>输出一段字符串：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]#  echo &quot;LinuxCool.com&quot; </span><br><span class="line">LinuxCool.com </span><br></pre></td></tr></table></figure><p>输出变量提取后的值：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# echo $PATH</span><br><span class="line">/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/root/bin</span><br></pre></td></tr></table></figure><p>对内容进行转义，不让$符号的提取变量值功能生效：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# echo \$PATH</span><br><span class="line">$PATH</span><br></pre></td></tr></table></figure><p>结合输出重定向符，将字符串信息导入文件中：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# echo &quot;It is a test&quot; &gt; linuxcool</span><br></pre></td></tr></table></figure><p>使用反引号符执行命令，并输出其结果到终端：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# echo `date`</span><br></pre></td></tr></table></figure><p>输出带有换行符的内容：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# echo -e &quot;a\nb\nc&quot;</span><br><span class="line">a</span><br><span class="line">b</span><br><span class="line">c</span><br></pre></td></tr></table></figure><p>输出信息中删除某个字符，注意看数字3消失了：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# echo -e &quot;123\b456&quot; </span><br><span class="line">12456</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>rmdir命令 – 删除空目录</title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/2.%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91/rmdir%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E7%A9%BA%E7%9B%AE%E5%BD%95/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/2.%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91/rmdir%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E7%A9%BA%E7%9B%AE%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="rmdir命令-–-删除空目录"><a href="#rmdir命令-–-删除空目录" class="headerlink" title="rmdir命令 – 删除空目录"></a>rmdir命令 – 删除空目录</h1><p>rmdir命令作用是删除空的目录，英文全称：“remove directory”。</p><p>注意：rmdir命令只能删除空目录。当要删除非空目录时，就要使用带有“-R”选项的rm命令。</p><p>rmdir命令的“-p”参数可以递归删除指定的多级目录，但是要求每个目录也必须是空目录。</p><span id="more"></span><p><strong>语法格式 :</strong>  rmdir [参数] [目录名称]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-p</th><th>用递归的方式删除指定的目录路径中的所有父级目录，非空则报错</th></tr></thead><tbody><tr><td>– – ignore-fail-on-non-empty</td><td>忽略由于删除非空目录时导致命令出错而产生的错误信息</td></tr><tr><td>-v</td><td>显示命令的详细执行过程</td></tr><tr><td>– – help</td><td>显示命令的帮助信息</td></tr><tr><td>– – version</td><td>显示命令的版本信息</td></tr></tbody></table><p><strong>参考实例</strong></p><p>删除空目录：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rmdir dir</span><br></pre></td></tr></table></figure><p>递归删除指定的目录树：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rmdir -p dir/dir_1/dir_2</span><br></pre></td></tr></table></figure><p>显示指令详细执行过程：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rmdir -v dir</span><br><span class="line">rmdir: 正在删除目录 &#x27;dir&#x27;</span><br><span class="line">[root@linuxcool ~]# rmdir -p -v dir/dir_1/dir_2</span><br><span class="line">rmdir: 正在删除目录 &#x27;dir/dir_1/dir_2</span><br><span class="line">rmdir: 正在删除目录 &#x27;dir/dir_1&#x27;</span><br><span class="line">rmdir: 正在删除目录 &#x27;dir_2&#x27;</span><br></pre></td></tr></table></figure><p>显示命令的版本信息：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rmdir --version</span><br><span class="line">rmdir (GNU coreutils) 8.30</span><br><span class="line">Copyright (C) 2018 Free Software Foundation, Inc.</span><br><span class="line">许可证 GPLv3+：GNU 通用公共许可证第 3 版或更新版本https://gnu.org/licenses/gpl.html。</span><br><span class="line">本软件是自由软件：您可以自由修改和重新发布它。</span><br><span class="line">在法律范围内没有其他保证。</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>rm命令 – 移除文件或目录</title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/2.%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91/rm%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%A7%BB%E9%99%A4%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/2.%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91/rm%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%A7%BB%E9%99%A4%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h1 id="rm命令-–-移除文件或目录"><a href="#rm命令-–-移除文件或目录" class="headerlink" title="rm命令 – 移除文件或目录"></a>rm命令 – 移除文件或目录</h1><p>rm是常用的命令，该命令的功能为删除一个目录中的一个或多个文件或目录，它也可以将某个目录及其下的所有文件及子目录均删除。对于链接文件，只是删除了链接，原有文件均保持不变。 rm也是一个危险的命令，使用的时候要特别当心，尤其对于新手，否则整个系统就会毁在这个命令（比如在/（根目录）下执行rm * -rf）。所以，我们在执行rm之前最好先确认一下在哪个目录，到底要删除什么东西，操作时保持高度清醒的头脑。</p><span id="more"></span><p><strong>语法格式：</strong>rm [参数] [文件]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-f</th><th>忽略不存在的文件，不会出现警告信息</th></tr></thead><tbody><tr><td>-i</td><td>删除前会询问用户是否操作</td></tr><tr><td>-r/R</td><td>递归删除</td></tr><tr><td>-v</td><td>显示指令的详细执行过程</td></tr></tbody></table><p><strong>参考实例</strong></p><p>删除前逐一询问确认：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rm -i test.txt.bz2 </span><br><span class="line">rm: remove regular file `test.txt.bz2&#x27;? </span><br></pre></td></tr></table></figure><p>直接删除，不会有任何提示：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rm -f test.txt.bz2  </span><br></pre></td></tr></table></figure><p>递归删除目录及目录下所有文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# mkdir /data/log</span><br><span class="line">[root@linuxcool ~]# rm -rf /data/log</span><br></pre></td></tr></table></figure><p>删除当前目录下所有文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rm -rf *</span><br></pre></td></tr></table></figure><p>清空系统中所有的文件（谨慎）：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rm -rf /*</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>rmmod命令 – 删除模块</title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/rmmod%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E6%A8%A1%E5%9D%97/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/rmmod%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E6%A8%A1%E5%9D%97/</url>
+      
+        <content type="html"><![CDATA[<h1 id="rmmod命令-–-删除模块"><a href="#rmmod命令-–-删除模块" class="headerlink" title="rmmod命令 – 删除模块"></a>rmmod命令 – 删除模块</h1><p>rmmod即“remove module”的简称,rmmod命令用于删除模块。 执行rmmod命令，可删除不需要的模块。Linux操作系统的核心具有模块化的特性，因此在编译核心时，不需要吧全部功能都放入核心，可以将这些功能编译成一个个单独的模块，待有需要时再分别载入它们。</p><span id="more"></span><p><strong>语法格式：</strong>rmmod [参数] [模块名称]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-a</th><th>删除所有目前不需要的模块</th></tr></thead><tbody><tr><td>-s</td><td>把信息输出至syslog常驻服务，而非终端机界面</td></tr><tr><td>-v</td><td>显示指令执行的详细信息</td></tr><tr><td>-f</td><td>强制移除模块，使用此选项比较危险</td></tr><tr><td>-w</td><td>等待着，知道模块能够被除时再移除模块</td></tr></tbody></table><p><strong>参考实例</strong></p><p>卸载模块pppoe并显示执行信息：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rmmod -v pppoe</span><br></pre></td></tr></table></figure><p>卸载bridge模块：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rmmod bridge</span><br></pre></td></tr></table></figure><p>卸载bridge模块并将错误信息写入syslog：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rmmod -s bridge</span><br></pre></td></tr></table></figure><p>孤立正在使用的bridge模块，知道不被使用：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rmmod -w bridge</span><br></pre></td></tr></table></figure><p>删除正在使用的bridge模块（-f可以删除正在使用的模块，非常危险，慎用）：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rmmod -f bridge</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>wait命令 – 等待指令</title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/wait%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%AD%89%E5%BE%85%E6%8C%87%E4%BB%A4/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/wait%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%AD%89%E5%BE%85%E6%8C%87%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<h1 id="wait命令-–-等待指令"><a href="#wait命令-–-等待指令" class="headerlink" title="wait命令 – 等待指令"></a>wait命令 – 等待指令</h1><p>wait命令用来等待指令的指令，直到其执行完毕后返回终端。该指令常用于shell脚本编程中，待指定的指令执行完成后，才会继续执行后面的任务。该指令等待作业时，在作业标识号前必须添加备份号”%”。</p><span id="more"></span><p><strong>语法格式：</strong>wait [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>22 或%1</th><th>进程号 或 作业号</th></tr></thead><tbody><tr><td></td><td></td></tr></tbody></table><p><strong>参考实例</strong></p><p>等待作业号为1的作业完成后再返回：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# wait %1</span><br><span class="line">[root@linuxcool ~]# find / -name password</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/history%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E4%B8%8E%E6%93%8D%E7%BA%B5%E5%8E%86%E5%8F%B2%E5%91%BD%E4%BB%A4/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/history%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E4%B8%8E%E6%93%8D%E7%BA%B5%E5%8E%86%E5%8F%B2%E5%91%BD%E4%BB%A4/</url>
+      
+        <content type="html"><![CDATA[<h1 id="history命令-–-显示与操纵历史命令"><a href="#history命令-–-显示与操纵历史命令" class="headerlink" title="history命令 – 显示与操纵历史命令"></a>history命令 – 显示与操纵历史命令</h1><p>history命令用于显示用户以前执行过的历史命令，并且能对历史命令进行追加和删除等操作。</p><p>如果你经常使用Linux命令，那么使用history命令可以有效地提升你的效率。</p><span id="more"></span><p><strong>语法格式:</strong> history [参数] [目录]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-a</th><th>将当前shell会话的历史命令追加到命令历史文件中,命令历史文件是保存历史命令的配置文件</th></tr></thead><tbody><tr><td>-c</td><td>清空当前历史命令列表</td></tr><tr><td>-d</td><td>删除历史命令列表中指定序号的命令</td></tr><tr><td>-n</td><td>从命令历史文件中读取本次Shell会话开始时没有读取的历史命令</td></tr><tr><td>-r</td><td>读取命令历史文件到当前的Shell历史命令内存缓冲区</td></tr><tr><td>-s</td><td>将指定的命令作为单独的条目加入命令历史内存缓冲区。在执行添加之前先删除命令历史内存缓冲区中最后一条命令</td></tr><tr><td>-w</td><td>把当前的shell历史命令内存缓冲区的内容写入命令历史文件</td></tr></tbody></table><p><strong>参考实例</strong></p><p>显示最近的10条命令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# history 10  </span><br></pre></td></tr></table></figure><p>将本次登录的命令写入历史文件中：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# history -w</span><br></pre></td></tr></table></figure><p>将命令历史文件中的内容读入到目前shell的history记忆中 ：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# history -r  </span><br></pre></td></tr></table></figure><p>将当前Shell会话的历史命令追加到命令历史文件中：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# history -a  </span><br></pre></td></tr></table></figure><p>清空当前历史命令列表：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# history -c </span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/hash%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E4%B8%8E%E6%B8%85%E9%99%A4%E5%91%BD%E4%BB%A4%E8%BF%90%E8%A1%8C%E6%97%B6%E6%9F%A5%E8%AF%A2%E7%9A%84%E5%93%88%E5%B8%8C%E8%A1%A8/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/hash%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E4%B8%8E%E6%B8%85%E9%99%A4%E5%91%BD%E4%BB%A4%E8%BF%90%E8%A1%8C%E6%97%B6%E6%9F%A5%E8%AF%A2%E7%9A%84%E5%93%88%E5%B8%8C%E8%A1%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="hash命令-–-显示与清除命令运行时查询的哈希表"><a href="#hash命令-–-显示与清除命令运行时查询的哈希表" class="headerlink" title="hash命令 – 显示与清除命令运行时查询的哈希表"></a>hash命令 – 显示与清除命令运行时查询的哈希表</h1><p>hash命令负责显示与清除命令运行时系统优先查询的哈希表（hash table）。</p><p>当执行hash命令不指定参数或标志时，hash命令向标准输出报告路径名列表的内容。此报告含有先前hash命令调用找到的当前shell环境中命令的路径名。而且还包含通过正常命令搜索进程调用并找到的那些命令。</p><span id="more"></span><p><strong>语法格式:</strong> hash [参数] [目录]</p><p><strong>常用参数：</strong>﻿</p><table><thead><tr><th>-d</th><th>在哈希表中清除记录</th></tr></thead><tbody><tr><td>-l</td><td>显示哈希表中的命令</td></tr><tr><td>-p&lt;指令&gt;</td><td>将具有完整路径的命令加入到哈希表中</td></tr><tr><td>-r</td><td>清除哈希表中的记录</td></tr><tr><td>-t</td><td>显示哈希表中命令的完整路径</td></tr></tbody></table><p><strong>参考实例</strong></p><p>显示哈希表中的命令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# hash -l </span><br></pre></td></tr></table></figure><p>删除哈希表中的命令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# hash -r </span><br></pre></td></tr></table></figure><p>向哈希表中添加命令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# hash -p /usr/sbin/adduser myadduser </span><br></pre></td></tr></table></figure><p>在哈希表中清除记录：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# hash -d</span><br></pre></td></tr></table></figure><p>显示哈希表中命令的完整路径：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# hash -t</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/bc%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%B5%AE%E7%82%B9%E8%BF%90%E7%AE%97/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/bc%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%B5%AE%E7%82%B9%E8%BF%90%E7%AE%97/</url>
+      
+        <content type="html"><![CDATA[<h1 id="bc命令-–-浮点运算"><a href="#bc命令-–-浮点运算" class="headerlink" title="bc命令 – 浮点运算"></a>bc命令 – 浮点运算</h1><p>bc的英文全拼为“ Binary Calculator ”，是一种支持任意精度的交互执行的计算器语言。bash内置了对整数四则运算的支持，但是并不支持浮点运算，而bc命令可以很方便的进行浮点运算，当然整数运算也不再话下。</p><span id="more"></span><p><strong>语法格式：</strong>bc [选项]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-i</th><th>强制进入交互式模式</th></tr></thead><tbody><tr><td>-l</td><td>定义使用的标准数学库</td></tr><tr><td>-w</td><td>定义使用的标准数学库</td></tr><tr><td>-q</td><td>打印正常的GNU bc环境信息</td></tr></tbody></table><p><strong>参考实例</strong></p><p>算术操作高级运算bc命令它可以执行浮点运算和一些高级函数：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# echo &quot;1.212*3&quot; | bc  3.636</span><br></pre></td></tr></table></figure><p>设定小数精度（数值范围）：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# echo &quot;scale=2;3/8&quot; | bc .37</span><br></pre></td></tr></table></figure><p>计算平方和平方根：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# echo &quot;10^10&quot; | bc 10000000000[root@linuxcool ~]# echo &quot;sqrt(100)&quot; | bc 10</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/zip%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/zip%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="zip命令-–-压缩文件"><a href="#zip命令-–-压缩文件" class="headerlink" title="zip命令 – 压缩文件"></a>zip命令 – 压缩文件</h1><p>zip程序将一个或多个压缩文件与有关文件的信息(名称、路径、日期、上次修改的时间、保护和检查信息以验证文件完整性)一起放入一个压缩存档中。可以使用一个命令将整个目录结构打包到zip存档中。</p><span id="more"></span><p>对于文本文件来说，压缩比为2：1和3：1是常见的。zip只有一种压缩方法(通缩)，并且可以在不压缩的情况下存储文件。(如果添加了bzip 2支持，zip也可以使用bzip 2压缩，但这些条目需要一个合理的现代解压缩来解压缩。当选择bzip 2压缩时，它将通货紧缩替换为默认方法。)zip会自动为每个要压缩的文件选择更好的两个文件(通缩或存储，如果选择bzip2，则选择bzip2或Store)。</p><p><strong>语法格式：</strong>zip [参数] [文件]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-q</th><th>不显示指令执行过程</th></tr></thead><tbody><tr><td>-r</td><td>递归处理，将指定目录下的所有文件和子目录一并处理</td></tr><tr><td>-z</td><td>替压缩文件加上注释</td></tr><tr><td>-v</td><td>显示指令执行过程或显示版本信息</td></tr><tr><td>-n&lt;字尾字符串&gt;</td><td>不压缩具有特定字尾字符串的文件</td></tr></tbody></table><p><strong>参考实例</strong></p><p>将 /home/html/ 这个目录下所有文件和文件夹打包为当前目录下的 html.zip：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zip -q -r html.zip /home/html</span><br></pre></td></tr></table></figure><p>压缩文件 cp.zip 中删除文件 a.c：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zip -dv cp.zip a.c </span><br></pre></td></tr></table></figure><p>把/home目录下面的mydata目录压缩为mydata.zip：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zip -r mydata.zip mydata </span><br></pre></td></tr></table></figure><p>把/home目录下面的abc文件夹和123.txt压缩成为abc123.zip：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zip -r abc123.zip abc 123.txt </span><br></pre></td></tr></table></figure><p>将 logs目录打包成 log.zip：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zip -r log.zip ./logs </span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/zipinfo%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E7%9C%8B%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E4%BF%A1%E6%81%AF/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/zipinfo%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E7%9C%8B%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E4%BF%A1%E6%81%AF/</url>
+      
+        <content type="html"><![CDATA[<h1 id="zipinfo命令-–-查看压缩文件信息"><a href="#zipinfo命令-–-查看压缩文件信息" class="headerlink" title="zipinfo命令 – 查看压缩文件信息"></a>zipinfo命令 – 查看压缩文件信息</h1><p>zipinfo命令的全称为“zip information”，该命令用于列出压缩文件信息。执行zipinfo指令可得知zip压缩文件的详细信息。</p><span id="more"></span><p><strong>语法格式：</strong>zipinfo [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-1</th><th>只列出文件名称</th></tr></thead><tbody><tr><td>-2</td><td>此参数的效果和指定”-1″参数类似，但可搭配”-h”,”-t”和”-z”参数使用</td></tr><tr><td>-h</td><td>只列出压缩文件的文件名称</td></tr><tr><td>-l</td><td>此参数的效果和指定”-m”参数类似，但会列出原始文件的大小而非每个文件的压缩率</td></tr><tr><td>-m</td><td>此参数的效果和指定”-s”参数类似，但多会列出每个文件的压缩率</td></tr><tr><td>-M</td><td>若信息内容超过一个画面，则采用类似more指令的方式列出信息</td></tr><tr><td>-s</td><td>用类似执行”ls -l”指令的效果列出压缩文件内容</td></tr><tr><td>-t</td><td>只列出压缩文件内所包含的文件数目，压缩前后的文件大小及压缩率</td></tr><tr><td>-T</td><td>将压缩文件内每个文件的日期时间用年，月，日，时，分，秒的顺序列出</td></tr><tr><td>-v</td><td>详细显示压缩文件内每一个文件的信息</td></tr><tr><td>-x&lt;范本样式&gt;</td><td>不列出符合条件的文件的信息</td></tr><tr><td>-z</td><td>如果压缩文件内含有注释，就将注释显示出来</td></tr></tbody></table><p><strong>参考实例</strong></p><p>显示压缩文件信息：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zipinfo file.zip </span><br><span class="line">Archive: file.zip  486 bytes  3 files</span><br><span class="line">-rw-r--r-- 2.3 unx    0 bx stor 24-May-10 18:54 a.c</span><br><span class="line">-rw-r--r-- 2.3 unx    0 bx stor 24-May-10 18:54 b.c</span><br><span class="line">-rw-r--r-- 2.3 unx    0 bx stor 24-May-10 18:54 c.c</span><br><span class="line">3 files, 0 bytes uncompressed, 0 bytes compressed: 0.0%</span><br></pre></td></tr></table></figure><p>显示压缩文件中每个文件的信息：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zipinfo -v file.zip </span><br></pre></td></tr></table></figure><p>只显示压缩包大小、文件数目：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zipinfo -h file.zip             </span><br><span class="line">Archive:  file.zip</span><br><span class="line">Zip file size: 907 bytes, number of entries: 3</span><br></pre></td></tr></table></figure><p>生成一个基本的、长格式的列表(而不是冗长的)，包括标题和总计行：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zipinfo -l file</span><br></pre></td></tr></table></figure><p>查看存档中最近修改的文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zipinfo -T file | sort –nr -k 7 | sed 15q</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/unzip%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E8%A7%A3%E5%8E%8B%E7%BC%A9zip%E6%96%87%E4%BB%B6/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/unzip%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E8%A7%A3%E5%8E%8B%E7%BC%A9zip%E6%96%87%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="unzip命令-–-解压缩zip文件"><a href="#unzip命令-–-解压缩zip文件" class="headerlink" title="unzip命令 – 解压缩zip文件"></a>unzip命令 – 解压缩zip文件</h1><p>unzip命令是用于.zip格式文件的解压缩工具 ，unzip命令将列出、测试或从zip格式存档中提取文件，这些文件通常位于MS-DOS系统上。</p><span id="more"></span><p>默认行为（就是没有选项）是从指定的ZIP存档中提取所有的文件到当前目录（及其下面的子目录）。一个配套程序zip（1L）创建ZIP存档；这两个程序都与PKWARE的PKZIP和PKUNZIP为MS-DOS创建的存档文件兼容，但许多情况下，程序选项或默认行为是不同的。</p><p><strong>语法格式：</strong>unzip [参数] [文件]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-l</th><th>显示压缩文件内所包含的文件</th></tr></thead><tbody><tr><td>-v</td><td>执行时显示详细的信息</td></tr><tr><td>-c</td><td>将解压缩的结果显示到屏幕上，并对字符做适当的转换</td></tr><tr><td>-n</td><td>解压缩时不要覆盖原有的文件</td></tr><tr><td>-j</td><td>不处理压缩文件中原有的目录路径</td></tr></tbody></table><p><strong>参考实例</strong></p><p>把/home目录下面的mydata.zip解压到mydatabak目录里面：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unzip mydata.zip -d mydatabak </span><br></pre></td></tr></table></figure><p>把/home目录下面的wwwroot.zip直接解压到/home目录里面：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unzip wwwroot.zip </span><br></pre></td></tr></table></figure><p>把/home目录下面的abc12.zip、abc23.zip、abc34.zip同时解压到/home目录里面：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unzip abc\*.zip </span><br></pre></td></tr></table></figure><p>查看把/home目录下面的wwwroot.zip里面的内容：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unzip -v wwwroot.zip </span><br></pre></td></tr></table></figure><p>验证/home目录下面的wwwroot.zip是否完整：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unzip -t wwwroot.zip  </span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/unarj%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E8%A7%A3%E5%8E%8B.arj%E6%96%87%E4%BB%B6/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/unarj%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E8%A7%A3%E5%8E%8B.arj%E6%96%87%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="unarj命令-–-解压-arj文件"><a href="#unarj命令-–-解压-arj文件" class="headerlink" title="unarj命令 – 解压.arj文件"></a>unarj命令 – 解压.arj文件</h1><p>unarj命令用于解压缩.arj文件。</p><span id="more"></span><p><strong>语法格式：</strong>unarj [参数] [.arj压缩文件]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-e</th><th>解压缩.arj文件</th></tr></thead><tbody><tr><td>-l</td><td>显示压缩文件内所包含的文件</td></tr><tr><td>-t</td><td>检查压缩文件是否正确</td></tr><tr><td>-x</td><td>解压缩时保留原有的路径</td></tr></tbody></table><p><strong>参考实例</strong></p><p>解压缩.arj文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unarj -e test.arj</span><br></pre></td></tr></table></figure><p>显示压缩文件内所包含的文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unarj -l test.arj</span><br></pre></td></tr></table></figure><p>检查压缩文件是否正确：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unarj -t test.arj</span><br></pre></td></tr></table></figure><p>解压缩时保留原有的路径：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unarj -x test.arj</span><br></pre></td></tr></table></figure><p>把文件解压到当前路径：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unarj -ex test.arj</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/gzip%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%8E%8B%E7%BC%A9%E5%92%8C%E8%A7%A3%E5%8E%8B%E6%96%87%E4%BB%B6/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/gzip%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%8E%8B%E7%BC%A9%E5%92%8C%E8%A7%A3%E5%8E%8B%E6%96%87%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="gzip命令-–-压缩和解压文件"><a href="#gzip命令-–-压缩和解压文件" class="headerlink" title="gzip命令 – 压缩和解压文件"></a>gzip命令 – 压缩和解压文件</h1><p>gzip命令的英文是“GNUzip”，是常用来压缩文件的工具，gzip是个使用广泛的压缩程序，文件经它压缩过后，其名称后面会多处“.gz”扩展名。</p><span id="more"></span><p>gzip是在Linux系统中经常使用的一个对文件进行压缩和解压缩的命令，既方便又好用。gzip不仅可以用来压缩大的、较少使用的文件以节省磁盘空间，还可以和tar命令一起构成Linux操作系统中比较流行的压缩文件格式。据统计，gzip命令对文本文件有60%～70%的压缩率。减少文件大小有两个明显的好处，一是可以减少存储空间，二是通过网络传输文件时，可以减少传输的时间。</p><p><strong>语法格式：</strong>gzip [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-a</th><th>使用ASCII文字模式</th></tr></thead><tbody><tr><td>-d</td><td>解开压缩文件</td></tr><tr><td>-f</td><td>强行压缩文件</td></tr><tr><td>-l</td><td>列出压缩文件的相关信息</td></tr><tr><td>-c</td><td>把压缩后的文件输出到标准输出设备，不去更动原始文件</td></tr><tr><td>-r</td><td>递归处理，将指定目录下的所有文件及子目录一并处理</td></tr><tr><td>-q</td><td>不显示警告信息</td></tr></tbody></table><p><strong>参考实例</strong></p><p>把rancher-v2.2.0目录下的每个文件压缩成.gz文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# gzip *</span><br></pre></td></tr></table></figure><p>把上例中每个压缩的文件解压，并列出详细的信息：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# gzip -dv *</span><br></pre></td></tr></table></figure><p>递归地解压目录：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# gzip -dr rancher.gz</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/7%E3%80%81%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/setleds%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E8%AE%BE%E5%AE%9A%E9%94%AE%E7%9B%98%E4%B8%8A%E6%96%B9%E4%B8%89%E4%B8%AA%20LED%20%E7%9A%84%E7%8A%B6%E6%80%81/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/7%E3%80%81%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/setleds%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E8%AE%BE%E5%AE%9A%E9%94%AE%E7%9B%98%E4%B8%8A%E6%96%B9%E4%B8%89%E4%B8%AA%20LED%20%E7%9A%84%E7%8A%B6%E6%80%81/</url>
+      
+        <content type="html"><![CDATA[<h1 id="setleds命令-–-设定键盘上方三个-LED-的状态"><a href="#setleds命令-–-设定键盘上方三个-LED-的状态" class="headerlink" title="setleds命令 – 设定键盘上方三个 LED 的状态"></a>setleds命令 – 设定键盘上方三个 LED 的状态</h1><p>setleds即是英文词组“set leds”的合并，翻译为中文就是设置LED灯。setleds命令用来设定键盘上方三个 LED 灯的状态。在 Linux 中，每一个虚拟主控台都有独立的设定。</p><p>这是一个十分神奇的命令，竟然可以通过命令来控制键盘的灯的状态。那么下面我一起来学习一下这个命令吧。</p><span id="more"></span><p><strong>语法格式：</strong>setleds [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-F</th><th>设定虚拟主控台的状态</th></tr></thead><tbody><tr><td>-D</td><td>改变虚拟主控台的状态和预设的状态</td></tr><tr><td>-L</td><td>直接改变 LED 显示的状态</td></tr><tr><td>+num/-num</td><td>将数字键打开或关闭</td></tr><tr><td>+caps/-caps</td><td>把大小写键打开或关闭</td></tr><tr><td>+scroll /-scroll</td><td>把选项键打开或关闭</td></tr></tbody></table><p><strong>参考实例</strong></p><p>控制键盘灯num灯亮和灯灭：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# setleds +num [root@linuxcool ~]# setleds -num </span><br></pre></td></tr></table></figure><p>控制键盘的大小写键打开或关闭，键盘指示灯亮与灭：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# setleds +caps [root@linuxcool ~]# setleds -caps </span><br></pre></td></tr></table></figure><p>控制键盘的选项键打开或关闭，键盘指示灯亮与灭：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# setleds +scroll </span><br></pre></td></tr></table></figure><p>对三灯的亮与灭的情况进行组合，分别设置为数字灯亮，大小写灯灭，选项键scroll灯灭：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# setleds +num -caps -scroll </span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/7%E3%80%81%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/sensors%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%A3%80%E6%B5%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%86%85%E9%83%A8%E6%B8%A9%E5%BA%A6%E5%8F%8A%E7%94%B5%E5%8E%8B/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/7%E3%80%81%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/sensors%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%A3%80%E6%B5%8B%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%86%85%E9%83%A8%E6%B8%A9%E5%BA%A6%E5%8F%8A%E7%94%B5%E5%8E%8B/</url>
+      
+        <content type="html"><![CDATA[<h1 id="sensors命令-–-检测服务器内部温度及电压"><a href="#sensors命令-–-检测服务器内部温度及电压" class="headerlink" title="sensors命令 – 检测服务器内部温度及电压"></a>sensors命令 – 检测服务器内部温度及电压</h1><p>sensors命令用于检测服务器内部降温系统是否健康，可以监控主板，CPU的工作电压，风扇转速、温度等数据 。</p><span id="more"></span><p><strong>语法格式</strong>：sensors</p><p><strong>参考实例</strong></p><p>检测cpu工作电压，温度等：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# sensors </span><br><span class="line">coretemp-isa-0000 </span><br><span class="line">Core 0:      +48.0°C  (high = +87.0°C, crit = +97.0°C)   </span><br><span class="line">Core 1:      +46.0°C  (high = +87.0°C, crit = +97.0°C)   </span><br><span class="line">Core 2:      +47.0°C  (high = +87.0°C, crit = +97.0°C)   </span><br><span class="line">Core 3:      +46.0°C  (high = +87.0°C, crit = +97.0°C) </span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/7%E3%80%81%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/mount%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%8C%82%E8%BD%BD/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/7%E3%80%81%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/mount%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E6%8C%82%E8%BD%BD/</url>
+      
+        <content type="html"><![CDATA[<h1 id="mount命令-–-文件系统挂载"><a href="#mount命令-–-文件系统挂载" class="headerlink" title="mount命令 – 文件系统挂载"></a>mount命令 – 文件系统挂载</h1><p>mount命令用于加载文件系统到指定的加载点。此命令的最常用于挂载cdrom，使我们可以访问cdrom中的数据，因为你将光盘插入cdrom中，Linux并不会自动挂载，必须使用Linux mount命令来手动完成挂载。</p><span id="more"></span><p><strong>语法格式：</strong>mount [参数]</p><p><strong>常用参数：</strong>﻿</p><table><thead><tr><th>-t</th><th>指定挂载类型</th></tr></thead><tbody><tr><td>-l</td><td>显示已加载的文件系统列表</td></tr><tr><td>-h</td><td>显示帮助信息并退出</td></tr><tr><td>-V</td><td>显示程序版本</td></tr><tr><td>-n</td><td>加载没有写入文件“/etc/mtab”中的文件系统</td></tr><tr><td>-r</td><td>将文件系统加载为只读模式</td></tr><tr><td>-a</td><td>加载文件“/etc/fstab”中描述的所有文件系统</td></tr></tbody></table><p><strong>参考实例</strong>﻿</p><p>查看版本：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# mount -V</span><br></pre></td></tr></table></figure><p>启动所有挂载：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# mount -a</span><br></pre></td></tr></table></figure><p>挂载 /dev/cdrom 到 /mnt：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# mount /dev/cdrom /mnt</span><br></pre></td></tr></table></figure><p>挂载nfs格式文件系统：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# mount -t nfs /123 /mnt  </span><br></pre></td></tr></table></figure><p>挂载第一块盘的第一个分区到/etc目录 ：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# mount -t ext4 -o loop,default /dev/sda1 /etc</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/7%E3%80%81%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/MAKEDEV%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%BB%BA%E7%AB%8B%E8%AE%BE%E5%A4%87/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/7%E3%80%81%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/MAKEDEV%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%BB%BA%E7%AB%8B%E8%AE%BE%E5%A4%87/</url>
+      
+        <content type="html"><![CDATA[<h1 id="MAKEDEV命令-–-建立设备"><a href="#MAKEDEV命令-–-建立设备" class="headerlink" title="MAKEDEV命令 – 建立设备"></a>MAKEDEV命令 – 建立设备</h1><p>MAKEDEV是一个脚本程序, 用于在 /dev 目录下建立设备, 通过这些设备文件可以 访问位于内核的驱动程序。</p><p>MAKEDEV 脚本创建静态的设备节点，通常位于/dev目录下。</p><span id="more"></span><p><strong>语法格式：</strong>MAKEDEV [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-v</th><th>显示出执行的每一个动作</th></tr></thead><tbody><tr><td>-n</td><td>并不做真正的更新, 只是显示一下它的执行效果</td></tr><tr><td>-d</td><td>删除设备文件</td></tr></tbody></table><p><strong>参考实例</strong></p><p>显示出执行的每一个动作:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ./MAKEDEV -v update</span><br></pre></td></tr></table></figure><p>删除设备:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ./MAKEDEV -d device</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/7%E3%80%81%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/lspci%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E5%BD%93%E5%89%8D%E8%AE%BE%E5%A4%87%E6%89%80%E6%9C%89PCI%E6%80%BB%E7%BA%BF%E4%BF%A1%E6%81%AF/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/7%E3%80%81%E8%AE%BE%E5%A4%87%E7%AE%A1%E7%90%86/lspci%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E5%BD%93%E5%89%8D%E8%AE%BE%E5%A4%87%E6%89%80%E6%9C%89PCI%E6%80%BB%E7%BA%BF%E4%BF%A1%E6%81%AF/</url>
+      
+        <content type="html"><![CDATA[<h1 id="lspci命令-–-显示当前设备所有PCI总线信息"><a href="#lspci命令-–-显示当前设备所有PCI总线信息" class="headerlink" title="lspci命令 – 显示当前设备所有PCI总线信息"></a>lspci命令 – 显示当前设备所有PCI总线信息</h1><p>lspci命令用于显示当前主机的所有PCI总线信息，以及所有已连接的PCI设备信息。 现在主流设备如网卡储存等都采用PCI总线</p><span id="more"></span><p><strong>语法格式：</strong>lspci [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-n</th><th>以数字方式显示PCI厂商和设备代码</th></tr></thead><tbody><tr><td>-t</td><td>以树状结构显示PCI设备的层次关系</td></tr><tr><td>-b</td><td>以总线为中心的视图</td></tr><tr><td>-s</td><td>仅显示指定总线插槽的设备和功能块信息</td></tr><tr><td>-i</td><td>指定PCI编号列表文件，不使用默认文件</td></tr><tr><td>-m</td><td>以机器可读方式显示PCI设备信息</td></tr></tbody></table><p><strong>参考实例</strong></p><p>显示当前主机的所有PCI总线信息：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lspci</span><br></pre></td></tr></table></figure><p>以树状结构显示PCI设备的层次关系：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lspci -t</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/ssh%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%AE%89%E5%85%A8%E8%BF%9E%E6%8E%A5%E5%AE%A2%E6%88%B7%E7%AB%AF/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/ssh%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%AE%89%E5%85%A8%E8%BF%9E%E6%8E%A5%E5%AE%A2%E6%88%B7%E7%AB%AF/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ssh命令-–-安全连接客户端"><a href="#ssh命令-–-安全连接客户端" class="headerlink" title="ssh命令 – 安全连接客户端"></a>ssh命令 – 安全连接客户端</h1><p>ssh命令是openssh套件中的客户端连接工具，可以给予ssh加密协议实现安全的远程登录服务器，实现对服务器的远程管理。</p><span id="more"></span><p><strong>语法格式:</strong> ssh [参数] [远程主机]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-1</th><th>强制使用ssh协议版本1</th></tr></thead><tbody><tr><td>-2</td><td>强制使用ssh协议版本2</td></tr><tr><td>-4</td><td>强制使用IPv4地址</td></tr><tr><td>-6</td><td>强制使用IPv6地址</td></tr><tr><td>-A</td><td>开启认证代理连接转发功能</td></tr><tr><td>-a</td><td>关闭认证代理连接转发功能</td></tr><tr><td>-b&lt;IP地址&gt;</td><td>使用本机指定的地址作为对位连接的源IP地址</td></tr><tr><td>-C</td><td>请求压缩所有数据</td></tr><tr><td>-F&lt;配置文件&gt;</td><td>指定ssh指令的配置文件，默认的配置文件为“/etc/ssh/ssh_config”</td></tr><tr><td>-f</td><td>后台执行ssh指令</td></tr><tr><td>-g</td><td>允许远程主机连接本机的转发端口</td></tr><tr><td>-i&lt;身份文件&gt;</td><td>指定身份文件（即私钥文件）</td></tr><tr><td>-l&lt;登录名&gt;</td><td>指定连接远程服务器的登录用户名</td></tr><tr><td>-N</td><td>不执行远程指令</td></tr><tr><td>-o&lt;选项&gt;</td><td>指定配置选项</td></tr><tr><td>-p&lt;端口&gt;</td><td>指定远程服务器上的端口</td></tr><tr><td>-q</td><td>静默模式，所有的警告和诊断信息被禁止输出</td></tr><tr><td>-X</td><td>开启X11转发功能</td></tr><tr><td>-x</td><td>关闭X11转发功能</td></tr><tr><td>-y</td><td>开启信任X11转发功能</td></tr></tbody></table><p><strong>参考实例</strong></p><p>登录远程服务器：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ssh 202.102.240.88</span><br></pre></td></tr></table></figure><p>用test用户连接远程服务器：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ssh -l test 202.102.220.88</span><br></pre></td></tr></table></figure><p>查看分区列表：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ssh 202.102.220.88 /sbin/fdisk -l</span><br></pre></td></tr></table></figure><p>强制使用ssh协议版本1：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ssh -1</span><br></pre></td></tr></table></figure><p>开启认证代理连接转发功能：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ssh -A</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/ping%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%B5%8B%E8%AF%95%E4%B8%BB%E6%9C%BA%E9%97%B4%E7%BD%91%E7%BB%9C%E8%BF%9E%E9%80%9A%E6%80%A7/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/ping%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%B5%8B%E8%AF%95%E4%B8%BB%E6%9C%BA%E9%97%B4%E7%BD%91%E7%BB%9C%E8%BF%9E%E9%80%9A%E6%80%A7/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ping命令-–-测试主机间网络连通性"><a href="#ping命令-–-测试主机间网络连通性" class="headerlink" title="ping命令 – 测试主机间网络连通性"></a>ping命令 – 测试主机间网络连通性</h1><p>ping命令主要用来测试主机之间网络的连通性，也可以用于。执行ping指令会使用ICMP传输协议，发出要求回应的信息，若远端主机的网络功能没有问题，就会回应该信息，因而得知该主机运作正常。</p><p>不过值得我们注意的是：Linux系统下的ping命令与Windows系统下的ping命令稍有不同。Windows下运行ping命令一般会发出4个请求就结束运行该命令；而Linux下不会自动终止，此时需要我们按CTR+C终止或者使用-c参数为ping命令指定发送的请求数目。</p><span id="more"></span><p><strong>语法格式：</strong>ping [参数] [目标主机]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-d</th><th>使用Socket的SO_DEBUG功能</th></tr></thead><tbody><tr><td>-c</td><td>指定发送报文的次数</td></tr><tr><td>-i</td><td>指定收发信息的间隔时间</td></tr><tr><td>-I</td><td>使用指定的网络接口送出数据包</td></tr><tr><td>-l</td><td>设置在送出要求信息之前，先行发出的数据包</td></tr><tr><td>-n</td><td>只输出数值</td></tr><tr><td>-p</td><td>设置填满数据包的范本样式</td></tr><tr><td>-q</td><td>不显示指令执行过程</td></tr><tr><td>-R</td><td>记录路由过程</td></tr><tr><td>-s</td><td>设置数据包的大小</td></tr><tr><td>-t</td><td>设置存活数值TTL的大小</td></tr><tr><td>-v</td><td>详细显示指令的执行过程</td></tr></tbody></table><p><strong>参考实例</strong></p><p>检测与linuxcool网站的连通性：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ping www.linuxcool.com</span><br></pre></td></tr></table></figure><p>连续ping4次：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ping -c 4 www.linuxcool.com </span><br></pre></td></tr></table></figure><p>设置次数为4，时间间隔为3秒：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ping -c 4 -i 3 www.linuxcool.com</span><br></pre></td></tr></table></figure><p>利用ping命令获取指定网站的IP地址：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ping -c 1 linuxcool.com | grep from | cut -d &quot; &quot; -f 4220.181.57.216</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/netstat%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/netstat%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81/</url>
+      
+        <content type="html"><![CDATA[<h1 id="netstat命令-–-显示网络状态"><a href="#netstat命令-–-显示网络状态" class="headerlink" title="netstat命令 – 显示网络状态"></a>netstat命令 – 显示网络状态</h1><p>netstat 命令用于显示各种网络相关信息，如网络连接，路由表，接口状态 (Interface Statistics)，masquerade 连接，多播成员 (Multicast Memberships) 等等。</p><p>从整体上看，netstat的输出结果可以分为两个部分：一个是Active Internet connections，称为有源TCP连接，其中”Recv-Q”和”Send-Q”指%0A的是接收队列和发送队列。这些数字一般都应该是0。如果不是则表示软件包正在队列中堆积。这种情况只能在非常少的情况见到；另一个是Active UNIX domain sockets，称为有源Unix域套接口(和网络套接字一样，但是只能用于本机通信，性能可以提高一倍)。</p><span id="more"></span><p><strong>语法格式：</strong>netstat [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-a</th><th>显示所有连线中的Socket</th></tr></thead><tbody><tr><td>-p</td><td>显示正在使用Socket的程序识别码和程序名称</td></tr><tr><td>-u</td><td>显示UDP传输协议的连线状况</td></tr><tr><td>-i</td><td>显示网络界面信息表单</td></tr><tr><td>-n</td><td>直接使用IP地址，不通过域名服务器</td></tr></tbody></table><p><strong>参考实例</strong></p><p>显示详细的网络状况：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# netstat -a</span><br></pre></td></tr></table></figure><p>显示当前户籍UDP连接状况：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# netstat -nu</span><br></pre></td></tr></table></figure><p>显示UDP端口号的使用情况：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# netstat -apu </span><br><span class="line">Active Internet connections (servers and established)</span><br><span class="line">Proto Recv-Q Send-Q Local Address  Foreign Address  State  PID/Program name    </span><br><span class="line">udp        0      0 0.0.0.0:bootpc          0.0.0.0:*      4000/dhclient       </span><br><span class="line">udp        0      0 localhost:323           0.0.0.0:*      3725/chronyd        </span><br><span class="line">udp6       0      0 localhost:323           [::]:*         3725/chronyd </span><br></pre></td></tr></table></figure><p>显示网卡列表：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# netstat -i </span><br><span class="line">Kernel Interface table </span><br><span class="line">Iface MTU Met  RX-OK  RX-ERR  RX-DRP RX-OVR  TX-OK TX-ERR TX-DRP TX-OVR Flg </span><br><span class="line">eth0 1500   0  181864   0      0       0     141278   0     0     0    BMRU </span><br><span class="line">lo   16436  0   3362    0      0       0     3362     0     0     0    LRU</span><br></pre></td></tr></table></figure><p>显示组播组的关系：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# netstat -g </span><br><span class="line">IPv6/IPv4 Group Memberships Interface    </span><br><span class="line">RefCnt Group </span><br><span class="line">--------------- ------ --------------------- </span><br><span class="line">lo        1   ALL-SYSTEMS.MCAST.NET </span><br><span class="line">eth0      1   ALL-SYSTEMS.MCAST.NET lo       1   ff02::1 </span><br><span class="line">eth0      1   ff02::1:ff0a:b0c eth0          1   ff02::1</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/fsck%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%A3%80%E6%9F%A5%E5%B9%B6%E4%BF%AE%E5%A4%8DLinux%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/fsck%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%A3%80%E6%9F%A5%E5%B9%B6%E4%BF%AE%E5%A4%8DLinux%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="fsck命令-–-检查并修复Linux文件系统"><a href="#fsck命令-–-检查并修复Linux文件系统" class="headerlink" title="fsck命令 – 检查并修复Linux文件系统"></a>fsck命令 – 检查并修复Linux文件系统</h1><p>fsck命令的英文全称是“filesystem check”，即检查文件系统的意思，常用于检查并修复Linux文件系统的一些错误信息，操作文件系统需要先备份重要数据，以防丢失。</p><p>Linux fsck命令用于检查并修复Linux文件系统，可以同时检查一个或多个 Linux 文件系统；若系统掉电或磁盘发生问题，可利用fsck命令对文件系统进行检查。</p><span id="more"></span><p><strong>语法格式：</strong>fsck [参数] [文件系统]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-a</th><th>自动修复文件系统，不询问任何问题</th></tr></thead><tbody><tr><td>-A</td><td>依照/etc/fstab配置文件的内容，检查文件内所列的全部文件系统</td></tr><tr><td>-N</td><td>不执行指令，仅列出实际执行会进行的动作</td></tr><tr><td>-P</td><td>当搭配”-A”参数使用时，则会同时检查所有的文件系统</td></tr><tr><td>-r</td><td>采用互动模式，在执行修复时询问问题，让用户得以确认并决定处理方式</td></tr><tr><td>-R</td><td>当搭配”-A”参数使用时，则会略过/目录的文件系统不予检查</td></tr><tr><td>-t</td><td>指定要检查的文件系统类型</td></tr><tr><td>-T</td><td>执行fsck指令时，不显示标题信息</td></tr><tr><td>-V</td><td>显示指令执行过程</td></tr></tbody></table><p><strong>参考实例</strong></p><p>修复坏的分区文件系统：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fsck -t ext3 -r /usr/local</span><br><span class="line"> fsck from util-linux 2.23.2</span><br><span class="line"> e2fsck 1.42.9 (28-Dec-2013)</span><br><span class="line"> fsck.ext3: Is a directory while trying to open /usr/local</span><br><span class="line"> The superblock could not be read or does not describe a correct ext2</span><br><span class="line"> filesystem.  If the device is valid and it really contains an ext2</span><br><span class="line"> filesystem (and not swap or ufs or something else), then the superblock</span><br><span class="line"> is corrupt, and you might try running e2fsck with an alternate superblock:</span><br><span class="line">     e2fsck -b 8193 </span><br><span class="line"> /usr/local: status 8, rss 1232, real 0.020288, user 0.002022, sys 0.005354</span><br></pre></td></tr></table></figure><p>显示fsck系统安装的版本号：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fsck --version fsck from util-linux 2.23.2 </span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/dhclient%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%8A%A8%E6%80%81%E8%8E%B7%E5%8F%96%E6%88%96%E9%87%8A%E6%94%BEIP%E5%9C%B0%E5%9D%80/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/dhclient%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%8A%A8%E6%80%81%E8%8E%B7%E5%8F%96%E6%88%96%E9%87%8A%E6%94%BEIP%E5%9C%B0%E5%9D%80/</url>
+      
+        <content type="html"><![CDATA[<h1 id="dhclient命令-–-动态获取或释放IP地址"><a href="#dhclient命令-–-动态获取或释放IP地址" class="headerlink" title="dhclient命令 – 动态获取或释放IP地址"></a>dhclient命令 – 动态获取或释放IP地址</h1><p>dhclient命令的作用是：使用动态主机配置协议动态的配置网络接口的网络参数，也支持BOOTP协议。</p><span id="more"></span><p><strong>语法格式：</strong>dhclient [参数] [网络接口]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-p</th><th>指定dhcp客户端监听的端口号（默认端口号86）</th></tr></thead><tbody><tr><td>-d</td><td>总是以前台方式运行程序</td></tr><tr><td>-q</td><td>安静模式，不打印任何错误的提示信息</td></tr><tr><td>-r</td><td>释放ip地址</td></tr><tr><td>-n</td><td>不配置任何接口</td></tr><tr><td>-x</td><td>停止正在运行的DHCP客户端，而不释放当前租约，杀死现有的dhclient</td></tr><tr><td>-s</td><td>在获取ip地址之前指定DHCP服务器</td></tr><tr><td>-w</td><td>即使没有找到广播接口，也继续运行</td></tr></tbody></table><p><strong>参考实例</strong></p><p>在指定网络接口上发出DHCP请求：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# dhclient eth0</span><br></pre></td></tr></table></figure><p>释放IP地址：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# dhclient -r</span><br><span class="line">Killed old client process</span><br></pre></td></tr></table></figure><p>从指定的服务器获取ip地址：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# dhclient -s 192.168.60.240</span><br></pre></td></tr></table></figure><p>停止运行dhclient：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# dhclient -x</span><br><span class="line">Killed old client process</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/#%20ifconfig%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E6%88%96%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/#%20ifconfig%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E6%88%96%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ifconfig命令-–-显示或设置网络设备"><a href="#ifconfig命令-–-显示或设置网络设备" class="headerlink" title="ifconfig命令 – 显示或设置网络设备"></a>ifconfig命令 – 显示或设置网络设备</h1><p>ifconfig命令的英文全称是“network interfaces configuring”，即用于配置和显示Linux内核中网络接口的网络参数。用ifconfig命令配置的网卡信息，在网卡重启后机器重启后，配置就不存在。要想将上述的配置信息永远的存的电脑里，那就要修改网卡的配置文件了。</p><span id="more"></span><p><strong>语法格式：</strong>ifconfig [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>add&lt;地址&gt;</th><th>设置网络设备IPv6的IP地址</th></tr></thead><tbody><tr><td>del&lt;地址&gt;</td><td>删除网络设备IPv6的IP地址</td></tr><tr><td>down</td><td>关闭指定的网络设备</td></tr><tr><td>up</td><td>启动指定的网络设备</td></tr><tr><td>IP地址</td><td>指定网络设备的IP地址</td></tr></tbody></table><p><strong>参考实例</strong></p><p>显示网络设备信息：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ifconfig</span><br><span class="line">eth0   Link encap:Ethernet HWaddr 00:50:56:0A:0B:0C       </span><br><span class="line">       inet addr:192.168.0.3 Bcast:192.168.0.255 Mask:255.255.255.0</span><br><span class="line">       inet6 addr: fe80::250:56ff:fe0a:b0c/64 Scope:Link     </span><br><span class="line">       UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1      </span><br><span class="line">       RX packets:172220 errors:0 dropped:0 overruns:0 frame:0      </span><br><span class="line">       TX packets:132379 errors:0 dropped:0 overruns:0 carrier:0 </span><br><span class="line">       collisions:0 txqueuelen:1000       </span><br><span class="line">       RX bytes:87101880 (83.0 MiB) TX bytes:41576123 (39.6 MiB) </span><br><span class="line">       Interrupt:185 Base address:0x2024  </span><br><span class="line">lo    Link encap:Local Loopback       </span><br><span class="line">      inet addr:127.0.0.1 Mask:255.0.0.0      </span><br><span class="line">      inet6 addr: ::1/128 Scope:Host      </span><br><span class="line">      UP LOOPBACK RUNNING MTU:16436 Metric:1      </span><br><span class="line">      RX packets:2022 errors:0 dropped:0 overruns:0 frame:0      </span><br><span class="line">      TX packets:2022 errors:0 dropped:0 overruns:0 carrier:0   </span><br><span class="line">      collisions:0 txqueuelen:0       </span><br><span class="line">      RX bytes:2459063 (2.3 MiB) </span><br><span class="line">      TX bytes:2459063 (2.3 MiB)</span><br></pre></td></tr></table></figure><p>启动关闭指定网卡：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ifconfig eth0 down</span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 up </span><br></pre></td></tr></table></figure><p>为网卡配置和删除IPv6地址：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ifconfig eth0 add 33ffe:3240:800:1005::2/64</span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 del 33ffe:3240:800:1005::2/64</span><br></pre></td></tr></table></figure><p>用ifconfig修改MAC地址：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ifconfig eth0 down</span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 hw ether 00:AA:BB:CC:DD:EE</span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 up</span><br><span class="line">[root@linuxcool ~]# ifconfig eth1 hw ether 00:1D:1C:1D:1E </span><br><span class="line">[root@linuxcool ~]# ifconfig eth1 up</span><br></pre></td></tr></table></figure><p>配置IP地址：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ifconfig eth0 192.168.1.56 </span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 192.168.1.56 netmask 255.255.255.0</span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 192.168.1.56 netmask 255.255.255.0 broadcast 192.168.1.255</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/tftp%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E4%B8%8A%E4%BC%A0%E5%8F%8A%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/tftp%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E4%B8%8A%E4%BC%A0%E5%8F%8A%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="tftp命令-–-上传及下载文件"><a href="#tftp命令-–-上传及下载文件" class="headerlink" title="tftp命令 – 上传及下载文件"></a>tftp命令 – 上传及下载文件</h1><p>tftp命令用于传输文件。ftp让用户得以下载存放于远端主机的文件，也能将文件上传到远端主机放置。</p><p>tftp是简单的文字模式ftp程序，它所使用的指令和ftp类似。</p><span id="more"></span><p><strong>语法格式：</strong>tftp [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>connect</th><th>连接到远程tftp服务器</th></tr></thead><tbody><tr><td>mode</td><td>文件传输模式</td></tr><tr><td>put</td><td>上传文件</td></tr><tr><td>get</td><td>下载文件</td></tr><tr><td>quit</td><td>退出</td></tr><tr><td>verbose</td><td>显示详细的处理信息</td></tr><tr><td>trace</td><td>显示包路径</td></tr><tr><td>status</td><td>显示当前状态信息</td></tr><tr><td>binary</td><td>二进制传输模式</td></tr><tr><td>ascii</td><td>ascii 传送模式</td></tr><tr><td>rexmt</td><td>设置包传输的超时时间</td></tr><tr><td>timeout</td><td>设置重传的超时时间</td></tr><tr><td>help</td><td>帮助信息</td></tr><tr><td>?</td><td>帮助信息</td></tr></tbody></table><p><strong>参考实例</strong></p><p>连接远程服务器”218.28.188.288″：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# tftp 218.28.188.288 </span><br></pre></td></tr></table></figure><p>远程下载file文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tftp&gt; get file                            </span><br><span class="line">getting from 218.28.188.288 to /dir  </span><br><span class="line">Recived 168236 bytes in 1.5 seconds[112157 bit/s] </span><br></pre></td></tr></table></figure><p>退出tftp：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tftp&gt; quit      </span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/lprm%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E6%89%93%E5%8D%B0%E9%98%9F%E5%88%97%E4%B8%AD%E7%9A%84%E6%89%93%E5%8D%B0%E4%BB%BB%E5%8A%A1/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/lprm%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E6%89%93%E5%8D%B0%E9%98%9F%E5%88%97%E4%B8%AD%E7%9A%84%E6%89%93%E5%8D%B0%E4%BB%BB%E5%8A%A1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="lprm命令-–-删除打印队列中的打印任务"><a href="#lprm命令-–-删除打印队列中的打印任务" class="headerlink" title="lprm命令 – 删除打印队列中的打印任务"></a>lprm命令 – 删除打印队列中的打印任务</h1><p>lprm命令的英文全称是“Remove jobs from the print queue”，意为用于删除打印队列中的打印任务。尚未完成的打印机工作会被放在打印机贮列之中，这个命令可用来将未送到打印机的工作取消。</p><span id="more"></span><p><strong>语法格式：</strong>lprm [参数] [任务编号]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-E</th><th>与打印服务器连接时强制使用加密</th></tr></thead><tbody><tr><td>-P</td><td>指定接受打印任务的目标打印机</td></tr><tr><td>-U</td><td>指定可选的用户名</td></tr></tbody></table><p><strong>参考实例</strong></p><p>将打印机hpprint中的第102号任务移除：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lprm -Phpprint 102</span><br></pre></td></tr></table></figure><p>将第101号任务由预设打印机中移除：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lprm 101</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/fsck%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%A3%80%E6%9F%A5%E5%B9%B6%E4%BF%AE%E5%A4%8DLinux%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/fsck%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%A3%80%E6%9F%A5%E5%B9%B6%E4%BF%AE%E5%A4%8DLinux%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/</url>
+      
+        <content type="html"><![CDATA[<h1 id="fsck命令-–-检查并修复Linux文件系统"><a href="#fsck命令-–-检查并修复Linux文件系统" class="headerlink" title="fsck命令 – 检查并修复Linux文件系统"></a>fsck命令 – 检查并修复Linux文件系统</h1><p>fsck命令的英文全称是“filesystem check”，即检查文件系统的意思，常用于检查并修复Linux文件系统的一些错误信息，操作文件系统需要先备份重要数据，以防丢失。</p><p>Linux fsck命令用于检查并修复Linux文件系统，可以同时检查一个或多个 Linux 文件系统；若系统掉电或磁盘发生问题，可利用fsck命令对文件系统进行检查。</p><span id="more"></span><p><strong>语法格式：</strong>fsck [参数] [文件系统]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-a</th><th>自动修复文件系统，不询问任何问题</th></tr></thead><tbody><tr><td>-A</td><td>依照/etc/fstab配置文件的内容，检查文件内所列的全部文件系统</td></tr><tr><td>-N</td><td>不执行指令，仅列出实际执行会进行的动作</td></tr><tr><td>-P</td><td>当搭配”-A”参数使用时，则会同时检查所有的文件系统</td></tr><tr><td>-r</td><td>采用互动模式，在执行修复时询问问题，让用户得以确认并决定处理方式</td></tr><tr><td>-R</td><td>当搭配”-A”参数使用时，则会略过/目录的文件系统不予检查</td></tr><tr><td>-t</td><td>指定要检查的文件系统类型</td></tr><tr><td>-T</td><td>执行fsck指令时，不显示标题信息</td></tr><tr><td>-V</td><td>显示指令执行过程</td></tr></tbody></table><p><strong>参考实例</strong></p><p>修复坏的分区文件系统：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fsck -t ext3 -r /usr/local</span><br><span class="line"> fsck from util-linux 2.23.2</span><br><span class="line"> e2fsck 1.42.9 (28-Dec-2013)</span><br><span class="line"> fsck.ext3: Is a directory while trying to open /usr/local</span><br><span class="line"> The superblock could not be read or does not describe a correct ext2</span><br><span class="line"> filesystem.  If the device is valid and it really contains an ext2</span><br><span class="line"> filesystem (and not swap or ufs or something else), then the superblock</span><br><span class="line"> is corrupt, and you might try running e2fsck with an alternate superblock:</span><br><span class="line">     e2fsck -b 8193 </span><br><span class="line"> /usr/local: status 8, rss 1232, real 0.020288, user 0.002022, sys 0.005354</span><br></pre></td></tr></table></figure><p>显示fsck系统安装的版本号：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fsck --version fsck from util-linux 2.23.2 </span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/curl%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%B7%A5%E5%85%B7/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/curl%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%B7%A5%E5%85%B7/</url>
+      
+        <content type="html"><![CDATA[<h1 id="curl命令-–-文件传输工具"><a href="#curl命令-–-文件传输工具" class="headerlink" title="curl命令 – 文件传输工具"></a>curl命令 – 文件传输工具</h1><p>curl命令是一个利用URL规则在shell终端命令行下工作的文件传输工具；它支持文件的上传和下载，所以是综合传输工具，但按传统，习惯称curl为下载工具。</p><p>作为一款强力工具，curl支持包括HTTP、HTTPS、ftp等众多协议，还支持POST、cookies、认证、从指定偏移处下载部分文件、用户代理字符串、限速、文件大小、进度条等特征；做网页处理流程和数据检索自动化。</p><span id="more"></span><p><strong>语法格式：</strong>curl [参数] [网址]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-O</th><th>把输出写到该文件中，保留远程文件的文件名</th></tr></thead><tbody><tr><td>-u</td><td>通过服务端配置的用户名和密码授权访问</td></tr></tbody></table><p><strong>参考实例</strong></p><p>将下载的数据写入到文件，必须使用文件的绝对地址：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# curl https://www.linuxcool.com/abc.txt --silent -O</span><br></pre></td></tr></table></figure><p>访问需要授权的页面时，可通过-u选项提供用户名和密码进行授权：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# curl -u root https://www.linuxprobe.com/ Enter host password for user &#x27;root&#x27;:</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/#%20ftpwho%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BAftp%E4%BC%9A%E8%AF%9D%E4%BF%A1%E6%81%AF/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/#%20ftpwho%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BAftp%E4%BC%9A%E8%AF%9D%E4%BF%A1%E6%81%AF/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ftpwho命令-–-显示ftp会话信息"><a href="#ftpwho命令-–-显示ftp会话信息" class="headerlink" title="ftpwho命令 – 显示ftp会话信息"></a>ftpwho命令 – 显示ftp会话信息</h1><p>ftpwho命令用于显示当前所有以FTP登入的用户会话信息。</p><p>执行该命令可得知当前用FTP登入系统的用户有哪些人，以及他们正在进行的操作。</p><span id="more"></span><p><strong>语法格式：</strong>ftpwho [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-h</th><th>显示帮助信息</th></tr></thead><tbody><tr><td>-v</td><td>详细模式，输出更多信息</td></tr></tbody></table><p><strong>参考实例</strong></p><p>查询当前正在登录FTP 服务器的用户：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ftpwho</span><br></pre></td></tr></table></figure><p>在详细模式下，查询当前正在登录FTP 服务器的用户：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ftpwho -v</span><br></pre></td></tr></table></figure><p>显示帮助信息：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ftpwho -h</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/lsblk%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%A3%81%E7%9B%98/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/lsblk%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%A3%81%E7%9B%98/</url>
+      
+        <content type="html"><![CDATA[<h1 id="lsblk命令-–-查看系统的磁盘"><a href="#lsblk命令-–-查看系统的磁盘" class="headerlink" title="lsblk命令 – 查看系统的磁盘"></a>lsblk命令 – 查看系统的磁盘</h1><p>lsblk命令的英文是“list block”，即用于列出所有可用块设备的信息，而且还能显示他们之间的依赖关系，但是它不会列出RAM盘的信息。</p><p>lsblk命令包含在util-linux-ng包中，现在该包改名为util-linux。</p><span id="more"></span><p><strong>语法格式：</strong>lsblk [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-a</th><th>显示所有设备</th></tr></thead><tbody><tr><td>-b</td><td>以bytes方式显示设备大小</td></tr><tr><td>-d</td><td>不显示 slaves 或 holders</td></tr><tr><td>-D</td><td>print discard capabilities</td></tr><tr><td>-e</td><td>排除设备</td></tr><tr><td>-f</td><td>显示文件系统信息</td></tr><tr><td>-h</td><td>显示帮助信息</td></tr><tr><td>-i</td><td>use ascii characters only</td></tr><tr><td>-m</td><td>显示权限信息</td></tr><tr><td>-l</td><td>使用列表格式显示</td></tr><tr><td>-n</td><td>不显示标题</td></tr><tr><td>-o</td><td>输出列</td></tr><tr><td>-P</td><td>使用key=”value”格式显示</td></tr><tr><td>-r</td><td>使用原始格式显示</td></tr><tr><td>-t</td><td>显示拓扑结构信息</td></tr></tbody></table><p><strong>参考实例</strong></p><p>lsblk命令默认情况下将以树状列出所有块设备：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~ ]# lsblk</span><br><span class="line">lsblk NAME   MAJ:MIN rm  SIZE RO type mountpoint</span><br><span class="line">sda      8:0    0 232.9G  0 disk </span><br><span class="line">├─sda1   8:1    0  46.6G  0 part / </span><br><span class="line">├─sda2   8:2    0     1K  0 part  </span><br><span class="line">├─sda5   8:5    0   190M  0 part /boot </span><br><span class="line">├─sda6   8:6    0   3.7G  0 part [SWAP] </span><br><span class="line">├─sda7   8:7    0  93.1G  0 part /data </span><br><span class="line">└─sda8   8:8    0  89.2G  0 part /personal </span><br><span class="line">sr0     11:0    1  1024M  0 rom</span><br></pre></td></tr></table></figure><p>默认选项不会列出所有空设备：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lsblk -a </span><br></pre></td></tr></table></figure><p>也可以用于列出一个特定设备的拥有关系，同时也可以列出组和模式：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lsblk -m </span><br></pre></td></tr></table></figure><p>要获取SCSI设备的列表，你只能使用-S选项，该选项是用来以颠倒的顺序打印依赖的：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lsblk -S</span><br></pre></td></tr></table></figure><p>例如，你也许想要以列表格式列出设备，而不是默认的树状格式。可以将两个不同的选项组合，以获得期望的输出：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lsblk -nl</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/fdisk%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/fdisk%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/</url>
+      
+        <content type="html"><![CDATA[<h1 id="fdisk命令-–-磁盘分区"><a href="#fdisk命令-–-磁盘分区" class="headerlink" title="fdisk命令 – 磁盘分区"></a>fdisk命令 – 磁盘分区</h1><p>fdisk命令的英文全称是“Partition table manipulator for Linux”，即作为磁盘的分区工具。进行硬盘分区从实质上说就是对硬盘的一种格式化， 用一个形象的比喻，分区就好比在一张白纸上画一个大方框，而格式化好比在方框里打上格子。</p><span id="more"></span><p><strong>语法格式：</strong>fdisk [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-b</th><th>指定每个分区的大小</th></tr></thead><tbody><tr><td>-l</td><td>列出指定的外围设备的分区表状况</td></tr><tr><td>-s</td><td>将指定的分区大小输出到标准输出上，单位为区块</td></tr><tr><td>-u</td><td>搭配”-l”参数列表，会用分区数目取代柱面数目，来表示每个分区的起始地址</td></tr><tr><td>-v</td><td>显示版本信息</td></tr></tbody></table><p><strong>参考实例</strong></p><p>查看所有分区情况：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fdisk -l</span><br></pre></td></tr></table></figure><p>选择分区磁盘：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fdisk /dev/sdb</span><br></pre></td></tr></table></figure><p>在当前磁盘上建立扩展分区：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fdisk /ext</span><br></pre></td></tr></table></figure><p>不检查磁盘表面加快分区操作：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fdisk /actok</span><br></pre></td></tr></table></figure><p>重建主引导记录：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fdisk /cmbr </span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/df%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/df%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5/</url>
+      
+        <content type="html"><![CDATA[<h1 id="df命令-–-显示磁盘空间使用情况"><a href="#df命令-–-显示磁盘空间使用情况" class="headerlink" title="df命令 – 显示磁盘空间使用情况"></a>df命令 – 显示磁盘空间使用情况</h1><p>df命令的英文全称即“Disk Free”，顾名思义功能是用于显示系统上可使用的磁盘空间。默认显示单位为KB，建议使用“df -h”的参数组合，根据磁盘容量自动变换合适的单位，更利于阅读。</p><p>日常普遍用该命令可以查看磁盘被占用了多少空间、还剩多少空间等信息。</p><span id="more"></span><p><strong>语法格式：</strong> df [参数] [指定文件]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-a</th><th>显示所有系统文件</th></tr></thead><tbody><tr><td>-B &lt;块大小&gt;</td><td>指定显示时的块大小</td></tr><tr><td>-h</td><td>以容易阅读的方式显示</td></tr><tr><td>-H</td><td>以1000字节为换算单位来显示</td></tr><tr><td>-i</td><td>显示索引字节信息</td></tr><tr><td>-k</td><td>指定块大小为1KB</td></tr><tr><td>-l</td><td>只显示本地文件系统</td></tr><tr><td>-t &lt;文件系统类型&gt;</td><td>只显示指定类型的文件系统</td></tr><tr><td>-T</td><td>输出时显示文件系统类型</td></tr><tr><td>– -sync</td><td>在取得磁盘使用信息前，先执行sync命令</td></tr></tbody></table><p><strong>参考实例</strong></p><p>显示磁盘分区使用情况：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# df</span><br><span class="line">文件系统                             1K-块    已用     可用   已用% 挂载点</span><br><span class="line">devtmpfs                           1980612       0  1980612    0% /dev</span><br><span class="line">tmpfs                              1994756       0  1994756    0% /dev/shm</span><br><span class="line">tmpfs                              1994756    1040  1993716    1% /run</span><br><span class="line">tmpfs                              1994756       0  1994756    0% /sys/fs/cgroup</span><br><span class="line">/dev/mapper/fedora_linuxhell-root 15718400 2040836 13677564   13% /</span><br><span class="line">tmpfs                              1994756       4  1994752    1% /tmp</span><br><span class="line">/dev/sda1                           999320  128264   802244   14% /boot</span><br><span class="line">tmpfs                               398948       0   398948   0% /run/user/0</span><br></pre></td></tr></table></figure><p>以容易阅读的方式显示磁盘分区使用情况：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# df -h 文件系统                           容量   已用   可用  已用% 挂载点 devtmpfs                           1.9G     0  1.9G    0% /dev </span><br><span class="line">tmpfs                              2.0G     0  2.0G    0% /dev/shm </span><br><span class="line">tmpfs                              2.0G  1.1M  2.0G    1% /run </span><br><span class="line">tmpfs                              2.0G     0  2.0G    0% /sys/fs/cgroup </span><br><span class="line">/dev/mapper/fedora_linuxhell-root   15G  2.0G   14G   13% / </span><br><span class="line">tmpfs                              2.0G  4.0K  2.0G    1% /tmp </span><br><span class="line">/dev/sda1                          976M  126M  784M   14% /boot </span><br><span class="line">tmpfs                              390M     0  390M    0% /run/user/0</span><br></pre></td></tr></table></figure><p>显示指定文件所在分区的磁盘使用情况：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# df /etc/dhcp</span><br><span class="line">文件系统                             1K-块    已用     可用   已用% 挂载点/dev/mapper/fedora_linuxcool-root 15718400 2040836 13677564   13% /</span><br></pre></td></tr></table></figure><p>显示文件类型为ext4的磁盘使用情况：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# df -t ext4</span><br><span class="line">文件系统        1K-块   已用   可用    已用% 挂载点</span><br><span class="line">/dev/sda1      999320 128264 802244   14% /boot</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/#%20vgextend%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%89%A9%E5%B1%95%E5%8D%B7%E7%BB%84/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/#%20vgextend%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%89%A9%E5%B1%95%E5%8D%B7%E7%BB%84/</url>
+      
+        <content type="html"><![CDATA[<h1 id="vgextend命令-–-扩展卷组"><a href="#vgextend命令-–-扩展卷组" class="headerlink" title="vgextend命令 – 扩展卷组"></a>vgextend命令 – 扩展卷组</h1><p>vgextend命令用于动态扩展LVM卷组，它通过向卷组中添加物理卷来增加卷组的容量。LVM卷组中的物理卷可以在使用vgcreate命令创建卷组时添加，也可以使用vgextend命令动态的添加。</p><span id="more"></span><p><strong>语法格式：</strong>vgextend [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-d</th><th>调试模式</th></tr></thead><tbody><tr><td>-t</td><td>仅测试</td></tr></tbody></table><p><strong>参考实例</strong></p><p>将物理卷/dev/sdb1加入卷组vglinuxprobe:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# vgextend vglinuxprobe /dev/sdb1</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/#%20hdparm%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E4%B8%8E%E8%AE%BE%E5%AE%9A%E7%A1%AC%E7%9B%98%E5%8F%82%E6%95%B0/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/#%20hdparm%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E4%B8%8E%E8%AE%BE%E5%AE%9A%E7%A1%AC%E7%9B%98%E5%8F%82%E6%95%B0/</url>
+      
+        <content type="html"><![CDATA[<h1 id="hdparm命令-–-显示与设定硬盘参数"><a href="#hdparm命令-–-显示与设定硬盘参数" class="headerlink" title="hdparm命令 – 显示与设定硬盘参数"></a>hdparm命令 – 显示与设定硬盘参数</h1><p>hdparm命令用于检测，显示与设定IDE或SCSI硬盘的参数。</p><span id="more"></span><p><strong>语法格式：</strong>hdparm [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-a</th><th>设定读取文件时，预先存入块区的分区数</th></tr></thead><tbody><tr><td>-f</td><td>将内存缓冲区的数据写入硬盘，并清空缓冲区</td></tr><tr><td>-g</td><td>显示硬盘的磁轨，磁头，磁区等参数</td></tr><tr><td>-I</td><td>直接读取硬盘所提供的硬件规格信息</td></tr><tr><td>-X</td><td>设定硬盘的传输模式</td></tr></tbody></table><p><strong>参考实例</strong></p><p>显示硬盘的相关设置：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# hdparm /dev/sda</span><br><span class="line">/dev/sda:</span><br><span class="line">IO_support = 0 (default 16-bit)  </span><br><span class="line">readonly = 0 (off) </span><br><span class="line">readahead = 256 (on)  </span><br><span class="line">geometry = 19929［柱面数］/255［磁头数］/63［扇区数］, sectors = 320173056［总扇区数］, start = 0［起始扇区数］ </span><br></pre></td></tr></table></figure><p>显示硬盘的柱面、磁头、扇区数：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# hdparm -g /dev/sda</span><br></pre></td></tr></table></figure><p>评估硬盘的读取效率：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# hdparm -t /dev/sda</span><br></pre></td></tr></table></figure><p>直接读取硬盘所提供的硬件规格信息：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# hdparm -X /dev/sda</span><br></pre></td></tr></table></figure><p>使IDE硬盘进入睡眠模式：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# hdparm -Y /dev/sda</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/3.%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/vmstat%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98%E7%8A%B6%E6%80%81/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/3.%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/vmstat%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E8%99%9A%E6%8B%9F%E5%86%85%E5%AD%98%E7%8A%B6%E6%80%81/</url>
+      
+        <content type="html"><![CDATA[<h1 id="vmstat命令-–-显示虚拟内存状态"><a href="#vmstat命令-–-显示虚拟内存状态" class="headerlink" title="vmstat命令 – 显示虚拟内存状态"></a>vmstat命令 – 显示虚拟内存状态</h1><p>vmstat命令的含义为显示虚拟内存状态（“Virtual Memory Statistics”），但是它可以报告关于进程、内存、I/O等系统整体运行状态。</p><span id="more"></span><p><strong>语法格式：</strong>vmstat [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-a</th><th>显示活动内页</th></tr></thead><tbody><tr><td>-f</td><td>显示启动后创建的进程总数</td></tr><tr><td>-m</td><td>显示slab信息</td></tr><tr><td>-n</td><td>头信息仅显示一次</td></tr><tr><td>-s</td><td>以表格方式显示事件计数器和内存状态</td></tr><tr><td>-d</td><td>报告磁盘状态</td></tr><tr><td>-p</td><td>显示指定的硬盘分区状态</td></tr><tr><td>-S</td><td>输出信息的单位</td></tr></tbody></table><p><strong>参考实例</strong></p><p>显示活动内页：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# vmstat -a</span><br></pre></td></tr></table></figure><p>显示启动后创建的进程总数：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# vmstat -f</span><br></pre></td></tr></table></figure><p>显示slab信息：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# vmstat -m</span><br></pre></td></tr></table></figure><p>头信息仅显示一次：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# vmstat -n</span><br></pre></td></tr></table></figure><p>以表格方式显示事件计数器和内存状态：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# vmstat -s</span><br></pre></td></tr></table></figure><p>显示指定的硬盘分区状态：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# vmstat -p /dev/sda1</span><br></pre></td></tr></table></figure><p>指定状态信息刷新的时间间隔为1秒：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# vmstat 1</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/3.%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/uname%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/3.%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/uname%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF/</url>
+      
+        <content type="html"><![CDATA[<h1 id="uname命令-–-显示系统信息"><a href="#uname命令-–-显示系统信息" class="headerlink" title="uname命令 – 显示系统信息"></a>uname命令 – 显示系统信息</h1><p>uname命令的英文全称即“Unix name”。</p><p>用于显示系统相关信息，比如主机名、内核版本号、硬件架构等。</p><p>如果未指定任何选项，其效果相当于执行”uname -s”命令，即显示系统内核的名字。</p><span id="more"></span><p><strong>语法格式：</strong>uname [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-a</th><th>显示系统所有相关信息</th></tr></thead><tbody><tr><td>-m</td><td>显示计算机硬件架构</td></tr><tr><td>-n</td><td>显示主机名称</td></tr><tr><td>-r</td><td>显示内核发行版本号</td></tr><tr><td>-s</td><td>显示内核名称</td></tr><tr><td>-v</td><td>显示内核版本</td></tr><tr><td>-p</td><td>显示主机处理器类型</td></tr><tr><td>-o</td><td>显示操作系统名称</td></tr><tr><td>-i</td><td>显示硬件平台</td></tr></tbody></table><p><strong>参考实例</strong></p><p>显示系统主机名、内核版本号、CPU类型等信息：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# uname -aLinux linuxcool 3.10.0-123.el7.x86_64 #1 SMP Mon May 5 11:16:57 EDT 2014 x86_64 x86_64 x86_64 GNU/Linux</span><br></pre></td></tr></table></figure><p>仅显示系统主机名：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# uname -n</span><br><span class="line">linuxcool</span><br></pre></td></tr></table></figure><p>显示当前系统的内核版本 :</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# uname -r</span><br><span class="line">3.10.0-123.el7.x86_64</span><br></pre></td></tr></table></figure><p>显示当前系统的硬件架构：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# uname -i</span><br><span class="line">x86_64</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/3.%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/startx%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%9D%E5%A7%8B%E5%8C%96X-windows/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/3.%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/startx%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%9D%E5%A7%8B%E5%8C%96X-windows/</url>
+      
+        <content type="html"><![CDATA[<h1 id="startx命令-–-初始化X-windows"><a href="#startx命令-–-初始化X-windows" class="headerlink" title="startx命令 – 初始化X-windows"></a>startx命令 – 初始化X-windows</h1><p>startx命令用来启动X-Window，它负责调用X-Window系统的初始化程序xinit。以完成 X-Window运行所必要的初始化工作，并启动X-Window系统。</p><span id="more"></span><p><strong>语法格式：</strong>startx [参数]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-d</th><th>指定在启动过程中传递给客户机的X服务器的显示名称</th></tr></thead><tbody><tr><td>-m</td><td>当未找到启动脚本时，启动窗口管理器</td></tr><tr><td>-r</td><td>当未找到启动脚本时，装入资源文件</td></tr><tr><td>-w</td><td>强制启动</td></tr><tr><td>-x</td><td>使用startup脚本启动X-windows会话</td></tr></tbody></table><p><strong>参考实例</strong></p><p>已默认方式启动X-windows系统：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# startx</span><br></pre></td></tr></table></figure><p>以16位颜色深度启动X-windows系统：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# startx -- -depth 16</span><br></pre></td></tr></table></figure><p>强制启动 X-windows系统：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# startx -w</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/3.%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/rpm%E5%91%BD%E4%BB%A4%20%E2%80%93%20RPM%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/3.%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/rpm%E5%91%BD%E4%BB%A4%20%E2%80%93%20RPM%E8%BD%AF%E4%BB%B6%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="rpm命令-–-RPM软件包管理器"><a href="#rpm命令-–-RPM软件包管理器" class="headerlink" title="rpm命令 – RPM软件包管理器"></a>rpm命令 – RPM软件包管理器</h1><p>rpm命令是Red-Hat Package Manager（RPM软件包管理器）的缩写， 该命令用于管理Linux 下软件包的软件。在 Linux 操作系统下，几乎所有的软件均可以通过RPM 进行安装、卸载及管理等操作。</p><p>概括的说，rpm命令包含了五种基本功能：安装、卸载、升级、查询和验证。</p><span id="more"></span><p><strong>语法格式：</strong>rpm [参数] [软件包]</p><p><strong>常用参数：</strong></p><table><thead><tr><th>-a</th><th>查询所有的软件包</th></tr></thead><tbody><tr><td>-b或-t</td><td>设置包装套件的完成阶段，并指定套件档的文件名称；</td></tr><tr><td>-c</td><td>只列出组态配置文件，本参数需配合”-l”参数使用</td></tr><tr><td>-d</td><td>只列出文本文件，本参数需配合”-l”参数使用</td></tr><tr><td>-e或–erase</td><td>卸载软件包</td></tr><tr><td>-f</td><td>查询文件或命令属于哪个软件包</td></tr><tr><td>-h或–hash</td><td>安装软件包时列出标记</td></tr><tr><td>-i</td><td>显示软件包的相关信息</td></tr><tr><td>–install</td><td>安装软件包</td></tr><tr><td>-l</td><td>显示软件包的文件列表</td></tr><tr><td>-p</td><td>查询指定的rpm软件包</td></tr><tr><td>-q</td><td>查询软件包</td></tr><tr><td>-R</td><td>显示软件包的依赖关系</td></tr><tr><td>-s</td><td>显示文件状态，本参数需配合”-l”参数使用</td></tr><tr><td>-U或–upgrade</td><td>升级软件包</td></tr><tr><td>-v</td><td>显示命令执行过程</td></tr><tr><td>-vv</td><td>详细显示指令执行过程</td></tr></tbody></table><p><strong>参考实例</strong></p><p>直接安装软件包：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rpm -ivh packge.rpm </span><br></pre></td></tr></table></figure><p>忽略报错，强制安装：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rpm --force -ivh package.rpm</span><br></pre></td></tr></table></figure><p>列出所有安装过的包：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rpm -qa</span><br></pre></td></tr></table></figure><p>查询rpm包中的文件安装的位置：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rpm -ql ls</span><br></pre></td></tr></table></figure><p>卸载rpm包：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rpm -e package.rpm </span><br></pre></td></tr></table></figure><p>升级软件包：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rpm -U file.rpm</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/3.%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/find%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E6%89%BE%E5%92%8C%E6%90%9C%E7%B4%A2%E6%96%87%E4%BB%B6/"/>
+      <url>/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/3.%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/find%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E6%89%BE%E5%92%8C%E6%90%9C%E7%B4%A2%E6%96%87%E4%BB%B6/</url>
+      
+        <content type="html"><![CDATA[<h1 id="find命令-–-查找和搜索文件"><a href="#find命令-–-查找和搜索文件" class="headerlink" title="find命令 – 查找和搜索文件"></a>find命令 – 查找和搜索文件</h1><p>find命令可以根据给定的路径和表达式查找的文件或目录。find参数选项很多，并且支持正则，功能强大。和管道结合使用可以实现复杂的功能，是系统管理者和普通用户必须掌握的命令。</p><p>find如不加任何参数，表示查找当前路径下的所有文件和目录，如果服务器负载比较高尽量不要在高峰期使用find命令，find命令模糊搜索还是比较消耗系统资源的。</p><span id="more"></span><p><strong>语法格式</strong>：find [参数] [路径] [查找和搜索范围]</p><p><strong>常用参数</strong>：</p><table><thead><tr><th>-name</th><th>按名称查找</th></tr></thead><tbody><tr><td>-size</td><td>按大小查找</td></tr><tr><td>-user</td><td>按属性查找</td></tr><tr><td>-type</td><td>按类型查找</td></tr><tr><td>-iname</td><td>忽略大小写</td></tr></tbody></table><p><strong>参考实例</strong></p><p>使用-name参数查看/etc目录下面所有的.conf结尾的配置文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# find /etc -name &quot;*.conf</span><br></pre></td></tr></table></figure><p>使用-size参数查看/etc目录下面大于1M的文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# find /etc -size +1M</span><br></pre></td></tr></table></figure><p>查找当前用户主目录下的所有文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# find $HOME -print</span><br></pre></td></tr></table></figure><p>列出当前目录及子目录下所有文件和文件夹：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# find .</span><br></pre></td></tr></table></figure><p>在/home目录下查找以.txt结尾的文件名：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# find /home -name &quot;*.txt&quot;</span><br></pre></td></tr></table></figure><p>在/var/log目录下忽略大小写查找以.log结尾的文件名：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# find /var/log -iname &quot;*.log&quot;</span><br></pre></td></tr></table></figure><p>搜索超过七天内被访问过的所有文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# find . -type f -atime +7</span><br></pre></td></tr></table></figure><p>搜索访问时间超过10分钟的所有文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# find . -type f -amin +10</span><br></pre></td></tr></table></figure><p>找出/home下不是以.txt结尾的文件：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# find /home ! -name &quot;*.txt&quot;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>markdown语法详解</title>
+      <link href="/HexoBlog/2021/09/15/markdown%E8%AF%AD%E6%B3%95/markdown%E8%AF%AD%E6%B3%95%E8%AF%A6%E8%A7%A3/"/>
+      <url>/HexoBlog/2021/09/15/markdown%E8%AF%AD%E6%B3%95/markdown%E8%AF%AD%E6%B3%95%E8%AF%A6%E8%A7%A3/</url>
+      
+        <content type="html"><![CDATA[<h1 id="markdown语法详解"><a href="#markdown语法详解" class="headerlink" title="markdown语法详解"></a>markdown语法详解</h1><p>Markdown 是一种轻量级标记语言。它允许人们”使用易读易写的纯文本格式编写文档， 然后转换成有效的XHTML(或者HTML)文档”。这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。</p><p>完全就是程序员的福音，因为几个非常简单的语法就能实现漂亮的文字排版。 另外各种工具和网址对于它的支持也是非常好，github博客就是用markdown写的。 还可以利用版本管理，非常方便的管理写过的文章，这篇文章总结一下它的用法，本篇文章涉及的快捷方式基于Typora（一款支持md的软件）</p><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题</span><br><span class="line">## 二级标题</span><br><span class="line">### 三级标题</span><br><span class="line"></span><br><span class="line">注意：#和文字之间有个空格</span><br></pre></td></tr></table></figure><h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h3 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h3><p>如果只是想高亮语句中的某个函数名或者关键字，可以使用快捷方式：Ctrl+Shift+k，然后指定语言</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    System.out.println();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h3><p>通过将字体加粗加斜来强调其重要性</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">*斜体文本*</span><br><span class="line">**粗体文本** </span><br><span class="line">***粗斜体文本***</span><br></pre></td></tr></table></figure><p><em>斜体文本</em></p><p><strong>粗体文本</strong></p><p><em><strong>粗斜体文本</strong></em></p><h3 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h3><p>使用空格一行或者多行将文本分隔，除非段落在列表中，否则不用使用空格键或者制表符（tab）缩进段落</p><h3 id="换行"><a href="#换行" class="headerlink" title="换行"></a>换行</h3><p>在一行末尾添加两个或者多个空格，然后按下return键即可创建一个换行，或者添加<br>标签</p><h3 id="块引用"><a href="#块引用" class="headerlink" title="块引用"></a>块引用</h3><p>要创建块引用，请在段落前添加一个 <code>&gt;</code> 符号。</p><blockquote><p>块引用实例 </p></blockquote><h3 id="多个段落的块引用"><a href="#多个段落的块引用" class="headerlink" title="多个段落的块引用"></a>多个段落的块引用</h3><p>块引用可以包含多个段落。为段落之间的空白行各添加一个 <code>&gt;</code> 符号。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;段落块引用实例开始</span><br><span class="line">&gt;</span><br><span class="line">&gt;段落块引用实例结束</span><br></pre></td></tr></table></figure><p> 渲染效果：</p><blockquote><p>段落块引用实例开始</p><p>段落块引用实例结束</p></blockquote><h3 id="嵌套块引用"><a href="#嵌套块引用" class="headerlink" title="嵌套块引用"></a>嵌套块引用</h3><p>块引用可以嵌套。在要嵌套的段落前添加一个 <code>&gt;&gt;</code> 符号。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&gt;开始引用</span><br><span class="line">&gt;</span><br><span class="line">&gt;&gt;嵌套引用</span><br></pre></td></tr></table></figure><p>  渲染效果：</p><blockquote><p>开始引用</p><blockquote><p>嵌套引用</p></blockquote></blockquote><h3 id="带有其它元素的块引用"><a href="#带有其它元素的块引用" class="headerlink" title="带有其它元素的块引用"></a>带有其它元素的块引用</h3><p>块引用可以包含其他 Markdown 格式的元素。并非所有元素都可以使用，你需要进行实验以查看哪些元素有效。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; #### 三级标题</span><br><span class="line">&gt;</span><br><span class="line">&gt; - 标记</span><br><span class="line">&gt; - 标记</span><br><span class="line">&gt;</span><br><span class="line">&gt;  *加斜* 普通文本 **加粗**.</span><br></pre></td></tr></table></figure><p>渲染效果：</p><blockquote><h4 id="三级标题-1"><a href="#三级标题-1" class="headerlink" title="三级标题"></a>三级标题</h4><ul><li>标记</li><li>标记</li></ul><p><em>加斜</em> 普通文本 <strong>加粗</strong>.</p></blockquote><h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><p>你可以将多个条目组织成有序或无序列表。</p><h3 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h3><p>要创建有序列表，请在每个列表项前添加数字并紧跟一个英文句点。数字不必按数学顺序排列，但是列表应当以数字 1 起始。</p><p>渲染效果：</p><ol><li><p>第一行</p><ol><li>第一行二级列表</li><li>第一行二级列表</li></ol></li><li><p>第二行</p><ol><li>第二行二级列表</li></ol></li><li><p>第三行</p></li></ol><h3 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h3><p>要创建无序列表，请在每个列表项前面添加破折号 (<code>-</code>)、星号 (<code>*</code>) 或加号 (<code>+</code>) 。缩进一个或多个列表项可创建嵌套列表。如果你需要以数字开头并且紧跟一个英文句号（也就是 <code>.</code>）的无序列表项，则可以使使用反斜线（<code>\</code>）来 转义这个英文句号。</p><p>渲染效果：</p><ul><li>第一行</li><li>第二行<ul><li>第二行二级列表</li></ul></li></ul><h3 id="无序列表引用块"><a href="#无序列表引用块" class="headerlink" title="无序列表引用块"></a>无序列表引用块</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">*   第一行</span><br><span class="line">*   第二行</span><br><span class="line"></span><br><span class="line">    &gt; 引用</span><br><span class="line"></span><br><span class="line">*   第三行</span><br></pre></td></tr></table></figure><p>渲染效果：</p><ul><li><p>  第一行</p></li><li><p>第二行</p><blockquote><p>引用</p></blockquote></li><li><p>  第三行</p></li></ul><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p>要将单词或短语表示为代码，请将其包裹在反引号 (```) 中。</p><p>如果你要表示为代码的单词或短语中包含一个或多个反引号，则可以通过将单词或短语包裹在双反引号(````)中。</p><p>渲染效果：</p><p><code>main</code></p><h3 id="代码块-1"><a href="#代码块-1" class="headerlink" title="代码块"></a>代码块</h3><p>使用三个```或者波浪~~~</p><p>渲染效果：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">代码块</span><br></pre></td></tr></table></figure><h3 id="分隔线"><a href="#分隔线" class="headerlink" title="分隔线"></a>分隔线</h3><p>要创建分隔线，请在单独一行上使用三个或多个星号 (<code>***</code>)、破折号 (<code>---</code>) 或下划线 (<code>___</code>) ，并且不能包含其他内容。</p><p>渲染效果：</p><hr><h3 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h3><p>要创建链接，请将链接文本括在方括号中，后面紧跟着括在圆括号中的 URL。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">示例：[百度](www.baidu.com])</span><br></pre></td></tr></table></figure><p>渲染效果：</p><p><a href="www.baidu.com%5D">百度</a></p><h3 id="网址和电子邮件地址"><a href="#网址和电子邮件地址" class="headerlink" title="网址和电子邮件地址"></a>网址和电子邮件地址</h3><p>要将 URL 或电子邮件地址快速转换为链接，请将其括在尖括号中。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;www.baidu.com&gt;</span><br><span class="line"></span><br><span class="line">&lt;dadada@example.com&gt;</span><br></pre></td></tr></table></figure><p>渲染效果：</p><p>&lt;<a href="http://www.baidu.com&gt;/">www.baidu.com&gt;</a></p><p><a href="mailto:&#100;&#x61;&#x64;&#x61;&#x64;&#x61;&#64;&#101;&#120;&#97;&#x6d;&#x70;&#x6c;&#101;&#46;&#99;&#x6f;&#109;">&#100;&#x61;&#x64;&#x61;&#x64;&#x61;&#64;&#101;&#120;&#97;&#x6d;&#x70;&#x6c;&#101;&#46;&#99;&#x6f;&#109;</a></p><h3 id="引用链接"><a href="#引用链接" class="headerlink" title="引用链接"></a>引用链接</h3><p>引用式链接是一种特殊类型的链接，它使得 URL 在 Markdown 中更易于显示和阅读。引用式链接由两部分组成：一部分被放置在正文文本中；另一部分被放置在文档中的其它地方，以便于阅读。</p><h4 id="引用式链接第一部分的格式"><a href="#引用式链接第一部分的格式" class="headerlink" title="引用式链接第一部分的格式"></a>引用式链接第一部分的格式</h4><p>引用式链接的第一部分的格式由两组方括号组成。第一组方括号内放的是显示为链接的文本，第二组方括号内放的是一个标签，该标签用于指向您存放在文档中其它位置的链接。</p><p>尽管不是必须的，但你可以在第一组和第二组方括号之间添加一个空格。第二组方括号中的标签不区分大小写，并且可以包含字母、数字、空格或标点符号。</p><p>以下示例中，链接的第一部分是等效的：</p><ul><li><code>[hobbit-hole][1]</code></li><li><code>[hobbit-hole] [1]</code></li></ul><h4 id="引用式链接第二部分的格式"><a href="#引用式链接第二部分的格式" class="headerlink" title="引用式链接第二部分的格式"></a>引用式链接第二部分的格式</h4><p>引用式链接的第二部分可以包含以下属性：</p><ol><li>放在方括号内的标签，以及紧跟在方括号后面的一个冒号和至少一个空格（例如 <code>[label]: </code>）。</li><li>链接的 URL，可以选择将其括在尖括号内。</li><li>链接的标题（可有可无），可以将其括在双引号、单引号或括号内。</li></ol><p>以下示例中，链接的第二部分是等效的：</p><ul><li><code>[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle</code></li><li><code>[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle &quot;Hobbit lifestyles&quot;</code></li><li><code>[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle &#39;Hobbit lifestyles&#39;</code></li><li><code>[1]: https://en.wikipedia.org/wiki/Hobbit#Lifestyle (Hobbit lifestyles)</code></li><li><code>[1]: &lt;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&gt; &quot;Hobbit lifestyles&quot;</code></li><li><code>[1]: &lt;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&gt; &#39;Hobbit lifestyles&#39;</code></li><li><code>[1]: &lt;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&gt; (Hobbit lifestyles)</code></li></ul><p>可以将链接的第二部分放在 Markdown 文档中的任何位置。有些人将它们放在被引用的段落的后面，有些人将它们放在文档的末尾（类似尾注或脚注）。</p><h4 id="将两部分组合在一起使用的示例"><a href="#将两部分组合在一起使用的示例" class="headerlink" title="将两部分组合在一起使用的示例"></a>将两部分组合在一起使用的示例</h4><p>假设你将一个 URL 作为一个 <a href="https://www.markdown.xyz/basic-syntax/#links">标准 URL 链接</a> 添加到段落中，在 Markdown 中如下所示：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends</span><br><span class="line">of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to</span><br><span class="line">eat: it was a [hobbit-hole](https://en.wikipedia.org/wiki/Hobbit#Lifestyle &quot;Hobbit lifestyles&quot;), and that means comfort.</span><br></pre></td></tr></table></figure><p>Though it may point to interesting additional information, the URL as displayed really doesn’t add much to the existing raw text other than making it harder to read. To fix that, you could format the URL like this instead:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends</span><br><span class="line">of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to</span><br><span class="line">eat: it was a [hobbit-hole][1], and that means comfort.</span><br><span class="line"></span><br><span class="line">[1]: &lt;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&gt; &quot;Hobbit lifestyles&quot;</span><br></pre></td></tr></table></figure><p>在上述两个实例中，渲染后的输出是相同的：</p><blockquote><p>In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to eat: it was a <a href="https://en.wikipedia.org/wiki/Hobbit#Lifestyle">hobbit-hole</a>, and that means comfort.</p></blockquote><p>该链接的 HTML 为：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;https://en.wikipedia.org/wiki/Hobbit#Lifestyle&quot; title=&quot;Hobbit lifestyles&quot;&gt;hobbit-hole&lt;/a&gt;</span><br></pre></td></tr></table></figure><h3 id="链接（Link）的最佳使用实践"><a href="#链接（Link）的最佳使用实践" class="headerlink" title="链接（Link）的最佳使用实践"></a>链接（Link）的最佳使用实践</h3><p>不同的 Markdown 应用程序在处理 URL 中间的空格方面是不一样的。为了兼容起见，请尽量使用 <code>%20</code> （空格的编码形式）来代替空格。</p><table><thead><tr><th>✅  这样做</th><th>❌  不要这样做</th></tr></thead><tbody><tr><td><code>[link](https://www.example.com/my%20great%20page)</code></td><td><code>[link](https://www.example.com/my great page)</code></td></tr></tbody></table><h2 id="图片（Images）"><a href="#图片（Images）" class="headerlink" title="图片（Images）"></a>图片（Images）</h2><p>要添加图片，首先请添加感叹号（<code>!</code>），然后紧跟着是方括号，方括号中可添加替代文本（alt text，即图片显示失败后显示此文本），最后跟着圆括号，圆括号中添加图片资源的路径或 URL。你可以选择在圆括号中的 URL 之后添加标题（即 title 属性）。</p><h3 id="带链接的图片"><a href="#带链接的图片" class="headerlink" title="带链接的图片"></a>带链接的图片</h3><p>要为图片添加链接，请先为图片的 Markdown 标记添加一个方括号，然后紧跟着一个圆括号，并在圆括号中添加链接地址。</p><h2 id="转义字符（Escaping-Characters）"><a href="#转义字符（Escaping-Characters）" class="headerlink" title="转义字符（Escaping Characters）"></a>转义字符（Escaping Characters）</h2><p>要显示原本用于格式化 Markdown 文档的字符，请在字符前面添加反斜杠字符 (<code>\</code>) 。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\* 如果没有开头的反斜杠字符的话，这一行将显示为无序列表。</span><br></pre></td></tr></table></figure><p>渲染效果如下：</p><p>* 如果没有开头的反斜杠字符的话，这一行将显示为无序列表。</p><h3 id="可做转义的（英文）字符"><a href="#可做转义的（英文）字符" class="headerlink" title="可做转义的（英文）字符"></a>可做转义的（英文）字符</h3><p>以下列出的字符都可以通过使用反斜杠字符从而达到转义目的。</p><table><thead><tr><th>字符</th><th>名称</th></tr></thead><tbody><tr><td>\</td><td>反斜杠（backslash）</td></tr><tr><td>`</td><td>backtick (另请参见 <a href="https://www.markdown.xyz/basic-syntax/#escaping-backticks">在代码中转义反引号</a>)</td></tr><tr><td>*</td><td>星号（asterisk）</td></tr><tr><td>_</td><td>下划线（underscore）</td></tr><tr><td>{ }</td><td>花括号（curly braces）</td></tr><tr><td>[ ]</td><td>方括号（brackets）</td></tr><tr><td>&lt; &gt;</td><td>angle brackets</td></tr><tr><td>( )</td><td>圆括号或括号（parentheses）</td></tr><tr><td>#</td><td>井号（pound sign）</td></tr><tr><td>+</td><td>加号（plus sign）</td></tr><tr><td>-</td><td>减号（minus sign） (也叫连字符 hyphen)</td></tr><tr><td>.</td><td>句点（dot）</td></tr><tr><td>!</td><td>感叹号（exclamation mark）</td></tr><tr><td>|</td><td>管道符（pipe） (另请参见 <a href="https://www.markdown.xyz/extended-syntax/#escaping-pipe-characters-in-tables">在表格中转义管道符</a>)</td></tr></tbody></table><h2 id="HTML-标签"><a href="#HTML-标签" class="headerlink" title="HTML 标签"></a>HTML 标签</h2><p>大多 Markdown 应用程序允许你在 Markdown 格式文本中添加 HTML 标签。如果你喜欢某些 HTML 标签胜于 Markdown 语法的话，这将何有帮助。例如，某些人发现通过 HTML 标签添加图像更加容易。当你需要更改元素的属性时（例如为文本指定颜色或更改图像的宽度），使用 HTML 标签更方便些。</p><p>如需使用 HTML，请将 HTML 标签添加到 Markdown 格式文本中即可。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">This **word** is bold. This &lt;em&gt;word&lt;/em&gt; is italic.</span><br></pre></td></tr></table></figure><p>渲染效果如下：</p><p>This <strong>word</strong> is bold. This <em>word</em> is italic.</p><h3 id="HTML-用法最佳实践"><a href="#HTML-用法最佳实践" class="headerlink" title="HTML 用法最佳实践"></a>HTML 用法最佳实践</h3><p>出于安全原因，并非所有 Markdown 应用程序都支持在 Markdown 文档中添加 HTML。如有疑问，请查看 Markdown 应用程序的文档。某些应用程序只支持 HTML 标签的子集。</p><p>对于 HTML 的块级元素 <code>&lt;div&gt;</code>、<code>&lt;table&gt;</code>、<code>&lt;pre&gt;</code> 和 <code>&lt;p&gt;</code>，请在其前后使用空行（blank lines）与其它内容进行分隔。尽量不要使用制表符（tabs）或空格（spaces）对 HTML 标签做缩进，否则将影响格式。</p><p>在 HTML 块级标签内不能使用 Markdown 语法。例如 <code>&lt;p&gt;italic and **bold**&lt;/p&gt;</code> 将不起作用。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
