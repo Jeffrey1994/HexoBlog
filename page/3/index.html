@@ -261,16 +261,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
+              <time title="创建时间：2021-09-16 15:32:04 / 修改时间：16:53:33" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:30:01" itemprop="dateModified" datetime="2020-08-14T14:30:01+08:00">2020-08-14</time>
-              </span>
 
           
 
@@ -284,23 +278,14 @@
 
       
           <h1 id="wait命令-–-等待指令"><a href="#wait命令-–-等待指令" class="headerlink" title="wait命令 – 等待指令"></a>wait命令 – 等待指令</h1><p>wait命令用来等待指令的指令，直到其执行完毕后返回终端。该指令常用于shell脚本编程中，待指定的指令执行完成后，才会继续执行后面的任务。该指令等待作业时，在作业标识号前必须添加备份号”%”。</p>
-<p><strong>语法格式：</strong>wait [参数]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>22 或%1</th>
-<th>进程号 或 作业号</th>
-</tr>
-</thead>
-<tbody><tr>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>等待作业号为1的作业完成后再返回：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# wait %1</span><br><span class="line">[root@linuxcool ~]# find / -name password</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/wait%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%AD%89%E5%BE%85%E6%8C%87%E4%BB%A4/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -342,16 +327,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
+              <time title="创建时间：2021-09-16 15:32:04 / 修改时间：16:53:24" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:31:07" itemprop="dateModified" datetime="2020-08-14T14:31:07+08:00">2020-08-14</time>
-              </span>
 
           
 
@@ -365,47 +344,14 @@
 
       
           <h1 id="rmmod命令-–-删除模块"><a href="#rmmod命令-–-删除模块" class="headerlink" title="rmmod命令 – 删除模块"></a>rmmod命令 – 删除模块</h1><p>rmmod即“remove module”的简称,rmmod命令用于删除模块。 执行rmmod命令，可删除不需要的模块。Linux操作系统的核心具有模块化的特性，因此在编译核心时，不需要吧全部功能都放入核心，可以将这些功能编译成一个个单独的模块，待有需要时再分别载入它们。</p>
-<p><strong>语法格式：</strong>rmmod [参数] [模块名称]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-a</th>
-<th>删除所有目前不需要的模块</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-s</td>
-<td>把信息输出至syslog常驻服务，而非终端机界面</td>
-</tr>
-<tr>
-<td>-v</td>
-<td>显示指令执行的详细信息</td>
-</tr>
-<tr>
-<td>-f</td>
-<td>强制移除模块，使用此选项比较危险</td>
-</tr>
-<tr>
-<td>-w</td>
-<td>等待着，知道模块能够被除时再移除模块</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>卸载模块pppoe并显示执行信息：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rmmod -v pppoe</span><br></pre></td></tr></table></figure>
-
-<p>卸载bridge模块：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rmmod bridge</span><br></pre></td></tr></table></figure>
-
-<p>卸载bridge模块并将错误信息写入syslog：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rmmod -s bridge</span><br></pre></td></tr></table></figure>
-
-<p>孤立正在使用的bridge模块，知道不被使用：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rmmod -w bridge</span><br></pre></td></tr></table></figure>
-
-<p>删除正在使用的bridge模块（-f可以删除正在使用的模块，非常危险，慎用）：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# rmmod -f bridge</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/rmmod%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E6%A8%A1%E5%9D%97/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -447,16 +393,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
+              <time title="创建时间：2021-09-16 15:32:04 / 修改时间：16:53:20" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:31:41" itemprop="dateModified" datetime="2020-08-14T14:31:41+08:00">2020-08-14</time>
-              </span>
 
           
 
@@ -471,55 +411,14 @@
       
           <h1 id="history命令-–-显示与操纵历史命令"><a href="#history命令-–-显示与操纵历史命令" class="headerlink" title="history命令 – 显示与操纵历史命令"></a>history命令 – 显示与操纵历史命令</h1><p>history命令用于显示用户以前执行过的历史命令，并且能对历史命令进行追加和删除等操作。</p>
 <p>如果你经常使用Linux命令，那么使用history命令可以有效地提升你的效率。</p>
-<p><strong>语法格式:</strong> history [参数] [目录]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-a</th>
-<th>将当前shell会话的历史命令追加到命令历史文件中,命令历史文件是保存历史命令的配置文件</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-c</td>
-<td>清空当前历史命令列表</td>
-</tr>
-<tr>
-<td>-d</td>
-<td>删除历史命令列表中指定序号的命令</td>
-</tr>
-<tr>
-<td>-n</td>
-<td>从命令历史文件中读取本次Shell会话开始时没有读取的历史命令</td>
-</tr>
-<tr>
-<td>-r</td>
-<td>读取命令历史文件到当前的Shell历史命令内存缓冲区</td>
-</tr>
-<tr>
-<td>-s</td>
-<td>将指定的命令作为单独的条目加入命令历史内存缓冲区。在执行添加之前先删除命令历史内存缓冲区中最后一条命令</td>
-</tr>
-<tr>
-<td>-w</td>
-<td>把当前的shell历史命令内存缓冲区的内容写入命令历史文件</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>显示最近的10条命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# history 10  </span><br></pre></td></tr></table></figure>
-
-<p>将本次登录的命令写入历史文件中：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# history -w</span><br></pre></td></tr></table></figure>
-
-<p>将命令历史文件中的内容读入到目前shell的history记忆中 ：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# history -r  </span><br></pre></td></tr></table></figure>
-
-<p>将当前Shell会话的历史命令追加到命令历史文件中：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# history -a  </span><br></pre></td></tr></table></figure>
-
-<p>清空当前历史命令列表：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# history -c </span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/history%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E4%B8%8E%E6%93%8D%E7%BA%B5%E5%8E%86%E5%8F%B2%E5%91%BD%E4%BB%A4/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -561,16 +460,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
+              <time title="创建时间：2021-09-16 15:32:04 / 修改时间：16:53:17" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:29:33" itemprop="dateModified" datetime="2020-08-14T14:29:33+08:00">2020-08-14</time>
-              </span>
 
           
 
@@ -585,47 +478,14 @@
       
           <h1 id="hash命令-–-显示与清除命令运行时查询的哈希表"><a href="#hash命令-–-显示与清除命令运行时查询的哈希表" class="headerlink" title="hash命令 – 显示与清除命令运行时查询的哈希表"></a>hash命令 – 显示与清除命令运行时查询的哈希表</h1><p>hash命令负责显示与清除命令运行时系统优先查询的哈希表（hash table）。</p>
 <p>当执行hash命令不指定参数或标志时，hash命令向标准输出报告路径名列表的内容。此报告含有先前hash命令调用找到的当前shell环境中命令的路径名。而且还包含通过正常命令搜索进程调用并找到的那些命令。</p>
-<p><strong>语法格式:</strong> hash [参数] [目录]</p>
-<p><strong>常用参数：</strong>﻿</p>
-<table>
-<thead>
-<tr>
-<th>-d</th>
-<th>在哈希表中清除记录</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-l</td>
-<td>显示哈希表中的命令</td>
-</tr>
-<tr>
-<td>-p&lt;指令&gt;</td>
-<td>将具有完整路径的命令加入到哈希表中</td>
-</tr>
-<tr>
-<td>-r</td>
-<td>清除哈希表中的记录</td>
-</tr>
-<tr>
-<td>-t</td>
-<td>显示哈希表中命令的完整路径</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>显示哈希表中的命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# hash -l </span><br></pre></td></tr></table></figure>
-
-<p>删除哈希表中的命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# hash -r </span><br></pre></td></tr></table></figure>
-
-<p>向哈希表中添加命令：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# hash -p /usr/sbin/adduser myadduser </span><br></pre></td></tr></table></figure>
-
-<p>在哈希表中清除记录：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# hash -d</span><br></pre></td></tr></table></figure>
-
-<p>显示哈希表中命令的完整路径：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# hash -t</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/hash%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E4%B8%8E%E6%B8%85%E9%99%A4%E5%91%BD%E4%BB%A4%E8%BF%90%E8%A1%8C%E6%97%B6%E6%9F%A5%E8%AF%A2%E7%9A%84%E5%93%88%E5%B8%8C%E8%A1%A8/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 

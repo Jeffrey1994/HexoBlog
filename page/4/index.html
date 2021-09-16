@@ -186,16 +186,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
+              <time title="创建时间：2021-09-16 15:32:04 / 修改时间：16:53:13" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:30:30" itemprop="dateModified" datetime="2020-08-14T14:30:30+08:00">2020-08-14</time>
-              </span>
 
           
 
@@ -209,37 +203,14 @@
 
       
           <h1 id="bc命令-–-浮点运算"><a href="#bc命令-–-浮点运算" class="headerlink" title="bc命令 – 浮点运算"></a>bc命令 – 浮点运算</h1><p>bc的英文全拼为“ Binary Calculator ”，是一种支持任意精度的交互执行的计算器语言。bash内置了对整数四则运算的支持，但是并不支持浮点运算，而bc命令可以很方便的进行浮点运算，当然整数运算也不再话下。</p>
-<p><strong>语法格式：</strong>bc [选项]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-i</th>
-<th>强制进入交互式模式</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-l</td>
-<td>定义使用的标准数学库</td>
-</tr>
-<tr>
-<td>-w</td>
-<td>定义使用的标准数学库</td>
-</tr>
-<tr>
-<td>-q</td>
-<td>打印正常的GNU bc环境信息</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>算术操作高级运算bc命令它可以执行浮点运算和一些高级函数：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# echo &quot;1.212*3&quot; | bc  3.636</span><br></pre></td></tr></table></figure>
-
-<p>设定小数精度（数值范围）：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# echo &quot;scale=2;3/8&quot; | bc .37</span><br></pre></td></tr></table></figure>
-
-<p>计算平方和平方根：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# echo &quot;10^10&quot; | bc 10000000000[root@linuxcool ~]# echo &quot;sqrt(100)&quot; | bc 10</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/bc%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%B5%AE%E7%82%B9%E8%BF%90%E7%AE%97/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -281,16 +252,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
+              <time title="创建时间：2021-09-16 15:32:04 / 修改时间：16:53:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:28:22" itemprop="dateModified" datetime="2020-08-14T14:28:22+08:00">2020-08-14</time>
-              </span>
 
           
 
@@ -304,48 +269,14 @@
 
       
           <h1 id="zip命令-–-压缩文件"><a href="#zip命令-–-压缩文件" class="headerlink" title="zip命令 – 压缩文件"></a>zip命令 – 压缩文件</h1><p>zip程序将一个或多个压缩文件与有关文件的信息(名称、路径、日期、上次修改的时间、保护和检查信息以验证文件完整性)一起放入一个压缩存档中。可以使用一个命令将整个目录结构打包到zip存档中。</p>
-<p>对于文本文件来说，压缩比为2：1和3：1是常见的。zip只有一种压缩方法(通缩)，并且可以在不压缩的情况下存储文件。(如果添加了bzip 2支持，zip也可以使用bzip 2压缩，但这些条目需要一个合理的现代解压缩来解压缩。当选择bzip 2压缩时，它将通货紧缩替换为默认方法。)zip会自动为每个要压缩的文件选择更好的两个文件(通缩或存储，如果选择bzip2，则选择bzip2或Store)。</p>
-<p><strong>语法格式：</strong>zip [参数] [文件]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-q</th>
-<th>不显示指令执行过程</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-r</td>
-<td>递归处理，将指定目录下的所有文件和子目录一并处理</td>
-</tr>
-<tr>
-<td>-z</td>
-<td>替压缩文件加上注释</td>
-</tr>
-<tr>
-<td>-v</td>
-<td>显示指令执行过程或显示版本信息</td>
-</tr>
-<tr>
-<td>-n&lt;字尾字符串&gt;</td>
-<td>不压缩具有特定字尾字符串的文件</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>将 /home/html/ 这个目录下所有文件和文件夹打包为当前目录下的 html.zip：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zip -q -r html.zip /home/html</span><br></pre></td></tr></table></figure>
-
-<p>压缩文件 cp.zip 中删除文件 a.c：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zip -dv cp.zip a.c </span><br></pre></td></tr></table></figure>
-
-<p>把/home目录下面的mydata目录压缩为mydata.zip：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zip -r mydata.zip mydata </span><br></pre></td></tr></table></figure>
-
-<p>把/home目录下面的abc文件夹和123.txt压缩成为abc123.zip：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zip -r abc123.zip abc 123.txt </span><br></pre></td></tr></table></figure>
-
-<p>将 logs目录打包成 log.zip：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zip -r log.zip ./logs </span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/zip%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -387,16 +318,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
+              <time title="创建时间：2021-09-16 15:32:04 / 修改时间：16:53:07" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:27:09" itemprop="dateModified" datetime="2020-08-14T14:27:09+08:00">2020-08-14</time>
-              </span>
 
           
 
@@ -410,75 +335,14 @@
 
       
           <h1 id="zipinfo命令-–-查看压缩文件信息"><a href="#zipinfo命令-–-查看压缩文件信息" class="headerlink" title="zipinfo命令 – 查看压缩文件信息"></a>zipinfo命令 – 查看压缩文件信息</h1><p>zipinfo命令的全称为“zip information”，该命令用于列出压缩文件信息。执行zipinfo指令可得知zip压缩文件的详细信息。</p>
-<p><strong>语法格式：</strong>zipinfo [参数]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-1</th>
-<th>只列出文件名称</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-2</td>
-<td>此参数的效果和指定”-1″参数类似，但可搭配”-h”,”-t”和”-z”参数使用</td>
-</tr>
-<tr>
-<td>-h</td>
-<td>只列出压缩文件的文件名称</td>
-</tr>
-<tr>
-<td>-l</td>
-<td>此参数的效果和指定”-m”参数类似，但会列出原始文件的大小而非每个文件的压缩率</td>
-</tr>
-<tr>
-<td>-m</td>
-<td>此参数的效果和指定”-s”参数类似，但多会列出每个文件的压缩率</td>
-</tr>
-<tr>
-<td>-M</td>
-<td>若信息内容超过一个画面，则采用类似more指令的方式列出信息</td>
-</tr>
-<tr>
-<td>-s</td>
-<td>用类似执行”ls -l”指令的效果列出压缩文件内容</td>
-</tr>
-<tr>
-<td>-t</td>
-<td>只列出压缩文件内所包含的文件数目，压缩前后的文件大小及压缩率</td>
-</tr>
-<tr>
-<td>-T</td>
-<td>将压缩文件内每个文件的日期时间用年，月，日，时，分，秒的顺序列出</td>
-</tr>
-<tr>
-<td>-v</td>
-<td>详细显示压缩文件内每一个文件的信息</td>
-</tr>
-<tr>
-<td>-x&lt;范本样式&gt;</td>
-<td>不列出符合条件的文件的信息</td>
-</tr>
-<tr>
-<td>-z</td>
-<td>如果压缩文件内含有注释，就将注释显示出来</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>显示压缩文件信息：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zipinfo file.zip </span><br><span class="line">Archive: file.zip  486 bytes  3 files</span><br><span class="line">-rw-r--r-- 2.3 unx    0 bx stor 24-May-10 18:54 a.c</span><br><span class="line">-rw-r--r-- 2.3 unx    0 bx stor 24-May-10 18:54 b.c</span><br><span class="line">-rw-r--r-- 2.3 unx    0 bx stor 24-May-10 18:54 c.c</span><br><span class="line">3 files, 0 bytes uncompressed, 0 bytes compressed: 0.0%</span><br></pre></td></tr></table></figure>
-
-<p>显示压缩文件中每个文件的信息：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zipinfo -v file.zip </span><br></pre></td></tr></table></figure>
-
-<p>只显示压缩包大小、文件数目：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zipinfo -h file.zip             </span><br><span class="line">Archive:  file.zip</span><br><span class="line">Zip file size: 907 bytes, number of entries: 3</span><br></pre></td></tr></table></figure>
-
-<p>生成一个基本的、长格式的列表(而不是冗长的)，包括标题和总计行：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zipinfo -l file</span><br></pre></td></tr></table></figure>
-
-<p>查看存档中最近修改的文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zipinfo -T file | sort –nr -k 7 | sed 15q</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/zipinfo%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E7%9C%8B%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E4%BF%A1%E6%81%AF/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -520,16 +384,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
+              <time title="创建时间：2021-09-16 15:32:04 / 修改时间：16:53:00" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:28:52" itemprop="dateModified" datetime="2020-08-14T14:28:52+08:00">2020-08-14</time>
-              </span>
 
           
 
@@ -543,48 +401,14 @@
 
       
           <h1 id="unzip命令-–-解压缩zip文件"><a href="#unzip命令-–-解压缩zip文件" class="headerlink" title="unzip命令 – 解压缩zip文件"></a>unzip命令 – 解压缩zip文件</h1><p>unzip命令是用于.zip格式文件的解压缩工具 ，unzip命令将列出、测试或从zip格式存档中提取文件，这些文件通常位于MS-DOS系统上。</p>
-<p>默认行为（就是没有选项）是从指定的ZIP存档中提取所有的文件到当前目录（及其下面的子目录）。一个配套程序zip（1L）创建ZIP存档；这两个程序都与PKWARE的PKZIP和PKUNZIP为MS-DOS创建的存档文件兼容，但许多情况下，程序选项或默认行为是不同的。</p>
-<p><strong>语法格式：</strong>unzip [参数] [文件]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-l</th>
-<th>显示压缩文件内所包含的文件</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-v</td>
-<td>执行时显示详细的信息</td>
-</tr>
-<tr>
-<td>-c</td>
-<td>将解压缩的结果显示到屏幕上，并对字符做适当的转换</td>
-</tr>
-<tr>
-<td>-n</td>
-<td>解压缩时不要覆盖原有的文件</td>
-</tr>
-<tr>
-<td>-j</td>
-<td>不处理压缩文件中原有的目录路径</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>把/home目录下面的mydata.zip解压到mydatabak目录里面：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unzip mydata.zip -d mydatabak </span><br></pre></td></tr></table></figure>
-
-<p>把/home目录下面的wwwroot.zip直接解压到/home目录里面：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unzip wwwroot.zip </span><br></pre></td></tr></table></figure>
-
-<p>把/home目录下面的abc12.zip、abc23.zip、abc34.zip同时解压到/home目录里面：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unzip abc\*.zip </span><br></pre></td></tr></table></figure>
-
-<p>查看把/home目录下面的wwwroot.zip里面的内容：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unzip -v wwwroot.zip </span><br></pre></td></tr></table></figure>
-
-<p>验证/home目录下面的wwwroot.zip是否完整：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unzip -t wwwroot.zip  </span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/unzip%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E8%A7%A3%E5%8E%8B%E7%BC%A9zip%E6%96%87%E4%BB%B6/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -626,16 +450,10 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
+              <time title="创建时间：2021-09-16 15:32:04 / 修改时间：16:52:57" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:28:00" itemprop="dateModified" datetime="2020-08-14T14:28:00+08:00">2020-08-14</time>
-              </span>
 
           
 
@@ -649,43 +467,14 @@
 
       
           <h1 id="unarj命令-–-解压-arj文件"><a href="#unarj命令-–-解压-arj文件" class="headerlink" title="unarj命令 – 解压.arj文件"></a>unarj命令 – 解压.arj文件</h1><p>unarj命令用于解压缩.arj文件。</p>
-<p><strong>语法格式：</strong>unarj [参数] [.arj压缩文件]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-e</th>
-<th>解压缩.arj文件</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-l</td>
-<td>显示压缩文件内所包含的文件</td>
-</tr>
-<tr>
-<td>-t</td>
-<td>检查压缩文件是否正确</td>
-</tr>
-<tr>
-<td>-x</td>
-<td>解压缩时保留原有的路径</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>解压缩.arj文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unarj -e test.arj</span><br></pre></td></tr></table></figure>
-
-<p>显示压缩文件内所包含的文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unarj -l test.arj</span><br></pre></td></tr></table></figure>
-
-<p>检查压缩文件是否正确：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unarj -t test.arj</span><br></pre></td></tr></table></figure>
-
-<p>解压缩时保留原有的路径：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unarj -x test.arj</span><br></pre></td></tr></table></figure>
-
-<p>把文件解压到当前路径：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unarj -ex test.arj</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/unarj%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E8%A7%A3%E5%8E%8B.arj%E6%96%87%E4%BB%B6/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
