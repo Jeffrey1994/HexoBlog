@@ -163,7 +163,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/curl%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%B7%A5%E5%85%B7/">
+    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/dhclient%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%8A%A8%E6%80%81%E8%8E%B7%E5%8F%96%E6%88%96%E9%87%8A%E6%94%BEIP%E5%9C%B0%E5%9D%80/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/HexoBlog/images/avatar.png">
@@ -177,7 +177,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/curl%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%B7%A5%E5%85%B7/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/dhclient%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%8A%A8%E6%80%81%E8%8E%B7%E5%8F%96%E6%88%96%E9%87%8A%E6%94%BEIP%E5%9C%B0%E5%9D%80/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta">
@@ -194,7 +194,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:16:25" itemprop="dateModified" datetime="2020-08-14T14:16:25+08:00">2020-08-14</time>
+                <time title="修改时间：2020-08-14 14:22:26" itemprop="dateModified" datetime="2020-08-14T14:22:26+08:00">2020-08-14</time>
               </span>
 
           
@@ -208,262 +208,57 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="curl命令-–-文件传输工具"><a href="#curl命令-–-文件传输工具" class="headerlink" title="curl命令 – 文件传输工具"></a>curl命令 – 文件传输工具</h1><p>curl命令是一个利用URL规则在shell终端命令行下工作的文件传输工具；它支持文件的上传和下载，所以是综合传输工具，但按传统，习惯称curl为下载工具。</p>
-<p>作为一款强力工具，curl支持包括HTTP、HTTPS、ftp等众多协议，还支持POST、cookies、认证、从指定偏移处下载部分文件、用户代理字符串、限速、文件大小、进度条等特征；做网页处理流程和数据检索自动化。</p>
-<p><strong>语法格式：</strong>curl [参数] [网址]</p>
+          <h1 id="dhclient命令-–-动态获取或释放IP地址"><a href="#dhclient命令-–-动态获取或释放IP地址" class="headerlink" title="dhclient命令 – 动态获取或释放IP地址"></a>dhclient命令 – 动态获取或释放IP地址</h1><p>dhclient命令的作用是：使用动态主机配置协议动态的配置网络接口的网络参数，也支持BOOTP协议。</p>
+<p><strong>语法格式：</strong>dhclient [参数] [网络接口]</p>
 <p><strong>常用参数：</strong></p>
 <table>
 <thead>
 <tr>
-<th>-O</th>
-<th>把输出写到该文件中，保留远程文件的文件名</th>
+<th>-p</th>
+<th>指定dhcp客户端监听的端口号（默认端口号86）</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>-u</td>
-<td>通过服务端配置的用户名和密码授权访问</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>将下载的数据写入到文件，必须使用文件的绝对地址：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# curl https://www.linuxcool.com/abc.txt --silent -O</span><br></pre></td></tr></table></figure>
-
-<p>访问需要授权的页面时，可通过-u选项提供用户名和密码进行授权：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# curl -u root https://www.linuxprobe.com/ Enter host password for user &#x27;root&#x27;:</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/#%20ftpwho%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BAftp%E4%BC%9A%E8%AF%9D%E4%BF%A1%E6%81%AF/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/HexoBlog/images/avatar.png">
-      <meta itemprop="name" content="哒哒哒">
-      <meta itemprop="description" content="个人博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="维多利亚骚年">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/#%20ftpwho%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BAftp%E4%BC%9A%E8%AF%9D%E4%BF%A1%E6%81%AF/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:17:41" itemprop="dateModified" datetime="2020-08-14T14:17:41+08:00">2020-08-14</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="ftpwho命令-–-显示ftp会话信息"><a href="#ftpwho命令-–-显示ftp会话信息" class="headerlink" title="ftpwho命令 – 显示ftp会话信息"></a>ftpwho命令 – 显示ftp会话信息</h1><p>ftpwho命令用于显示当前所有以FTP登入的用户会话信息。</p>
-<p>执行该命令可得知当前用FTP登入系统的用户有哪些人，以及他们正在进行的操作。</p>
-<p><strong>语法格式：</strong>ftpwho [参数]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-h</th>
-<th>显示帮助信息</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-v</td>
-<td>详细模式，输出更多信息</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>查询当前正在登录FTP 服务器的用户：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ftpwho</span><br></pre></td></tr></table></figure>
-
-<p>在详细模式下，查询当前正在登录FTP 服务器的用户：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ftpwho -v</span><br></pre></td></tr></table></figure>
-
-<p>显示帮助信息：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ftpwho -h</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/lsblk%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%A3%81%E7%9B%98/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/HexoBlog/images/avatar.png">
-      <meta itemprop="name" content="哒哒哒">
-      <meta itemprop="description" content="个人博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="维多利亚骚年">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/lsblk%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%A3%81%E7%9B%98/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:13:25" itemprop="dateModified" datetime="2020-08-14T14:13:25+08:00">2020-08-14</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="lsblk命令-–-查看系统的磁盘"><a href="#lsblk命令-–-查看系统的磁盘" class="headerlink" title="lsblk命令 – 查看系统的磁盘"></a>lsblk命令 – 查看系统的磁盘</h1><p>lsblk命令的英文是“list block”，即用于列出所有可用块设备的信息，而且还能显示他们之间的依赖关系，但是它不会列出RAM盘的信息。</p>
-<p>lsblk命令包含在util-linux-ng包中，现在该包改名为util-linux。</p>
-<p><strong>语法格式：</strong>lsblk [参数]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-a</th>
-<th>显示所有设备</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-b</td>
-<td>以bytes方式显示设备大小</td>
-</tr>
-<tr>
 <td>-d</td>
-<td>不显示 slaves 或 holders</td>
+<td>总是以前台方式运行程序</td>
 </tr>
 <tr>
-<td>-D</td>
-<td>print discard capabilities</td>
-</tr>
-<tr>
-<td>-e</td>
-<td>排除设备</td>
-</tr>
-<tr>
-<td>-f</td>
-<td>显示文件系统信息</td>
-</tr>
-<tr>
-<td>-h</td>
-<td>显示帮助信息</td>
-</tr>
-<tr>
-<td>-i</td>
-<td>use ascii characters only</td>
-</tr>
-<tr>
-<td>-m</td>
-<td>显示权限信息</td>
-</tr>
-<tr>
-<td>-l</td>
-<td>使用列表格式显示</td>
-</tr>
-<tr>
-<td>-n</td>
-<td>不显示标题</td>
-</tr>
-<tr>
-<td>-o</td>
-<td>输出列</td>
-</tr>
-<tr>
-<td>-P</td>
-<td>使用key=”value”格式显示</td>
+<td>-q</td>
+<td>安静模式，不打印任何错误的提示信息</td>
 </tr>
 <tr>
 <td>-r</td>
-<td>使用原始格式显示</td>
+<td>释放ip地址</td>
 </tr>
 <tr>
-<td>-t</td>
-<td>显示拓扑结构信息</td>
+<td>-n</td>
+<td>不配置任何接口</td>
+</tr>
+<tr>
+<td>-x</td>
+<td>停止正在运行的DHCP客户端，而不释放当前租约，杀死现有的dhclient</td>
+</tr>
+<tr>
+<td>-s</td>
+<td>在获取ip地址之前指定DHCP服务器</td>
+</tr>
+<tr>
+<td>-w</td>
+<td>即使没有找到广播接口，也继续运行</td>
 </tr>
 </tbody></table>
 <p><strong>参考实例</strong></p>
-<p>lsblk命令默认情况下将以树状列出所有块设备：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~ ]# lsblk</span><br><span class="line">lsblk NAME   MAJ:MIN rm  SIZE RO type mountpoint</span><br><span class="line">sda      8:0    0 232.9G  0 disk </span><br><span class="line">├─sda1   8:1    0  46.6G  0 part / </span><br><span class="line">├─sda2   8:2    0     1K  0 part  </span><br><span class="line">├─sda5   8:5    0   190M  0 part /boot </span><br><span class="line">├─sda6   8:6    0   3.7G  0 part [SWAP] </span><br><span class="line">├─sda7   8:7    0  93.1G  0 part /data </span><br><span class="line">└─sda8   8:8    0  89.2G  0 part /personal </span><br><span class="line">sr0     11:0    1  1024M  0 rom</span><br></pre></td></tr></table></figure>
+<p>在指定网络接口上发出DHCP请求：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# dhclient eth0</span><br></pre></td></tr></table></figure>
 
-<p>默认选项不会列出所有空设备：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lsblk -a </span><br></pre></td></tr></table></figure>
+<p>释放IP地址：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# dhclient -r</span><br><span class="line">Killed old client process</span><br></pre></td></tr></table></figure>
 
-<p>也可以用于列出一个特定设备的拥有关系，同时也可以列出组和模式：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lsblk -m </span><br></pre></td></tr></table></figure>
+<p>从指定的服务器获取ip地址：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# dhclient -s 192.168.60.240</span><br></pre></td></tr></table></figure>
 
-<p>要获取SCSI设备的列表，你只能使用-S选项，该选项是用来以颠倒的顺序打印依赖的：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lsblk -S</span><br></pre></td></tr></table></figure>
-
-<p>例如，你也许想要以列表格式列出设备，而不是默认的树状格式。可以将两个不同的选项组合，以获得期望的输出：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lsblk -nl</span><br></pre></td></tr></table></figure>
+<p>停止运行dhclient：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# dhclient -x</span><br><span class="line">Killed old client process</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -482,7 +277,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/fdisk%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/">
+    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/#%20ifconfig%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E6%88%96%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/HexoBlog/images/avatar.png">
@@ -496,7 +291,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/fdisk%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/#%20ifconfig%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E6%88%96%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta">
@@ -513,7 +308,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:11:24" itemprop="dateModified" datetime="2020-08-14T14:11:24+08:00">2020-08-14</time>
+                <time title="修改时间：2020-08-14 14:21:55" itemprop="dateModified" datetime="2020-08-14T14:21:55+08:00">2020-08-14</time>
               </span>
 
           
@@ -527,48 +322,48 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="fdisk命令-–-磁盘分区"><a href="#fdisk命令-–-磁盘分区" class="headerlink" title="fdisk命令 – 磁盘分区"></a>fdisk命令 – 磁盘分区</h1><p>fdisk命令的英文全称是“Partition table manipulator for Linux”，即作为磁盘的分区工具。进行硬盘分区从实质上说就是对硬盘的一种格式化， 用一个形象的比喻，分区就好比在一张白纸上画一个大方框，而格式化好比在方框里打上格子。</p>
-<p><strong>语法格式：</strong>fdisk [参数]</p>
+          <h1 id="ifconfig命令-–-显示或设置网络设备"><a href="#ifconfig命令-–-显示或设置网络设备" class="headerlink" title="ifconfig命令 – 显示或设置网络设备"></a>ifconfig命令 – 显示或设置网络设备</h1><p>ifconfig命令的英文全称是“network interfaces configuring”，即用于配置和显示Linux内核中网络接口的网络参数。用ifconfig命令配置的网卡信息，在网卡重启后机器重启后，配置就不存在。要想将上述的配置信息永远的存的电脑里，那就要修改网卡的配置文件了。</p>
+<p><strong>语法格式：</strong>ifconfig [参数]</p>
 <p><strong>常用参数：</strong></p>
 <table>
 <thead>
 <tr>
-<th>-b</th>
-<th>指定每个分区的大小</th>
+<th>add&lt;地址&gt;</th>
+<th>设置网络设备IPv6的IP地址</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>-l</td>
-<td>列出指定的外围设备的分区表状况</td>
+<td>del&lt;地址&gt;</td>
+<td>删除网络设备IPv6的IP地址</td>
 </tr>
 <tr>
-<td>-s</td>
-<td>将指定的分区大小输出到标准输出上，单位为区块</td>
+<td>down</td>
+<td>关闭指定的网络设备</td>
 </tr>
 <tr>
-<td>-u</td>
-<td>搭配”-l”参数列表，会用分区数目取代柱面数目，来表示每个分区的起始地址</td>
+<td>up</td>
+<td>启动指定的网络设备</td>
 </tr>
 <tr>
-<td>-v</td>
-<td>显示版本信息</td>
+<td>IP地址</td>
+<td>指定网络设备的IP地址</td>
 </tr>
 </tbody></table>
 <p><strong>参考实例</strong></p>
-<p>查看所有分区情况：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fdisk -l</span><br></pre></td></tr></table></figure>
+<p>显示网络设备信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ifconfig</span><br><span class="line">eth0   Link encap:Ethernet HWaddr 00:50:56:0A:0B:0C       </span><br><span class="line">       inet addr:192.168.0.3 Bcast:192.168.0.255 Mask:255.255.255.0</span><br><span class="line">       inet6 addr: fe80::250:56ff:fe0a:b0c/64 Scope:Link     </span><br><span class="line">       UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1      </span><br><span class="line">       RX packets:172220 errors:0 dropped:0 overruns:0 frame:0      </span><br><span class="line">       TX packets:132379 errors:0 dropped:0 overruns:0 carrier:0 </span><br><span class="line">       collisions:0 txqueuelen:1000       </span><br><span class="line">       RX bytes:87101880 (83.0 MiB) TX bytes:41576123 (39.6 MiB) </span><br><span class="line">       Interrupt:185 Base address:0x2024  </span><br><span class="line">lo    Link encap:Local Loopback       </span><br><span class="line">      inet addr:127.0.0.1 Mask:255.0.0.0      </span><br><span class="line">      inet6 addr: ::1/128 Scope:Host      </span><br><span class="line">      UP LOOPBACK RUNNING MTU:16436 Metric:1      </span><br><span class="line">      RX packets:2022 errors:0 dropped:0 overruns:0 frame:0      </span><br><span class="line">      TX packets:2022 errors:0 dropped:0 overruns:0 carrier:0   </span><br><span class="line">      collisions:0 txqueuelen:0       </span><br><span class="line">      RX bytes:2459063 (2.3 MiB) </span><br><span class="line">      TX bytes:2459063 (2.3 MiB)</span><br></pre></td></tr></table></figure>
 
-<p>选择分区磁盘：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fdisk /dev/sdb</span><br></pre></td></tr></table></figure>
+<p>启动关闭指定网卡：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ifconfig eth0 down</span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 up </span><br></pre></td></tr></table></figure>
 
-<p>在当前磁盘上建立扩展分区：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fdisk /ext</span><br></pre></td></tr></table></figure>
+<p>为网卡配置和删除IPv6地址：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ifconfig eth0 add 33ffe:3240:800:1005::2/64</span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 del 33ffe:3240:800:1005::2/64</span><br></pre></td></tr></table></figure>
 
-<p>不检查磁盘表面加快分区操作：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fdisk /actok</span><br></pre></td></tr></table></figure>
+<p>用ifconfig修改MAC地址：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ifconfig eth0 down</span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 hw ether 00:AA:BB:CC:DD:EE</span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 up</span><br><span class="line">[root@linuxcool ~]# ifconfig eth1 hw ether 00:1D:1C:1D:1E </span><br><span class="line">[root@linuxcool ~]# ifconfig eth1 up</span><br></pre></td></tr></table></figure>
 
-<p>重建主引导记录：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fdisk /cmbr </span><br></pre></td></tr></table></figure>
+<p>配置IP地址：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ifconfig eth0 192.168.1.56 </span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 192.168.1.56 netmask 255.255.255.0</span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 192.168.1.56 netmask 255.255.255.0 broadcast 192.168.1.255</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -587,7 +382,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/df%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5/">
+    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/tftp%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E4%B8%8A%E4%BC%A0%E5%8F%8A%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/HexoBlog/images/avatar.png">
@@ -601,7 +396,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/df%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/tftp%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E4%B8%8A%E4%BC%A0%E5%8F%8A%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta">
@@ -618,7 +413,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:10:28" itemprop="dateModified" datetime="2020-08-14T14:10:28+08:00">2020-08-14</time>
+                <time title="修改时间：2020-08-14 14:15:54" itemprop="dateModified" datetime="2020-08-14T14:15:54+08:00">2020-08-14</time>
               </span>
 
           
@@ -632,66 +427,280 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="df命令-–-显示磁盘空间使用情况"><a href="#df命令-–-显示磁盘空间使用情况" class="headerlink" title="df命令 – 显示磁盘空间使用情况"></a>df命令 – 显示磁盘空间使用情况</h1><p>df命令的英文全称即“Disk Free”，顾名思义功能是用于显示系统上可使用的磁盘空间。默认显示单位为KB，建议使用“df -h”的参数组合，根据磁盘容量自动变换合适的单位，更利于阅读。</p>
-<p>日常普遍用该命令可以查看磁盘被占用了多少空间、还剩多少空间等信息。</p>
-<p><strong>语法格式：</strong> df [参数] [指定文件]</p>
+          <h1 id="tftp命令-–-上传及下载文件"><a href="#tftp命令-–-上传及下载文件" class="headerlink" title="tftp命令 – 上传及下载文件"></a>tftp命令 – 上传及下载文件</h1><p>tftp命令用于传输文件。ftp让用户得以下载存放于远端主机的文件，也能将文件上传到远端主机放置。</p>
+<p>tftp是简单的文字模式ftp程序，它所使用的指令和ftp类似。</p>
+<p><strong>语法格式：</strong>tftp [参数]</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>connect</th>
+<th>连接到远程tftp服务器</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>mode</td>
+<td>文件传输模式</td>
+</tr>
+<tr>
+<td>put</td>
+<td>上传文件</td>
+</tr>
+<tr>
+<td>get</td>
+<td>下载文件</td>
+</tr>
+<tr>
+<td>quit</td>
+<td>退出</td>
+</tr>
+<tr>
+<td>verbose</td>
+<td>显示详细的处理信息</td>
+</tr>
+<tr>
+<td>trace</td>
+<td>显示包路径</td>
+</tr>
+<tr>
+<td>status</td>
+<td>显示当前状态信息</td>
+</tr>
+<tr>
+<td>binary</td>
+<td>二进制传输模式</td>
+</tr>
+<tr>
+<td>ascii</td>
+<td>ascii 传送模式</td>
+</tr>
+<tr>
+<td>rexmt</td>
+<td>设置包传输的超时时间</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>设置重传的超时时间</td>
+</tr>
+<tr>
+<td>help</td>
+<td>帮助信息</td>
+</tr>
+<tr>
+<td>?</td>
+<td>帮助信息</td>
+</tr>
+</tbody></table>
+<p><strong>参考实例</strong></p>
+<p>连接远程服务器”218.28.188.288″：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# tftp 218.28.188.288 </span><br></pre></td></tr></table></figure>
+
+<p>远程下载file文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tftp&gt; get file                            </span><br><span class="line">getting from 218.28.188.288 to /dir  </span><br><span class="line">Recived 168236 bytes in 1.5 seconds[112157 bit/s] </span><br></pre></td></tr></table></figure>
+
+<p>退出tftp：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tftp&gt; quit      </span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/lprm%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E6%89%93%E5%8D%B0%E9%98%9F%E5%88%97%E4%B8%AD%E7%9A%84%E6%89%93%E5%8D%B0%E4%BB%BB%E5%8A%A1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/HexoBlog/images/avatar.png">
+      <meta itemprop="name" content="哒哒哒">
+      <meta itemprop="description" content="个人博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="维多利亚骚年">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/lprm%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E6%89%93%E5%8D%B0%E9%98%9F%E5%88%97%E4%B8%AD%E7%9A%84%E6%89%93%E5%8D%B0%E4%BB%BB%E5%8A%A1/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-08-14 14:18:13" itemprop="dateModified" datetime="2020-08-14T14:18:13+08:00">2020-08-14</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="lprm命令-–-删除打印队列中的打印任务"><a href="#lprm命令-–-删除打印队列中的打印任务" class="headerlink" title="lprm命令 – 删除打印队列中的打印任务"></a>lprm命令 – 删除打印队列中的打印任务</h1><p>lprm命令的英文全称是“Remove jobs from the print queue”，意为用于删除打印队列中的打印任务。尚未完成的打印机工作会被放在打印机贮列之中，这个命令可用来将未送到打印机的工作取消。</p>
+<p><strong>语法格式：</strong>lprm [参数] [任务编号]</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>-E</th>
+<th>与打印服务器连接时强制使用加密</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-P</td>
+<td>指定接受打印任务的目标打印机</td>
+</tr>
+<tr>
+<td>-U</td>
+<td>指定可选的用户名</td>
+</tr>
+</tbody></table>
+<p><strong>参考实例</strong></p>
+<p>将打印机hpprint中的第102号任务移除：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lprm -Phpprint 102</span><br></pre></td></tr></table></figure>
+
+<p>将第101号任务由预设打印机中移除：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lprm 101</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/fsck%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%A3%80%E6%9F%A5%E5%B9%B6%E4%BF%AE%E5%A4%8DLinux%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/HexoBlog/images/avatar.png">
+      <meta itemprop="name" content="哒哒哒">
+      <meta itemprop="description" content="个人博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="维多利亚骚年">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/fsck%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%A3%80%E6%9F%A5%E5%B9%B6%E4%BF%AE%E5%A4%8DLinux%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-08-14 14:17:19" itemprop="dateModified" datetime="2020-08-14T14:17:19+08:00">2020-08-14</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="fsck命令-–-检查并修复Linux文件系统"><a href="#fsck命令-–-检查并修复Linux文件系统" class="headerlink" title="fsck命令 – 检查并修复Linux文件系统"></a>fsck命令 – 检查并修复Linux文件系统</h1><p>fsck命令的英文全称是“filesystem check”，即检查文件系统的意思，常用于检查并修复Linux文件系统的一些错误信息，操作文件系统需要先备份重要数据，以防丢失。</p>
+<p>Linux fsck命令用于检查并修复Linux文件系统，可以同时检查一个或多个 Linux 文件系统；若系统掉电或磁盘发生问题，可利用fsck命令对文件系统进行检查。</p>
+<p><strong>语法格式：</strong>fsck [参数] [文件系统]</p>
 <p><strong>常用参数：</strong></p>
 <table>
 <thead>
 <tr>
 <th>-a</th>
-<th>显示所有系统文件</th>
+<th>自动修复文件系统，不询问任何问题</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>-B &lt;块大小&gt;</td>
-<td>指定显示时的块大小</td>
+<td>-A</td>
+<td>依照/etc/fstab配置文件的内容，检查文件内所列的全部文件系统</td>
 </tr>
 <tr>
-<td>-h</td>
-<td>以容易阅读的方式显示</td>
+<td>-N</td>
+<td>不执行指令，仅列出实际执行会进行的动作</td>
 </tr>
 <tr>
-<td>-H</td>
-<td>以1000字节为换算单位来显示</td>
+<td>-P</td>
+<td>当搭配”-A”参数使用时，则会同时检查所有的文件系统</td>
 </tr>
 <tr>
-<td>-i</td>
-<td>显示索引字节信息</td>
+<td>-r</td>
+<td>采用互动模式，在执行修复时询问问题，让用户得以确认并决定处理方式</td>
 </tr>
 <tr>
-<td>-k</td>
-<td>指定块大小为1KB</td>
+<td>-R</td>
+<td>当搭配”-A”参数使用时，则会略过/目录的文件系统不予检查</td>
 </tr>
 <tr>
-<td>-l</td>
-<td>只显示本地文件系统</td>
-</tr>
-<tr>
-<td>-t &lt;文件系统类型&gt;</td>
-<td>只显示指定类型的文件系统</td>
+<td>-t</td>
+<td>指定要检查的文件系统类型</td>
 </tr>
 <tr>
 <td>-T</td>
-<td>输出时显示文件系统类型</td>
+<td>执行fsck指令时，不显示标题信息</td>
 </tr>
 <tr>
-<td>– -sync</td>
-<td>在取得磁盘使用信息前，先执行sync命令</td>
+<td>-V</td>
+<td>显示指令执行过程</td>
 </tr>
 </tbody></table>
 <p><strong>参考实例</strong></p>
-<p>显示磁盘分区使用情况：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# df</span><br><span class="line">文件系统                             1K-块    已用     可用   已用% 挂载点</span><br><span class="line">devtmpfs                           1980612       0  1980612    0% /dev</span><br><span class="line">tmpfs                              1994756       0  1994756    0% /dev/shm</span><br><span class="line">tmpfs                              1994756    1040  1993716    1% /run</span><br><span class="line">tmpfs                              1994756       0  1994756    0% /sys/fs/cgroup</span><br><span class="line">/dev/mapper/fedora_linuxhell-root 15718400 2040836 13677564   13% /</span><br><span class="line">tmpfs                              1994756       4  1994752    1% /tmp</span><br><span class="line">/dev/sda1                           999320  128264   802244   14% /boot</span><br><span class="line">tmpfs                               398948       0   398948   0% /run/user/0</span><br></pre></td></tr></table></figure>
+<p>修复坏的分区文件系统：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fsck -t ext3 -r /usr/local</span><br><span class="line"> fsck from util-linux 2.23.2</span><br><span class="line"> e2fsck 1.42.9 (28-Dec-2013)</span><br><span class="line"> fsck.ext3: Is a directory while trying to open /usr/local</span><br><span class="line"> The superblock could not be read or does not describe a correct ext2</span><br><span class="line"> filesystem.  If the device is valid and it really contains an ext2</span><br><span class="line"> filesystem (and not swap or ufs or something else), then the superblock</span><br><span class="line"> is corrupt, and you might try running e2fsck with an alternate superblock:</span><br><span class="line">     e2fsck -b 8193 </span><br><span class="line"> /usr/local: status 8, rss 1232, real 0.020288, user 0.002022, sys 0.005354</span><br></pre></td></tr></table></figure>
 
-<p>以容易阅读的方式显示磁盘分区使用情况：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# df -h 文件系统                           容量   已用   可用  已用% 挂载点 devtmpfs                           1.9G     0  1.9G    0% /dev </span><br><span class="line">tmpfs                              2.0G     0  2.0G    0% /dev/shm </span><br><span class="line">tmpfs                              2.0G  1.1M  2.0G    1% /run </span><br><span class="line">tmpfs                              2.0G     0  2.0G    0% /sys/fs/cgroup </span><br><span class="line">/dev/mapper/fedora_linuxhell-root   15G  2.0G   14G   13% / </span><br><span class="line">tmpfs                              2.0G  4.0K  2.0G    1% /tmp </span><br><span class="line">/dev/sda1                          976M  126M  784M   14% /boot </span><br><span class="line">tmpfs                              390M     0  390M    0% /run/user/0</span><br></pre></td></tr></table></figure>
-
-<p>显示指定文件所在分区的磁盘使用情况：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# df /etc/dhcp</span><br><span class="line">文件系统                             1K-块    已用     可用   已用% 挂载点/dev/mapper/fedora_linuxcool-root 15718400 2040836 13677564   13% /</span><br></pre></td></tr></table></figure>
-
-<p>显示文件类型为ext4的磁盘使用情况：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# df -t ext4</span><br><span class="line">文件系统        1K-块   已用   可用    已用% 挂载点</span><br><span class="line">/dev/sda1      999320 128264 802244   14% /boot</span><br></pre></td></tr></table></figure>
+<p>显示fsck系统安装的版本号：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fsck --version fsck from util-linux 2.23.2 </span><br></pre></td></tr></table></figure>
       
     </div>
 
