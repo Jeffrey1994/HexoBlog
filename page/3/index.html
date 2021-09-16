@@ -163,7 +163,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/fsck%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%A3%80%E6%9F%A5%E5%B9%B6%E4%BF%AE%E5%A4%8DLinux%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/">
+    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/bc%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%B5%AE%E7%82%B9%E8%BF%90%E7%AE%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/HexoBlog/images/avatar.png">
@@ -177,7 +177,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/fsck%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%A3%80%E6%9F%A5%E5%B9%B6%E4%BF%AE%E5%A4%8DLinux%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/9%E3%80%81%E5%85%B6%E4%BB%96%E5%91%BD%E4%BB%A4/bc%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%B5%AE%E7%82%B9%E8%BF%90%E7%AE%97/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta">
@@ -194,7 +194,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:18:48" itemprop="dateModified" datetime="2020-08-14T14:18:48+08:00">2020-08-14</time>
+                <time title="修改时间：2020-08-14 14:30:30" itemprop="dateModified" datetime="2020-08-14T14:30:30+08:00">2020-08-14</time>
               </span>
 
           
@@ -208,170 +208,38 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="fsck命令-–-检查并修复Linux文件系统"><a href="#fsck命令-–-检查并修复Linux文件系统" class="headerlink" title="fsck命令 – 检查并修复Linux文件系统"></a>fsck命令 – 检查并修复Linux文件系统</h1><p>fsck命令的英文全称是“filesystem check”，即检查文件系统的意思，常用于检查并修复Linux文件系统的一些错误信息，操作文件系统需要先备份重要数据，以防丢失。</p>
-<p>Linux fsck命令用于检查并修复Linux文件系统，可以同时检查一个或多个 Linux 文件系统；若系统掉电或磁盘发生问题，可利用fsck命令对文件系统进行检查。</p>
-<p><strong>语法格式：</strong>fsck [参数] [文件系统]</p>
+          <h1 id="bc命令-–-浮点运算"><a href="#bc命令-–-浮点运算" class="headerlink" title="bc命令 – 浮点运算"></a>bc命令 – 浮点运算</h1><p>bc的英文全拼为“ Binary Calculator ”，是一种支持任意精度的交互执行的计算器语言。bash内置了对整数四则运算的支持，但是并不支持浮点运算，而bc命令可以很方便的进行浮点运算，当然整数运算也不再话下。</p>
+<p><strong>语法格式：</strong>bc [选项]</p>
 <p><strong>常用参数：</strong></p>
 <table>
 <thead>
 <tr>
-<th>-a</th>
-<th>自动修复文件系统，不询问任何问题</th>
+<th>-i</th>
+<th>强制进入交互式模式</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>-A</td>
-<td>依照/etc/fstab配置文件的内容，检查文件内所列的全部文件系统</td>
-</tr>
-<tr>
-<td>-N</td>
-<td>不执行指令，仅列出实际执行会进行的动作</td>
-</tr>
-<tr>
-<td>-P</td>
-<td>当搭配”-A”参数使用时，则会同时检查所有的文件系统</td>
-</tr>
-<tr>
-<td>-r</td>
-<td>采用互动模式，在执行修复时询问问题，让用户得以确认并决定处理方式</td>
-</tr>
-<tr>
-<td>-R</td>
-<td>当搭配”-A”参数使用时，则会略过/目录的文件系统不予检查</td>
-</tr>
-<tr>
-<td>-t</td>
-<td>指定要检查的文件系统类型</td>
-</tr>
-<tr>
-<td>-T</td>
-<td>执行fsck指令时，不显示标题信息</td>
-</tr>
-<tr>
-<td>-V</td>
-<td>显示指令执行过程</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>修复坏的分区文件系统：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fsck -t ext3 -r /usr/local</span><br><span class="line"> fsck from util-linux 2.23.2</span><br><span class="line"> e2fsck 1.42.9 (28-Dec-2013)</span><br><span class="line"> fsck.ext3: Is a directory while trying to open /usr/local</span><br><span class="line"> The superblock could not be read or does not describe a correct ext2</span><br><span class="line"> filesystem.  If the device is valid and it really contains an ext2</span><br><span class="line"> filesystem (and not swap or ufs or something else), then the superblock</span><br><span class="line"> is corrupt, and you might try running e2fsck with an alternate superblock:</span><br><span class="line">     e2fsck -b 8193 </span><br><span class="line"> /usr/local: status 8, rss 1232, real 0.020288, user 0.002022, sys 0.005354</span><br></pre></td></tr></table></figure>
-
-<p>显示fsck系统安装的版本号：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fsck --version fsck from util-linux 2.23.2 </span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/dhclient%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%8A%A8%E6%80%81%E8%8E%B7%E5%8F%96%E6%88%96%E9%87%8A%E6%94%BEIP%E5%9C%B0%E5%9D%80/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/HexoBlog/images/avatar.png">
-      <meta itemprop="name" content="哒哒哒">
-      <meta itemprop="description" content="个人博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="维多利亚骚年">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/dhclient%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%8A%A8%E6%80%81%E8%8E%B7%E5%8F%96%E6%88%96%E9%87%8A%E6%94%BEIP%E5%9C%B0%E5%9D%80/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:22:26" itemprop="dateModified" datetime="2020-08-14T14:22:26+08:00">2020-08-14</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="dhclient命令-–-动态获取或释放IP地址"><a href="#dhclient命令-–-动态获取或释放IP地址" class="headerlink" title="dhclient命令 – 动态获取或释放IP地址"></a>dhclient命令 – 动态获取或释放IP地址</h1><p>dhclient命令的作用是：使用动态主机配置协议动态的配置网络接口的网络参数，也支持BOOTP协议。</p>
-<p><strong>语法格式：</strong>dhclient [参数] [网络接口]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-p</th>
-<th>指定dhcp客户端监听的端口号（默认端口号86）</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-d</td>
-<td>总是以前台方式运行程序</td>
-</tr>
-<tr>
-<td>-q</td>
-<td>安静模式，不打印任何错误的提示信息</td>
-</tr>
-<tr>
-<td>-r</td>
-<td>释放ip地址</td>
-</tr>
-<tr>
-<td>-n</td>
-<td>不配置任何接口</td>
-</tr>
-<tr>
-<td>-x</td>
-<td>停止正在运行的DHCP客户端，而不释放当前租约，杀死现有的dhclient</td>
-</tr>
-<tr>
-<td>-s</td>
-<td>在获取ip地址之前指定DHCP服务器</td>
+<td>-l</td>
+<td>定义使用的标准数学库</td>
 </tr>
 <tr>
 <td>-w</td>
-<td>即使没有找到广播接口，也继续运行</td>
+<td>定义使用的标准数学库</td>
+</tr>
+<tr>
+<td>-q</td>
+<td>打印正常的GNU bc环境信息</td>
 </tr>
 </tbody></table>
 <p><strong>参考实例</strong></p>
-<p>在指定网络接口上发出DHCP请求：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# dhclient eth0</span><br></pre></td></tr></table></figure>
+<p>算术操作高级运算bc命令它可以执行浮点运算和一些高级函数：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# echo &quot;1.212*3&quot; | bc  3.636</span><br></pre></td></tr></table></figure>
 
-<p>释放IP地址：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# dhclient -r</span><br><span class="line">Killed old client process</span><br></pre></td></tr></table></figure>
+<p>设定小数精度（数值范围）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# echo &quot;scale=2;3/8&quot; | bc .37</span><br></pre></td></tr></table></figure>
 
-<p>从指定的服务器获取ip地址：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# dhclient -s 192.168.60.240</span><br></pre></td></tr></table></figure>
-
-<p>停止运行dhclient：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# dhclient -x</span><br><span class="line">Killed old client process</span><br></pre></td></tr></table></figure>
+<p>计算平方和平方根：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# echo &quot;10^10&quot; | bc 10000000000[root@linuxcool ~]# echo &quot;sqrt(100)&quot; | bc 10</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -390,7 +258,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/#%20ifconfig%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E6%88%96%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87/">
+    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/zip%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/HexoBlog/images/avatar.png">
@@ -404,7 +272,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/6%E3%80%81%E7%BD%91%E7%BB%9C%E9%80%9A%E8%AE%AF/#%20ifconfig%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E6%88%96%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%BB%9C%E8%AE%BE%E5%A4%87/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/zip%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta">
@@ -421,7 +289,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:21:55" itemprop="dateModified" datetime="2020-08-14T14:21:55+08:00">2020-08-14</time>
+                <time title="修改时间：2020-08-14 14:28:22" itemprop="dateModified" datetime="2020-08-14T14:28:22+08:00">2020-08-14</time>
               </span>
 
           
@@ -435,558 +303,49 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="ifconfig命令-–-显示或设置网络设备"><a href="#ifconfig命令-–-显示或设置网络设备" class="headerlink" title="ifconfig命令 – 显示或设置网络设备"></a>ifconfig命令 – 显示或设置网络设备</h1><p>ifconfig命令的英文全称是“network interfaces configuring”，即用于配置和显示Linux内核中网络接口的网络参数。用ifconfig命令配置的网卡信息，在网卡重启后机器重启后，配置就不存在。要想将上述的配置信息永远的存的电脑里，那就要修改网卡的配置文件了。</p>
-<p><strong>语法格式：</strong>ifconfig [参数]</p>
+          <h1 id="zip命令-–-压缩文件"><a href="#zip命令-–-压缩文件" class="headerlink" title="zip命令 – 压缩文件"></a>zip命令 – 压缩文件</h1><p>zip程序将一个或多个压缩文件与有关文件的信息(名称、路径、日期、上次修改的时间、保护和检查信息以验证文件完整性)一起放入一个压缩存档中。可以使用一个命令将整个目录结构打包到zip存档中。</p>
+<p>对于文本文件来说，压缩比为2：1和3：1是常见的。zip只有一种压缩方法(通缩)，并且可以在不压缩的情况下存储文件。(如果添加了bzip 2支持，zip也可以使用bzip 2压缩，但这些条目需要一个合理的现代解压缩来解压缩。当选择bzip 2压缩时，它将通货紧缩替换为默认方法。)zip会自动为每个要压缩的文件选择更好的两个文件(通缩或存储，如果选择bzip2，则选择bzip2或Store)。</p>
+<p><strong>语法格式：</strong>zip [参数] [文件]</p>
 <p><strong>常用参数：</strong></p>
 <table>
 <thead>
 <tr>
-<th>add&lt;地址&gt;</th>
-<th>设置网络设备IPv6的IP地址</th>
+<th>-q</th>
+<th>不显示指令执行过程</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>del&lt;地址&gt;</td>
-<td>删除网络设备IPv6的IP地址</td>
-</tr>
-<tr>
-<td>down</td>
-<td>关闭指定的网络设备</td>
-</tr>
-<tr>
-<td>up</td>
-<td>启动指定的网络设备</td>
-</tr>
-<tr>
-<td>IP地址</td>
-<td>指定网络设备的IP地址</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>显示网络设备信息：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ifconfig</span><br><span class="line">eth0   Link encap:Ethernet HWaddr 00:50:56:0A:0B:0C       </span><br><span class="line">       inet addr:192.168.0.3 Bcast:192.168.0.255 Mask:255.255.255.0</span><br><span class="line">       inet6 addr: fe80::250:56ff:fe0a:b0c/64 Scope:Link     </span><br><span class="line">       UP BROADCAST RUNNING MULTICAST MTU:1500 Metric:1      </span><br><span class="line">       RX packets:172220 errors:0 dropped:0 overruns:0 frame:0      </span><br><span class="line">       TX packets:132379 errors:0 dropped:0 overruns:0 carrier:0 </span><br><span class="line">       collisions:0 txqueuelen:1000       </span><br><span class="line">       RX bytes:87101880 (83.0 MiB) TX bytes:41576123 (39.6 MiB) </span><br><span class="line">       Interrupt:185 Base address:0x2024  </span><br><span class="line">lo    Link encap:Local Loopback       </span><br><span class="line">      inet addr:127.0.0.1 Mask:255.0.0.0      </span><br><span class="line">      inet6 addr: ::1/128 Scope:Host      </span><br><span class="line">      UP LOOPBACK RUNNING MTU:16436 Metric:1      </span><br><span class="line">      RX packets:2022 errors:0 dropped:0 overruns:0 frame:0      </span><br><span class="line">      TX packets:2022 errors:0 dropped:0 overruns:0 carrier:0   </span><br><span class="line">      collisions:0 txqueuelen:0       </span><br><span class="line">      RX bytes:2459063 (2.3 MiB) </span><br><span class="line">      TX bytes:2459063 (2.3 MiB)</span><br></pre></td></tr></table></figure>
-
-<p>启动关闭指定网卡：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ifconfig eth0 down</span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 up </span><br></pre></td></tr></table></figure>
-
-<p>为网卡配置和删除IPv6地址：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ifconfig eth0 add 33ffe:3240:800:1005::2/64</span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 del 33ffe:3240:800:1005::2/64</span><br></pre></td></tr></table></figure>
-
-<p>用ifconfig修改MAC地址：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ifconfig eth0 down</span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 hw ether 00:AA:BB:CC:DD:EE</span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 up</span><br><span class="line">[root@linuxcool ~]# ifconfig eth1 hw ether 00:1D:1C:1D:1E </span><br><span class="line">[root@linuxcool ~]# ifconfig eth1 up</span><br></pre></td></tr></table></figure>
-
-<p>配置IP地址：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ifconfig eth0 192.168.1.56 </span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 192.168.1.56 netmask 255.255.255.0</span><br><span class="line">[root@linuxcool ~]# ifconfig eth0 192.168.1.56 netmask 255.255.255.0 broadcast 192.168.1.255</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/tftp%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E4%B8%8A%E4%BC%A0%E5%8F%8A%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/HexoBlog/images/avatar.png">
-      <meta itemprop="name" content="哒哒哒">
-      <meta itemprop="description" content="个人博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="维多利亚骚年">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/tftp%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E4%B8%8A%E4%BC%A0%E5%8F%8A%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:15:54" itemprop="dateModified" datetime="2020-08-14T14:15:54+08:00">2020-08-14</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="tftp命令-–-上传及下载文件"><a href="#tftp命令-–-上传及下载文件" class="headerlink" title="tftp命令 – 上传及下载文件"></a>tftp命令 – 上传及下载文件</h1><p>tftp命令用于传输文件。ftp让用户得以下载存放于远端主机的文件，也能将文件上传到远端主机放置。</p>
-<p>tftp是简单的文字模式ftp程序，它所使用的指令和ftp类似。</p>
-<p><strong>语法格式：</strong>tftp [参数]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>connect</th>
-<th>连接到远程tftp服务器</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>mode</td>
-<td>文件传输模式</td>
-</tr>
-<tr>
-<td>put</td>
-<td>上传文件</td>
-</tr>
-<tr>
-<td>get</td>
-<td>下载文件</td>
-</tr>
-<tr>
-<td>quit</td>
-<td>退出</td>
-</tr>
-<tr>
-<td>verbose</td>
-<td>显示详细的处理信息</td>
-</tr>
-<tr>
-<td>trace</td>
-<td>显示包路径</td>
-</tr>
-<tr>
-<td>status</td>
-<td>显示当前状态信息</td>
-</tr>
-<tr>
-<td>binary</td>
-<td>二进制传输模式</td>
-</tr>
-<tr>
-<td>ascii</td>
-<td>ascii 传送模式</td>
-</tr>
-<tr>
-<td>rexmt</td>
-<td>设置包传输的超时时间</td>
-</tr>
-<tr>
-<td>timeout</td>
-<td>设置重传的超时时间</td>
-</tr>
-<tr>
-<td>help</td>
-<td>帮助信息</td>
-</tr>
-<tr>
-<td>?</td>
-<td>帮助信息</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>连接远程服务器”218.28.188.288″：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# tftp 218.28.188.288 </span><br></pre></td></tr></table></figure>
-
-<p>远程下载file文件：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tftp&gt; get file                            </span><br><span class="line">getting from 218.28.188.288 to /dir  </span><br><span class="line">Recived 168236 bytes in 1.5 seconds[112157 bit/s] </span><br></pre></td></tr></table></figure>
-
-<p>退出tftp：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tftp&gt; quit      </span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/lprm%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E6%89%93%E5%8D%B0%E9%98%9F%E5%88%97%E4%B8%AD%E7%9A%84%E6%89%93%E5%8D%B0%E4%BB%BB%E5%8A%A1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/HexoBlog/images/avatar.png">
-      <meta itemprop="name" content="哒哒哒">
-      <meta itemprop="description" content="个人博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="维多利亚骚年">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/lprm%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%A0%E9%99%A4%E6%89%93%E5%8D%B0%E9%98%9F%E5%88%97%E4%B8%AD%E7%9A%84%E6%89%93%E5%8D%B0%E4%BB%BB%E5%8A%A1/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:18:13" itemprop="dateModified" datetime="2020-08-14T14:18:13+08:00">2020-08-14</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="lprm命令-–-删除打印队列中的打印任务"><a href="#lprm命令-–-删除打印队列中的打印任务" class="headerlink" title="lprm命令 – 删除打印队列中的打印任务"></a>lprm命令 – 删除打印队列中的打印任务</h1><p>lprm命令的英文全称是“Remove jobs from the print queue”，意为用于删除打印队列中的打印任务。尚未完成的打印机工作会被放在打印机贮列之中，这个命令可用来将未送到打印机的工作取消。</p>
-<p><strong>语法格式：</strong>lprm [参数] [任务编号]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-E</th>
-<th>与打印服务器连接时强制使用加密</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-P</td>
-<td>指定接受打印任务的目标打印机</td>
-</tr>
-<tr>
-<td>-U</td>
-<td>指定可选的用户名</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>将打印机hpprint中的第102号任务移除：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lprm -Phpprint 102</span><br></pre></td></tr></table></figure>
-
-<p>将第101号任务由预设打印机中移除：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lprm 101</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/fsck%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%A3%80%E6%9F%A5%E5%B9%B6%E4%BF%AE%E5%A4%8DLinux%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/HexoBlog/images/avatar.png">
-      <meta itemprop="name" content="哒哒哒">
-      <meta itemprop="description" content="个人博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="维多利亚骚年">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/fsck%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%A3%80%E6%9F%A5%E5%B9%B6%E4%BF%AE%E5%A4%8DLinux%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:17:19" itemprop="dateModified" datetime="2020-08-14T14:17:19+08:00">2020-08-14</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="fsck命令-–-检查并修复Linux文件系统"><a href="#fsck命令-–-检查并修复Linux文件系统" class="headerlink" title="fsck命令 – 检查并修复Linux文件系统"></a>fsck命令 – 检查并修复Linux文件系统</h1><p>fsck命令的英文全称是“filesystem check”，即检查文件系统的意思，常用于检查并修复Linux文件系统的一些错误信息，操作文件系统需要先备份重要数据，以防丢失。</p>
-<p>Linux fsck命令用于检查并修复Linux文件系统，可以同时检查一个或多个 Linux 文件系统；若系统掉电或磁盘发生问题，可利用fsck命令对文件系统进行检查。</p>
-<p><strong>语法格式：</strong>fsck [参数] [文件系统]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-a</th>
-<th>自动修复文件系统，不询问任何问题</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-A</td>
-<td>依照/etc/fstab配置文件的内容，检查文件内所列的全部文件系统</td>
-</tr>
-<tr>
-<td>-N</td>
-<td>不执行指令，仅列出实际执行会进行的动作</td>
-</tr>
-<tr>
-<td>-P</td>
-<td>当搭配”-A”参数使用时，则会同时检查所有的文件系统</td>
-</tr>
-<tr>
 <td>-r</td>
-<td>采用互动模式，在执行修复时询问问题，让用户得以确认并决定处理方式</td>
+<td>递归处理，将指定目录下的所有文件和子目录一并处理</td>
 </tr>
 <tr>
-<td>-R</td>
-<td>当搭配”-A”参数使用时，则会略过/目录的文件系统不予检查</td>
+<td>-z</td>
+<td>替压缩文件加上注释</td>
 </tr>
 <tr>
-<td>-t</td>
-<td>指定要检查的文件系统类型</td>
-</tr>
-<tr>
-<td>-T</td>
-<td>执行fsck指令时，不显示标题信息</td>
-</tr>
-<tr>
-<td>-V</td>
-<td>显示指令执行过程</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>修复坏的分区文件系统：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fsck -t ext3 -r /usr/local</span><br><span class="line"> fsck from util-linux 2.23.2</span><br><span class="line"> e2fsck 1.42.9 (28-Dec-2013)</span><br><span class="line"> fsck.ext3: Is a directory while trying to open /usr/local</span><br><span class="line"> The superblock could not be read or does not describe a correct ext2</span><br><span class="line"> filesystem.  If the device is valid and it really contains an ext2</span><br><span class="line"> filesystem (and not swap or ufs or something else), then the superblock</span><br><span class="line"> is corrupt, and you might try running e2fsck with an alternate superblock:</span><br><span class="line">     e2fsck -b 8193 </span><br><span class="line"> /usr/local: status 8, rss 1232, real 0.020288, user 0.002022, sys 0.005354</span><br></pre></td></tr></table></figure>
-
-<p>显示fsck系统安装的版本号：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fsck --version fsck from util-linux 2.23.2 </span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/curl%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%B7%A5%E5%85%B7/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/HexoBlog/images/avatar.png">
-      <meta itemprop="name" content="哒哒哒">
-      <meta itemprop="description" content="个人博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="维多利亚骚年">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/curl%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93%E5%B7%A5%E5%85%B7/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:16:25" itemprop="dateModified" datetime="2020-08-14T14:16:25+08:00">2020-08-14</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="curl命令-–-文件传输工具"><a href="#curl命令-–-文件传输工具" class="headerlink" title="curl命令 – 文件传输工具"></a>curl命令 – 文件传输工具</h1><p>curl命令是一个利用URL规则在shell终端命令行下工作的文件传输工具；它支持文件的上传和下载，所以是综合传输工具，但按传统，习惯称curl为下载工具。</p>
-<p>作为一款强力工具，curl支持包括HTTP、HTTPS、ftp等众多协议，还支持POST、cookies、认证、从指定偏移处下载部分文件、用户代理字符串、限速、文件大小、进度条等特征；做网页处理流程和数据检索自动化。</p>
-<p><strong>语法格式：</strong>curl [参数] [网址]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-O</th>
-<th>把输出写到该文件中，保留远程文件的文件名</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-u</td>
-<td>通过服务端配置的用户名和密码授权访问</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>将下载的数据写入到文件，必须使用文件的绝对地址：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# curl https://www.linuxcool.com/abc.txt --silent -O</span><br></pre></td></tr></table></figure>
-
-<p>访问需要授权的页面时，可通过-u选项提供用户名和密码进行授权：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# curl -u root https://www.linuxprobe.com/ Enter host password for user &#x27;root&#x27;:</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/#%20ftpwho%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BAftp%E4%BC%9A%E8%AF%9D%E4%BF%A1%E6%81%AF/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/HexoBlog/images/avatar.png">
-      <meta itemprop="name" content="哒哒哒">
-      <meta itemprop="description" content="个人博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="维多利亚骚年">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/5%E3%80%81%E6%96%87%E4%BB%B6%E4%BC%A0%E8%BE%93/#%20ftpwho%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BAftp%E4%BC%9A%E8%AF%9D%E4%BF%A1%E6%81%AF/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:17:41" itemprop="dateModified" datetime="2020-08-14T14:17:41+08:00">2020-08-14</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="ftpwho命令-–-显示ftp会话信息"><a href="#ftpwho命令-–-显示ftp会话信息" class="headerlink" title="ftpwho命令 – 显示ftp会话信息"></a>ftpwho命令 – 显示ftp会话信息</h1><p>ftpwho命令用于显示当前所有以FTP登入的用户会话信息。</p>
-<p>执行该命令可得知当前用FTP登入系统的用户有哪些人，以及他们正在进行的操作。</p>
-<p><strong>语法格式：</strong>ftpwho [参数]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-h</th>
-<th>显示帮助信息</th>
-</tr>
-</thead>
-<tbody><tr>
 <td>-v</td>
-<td>详细模式，输出更多信息</td>
+<td>显示指令执行过程或显示版本信息</td>
+</tr>
+<tr>
+<td>-n&lt;字尾字符串&gt;</td>
+<td>不压缩具有特定字尾字符串的文件</td>
 </tr>
 </tbody></table>
 <p><strong>参考实例</strong></p>
-<p>查询当前正在登录FTP 服务器的用户：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ftpwho</span><br></pre></td></tr></table></figure>
+<p>将 /home/html/ 这个目录下所有文件和文件夹打包为当前目录下的 html.zip：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zip -q -r html.zip /home/html</span><br></pre></td></tr></table></figure>
 
-<p>在详细模式下，查询当前正在登录FTP 服务器的用户：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ftpwho -v</span><br></pre></td></tr></table></figure>
+<p>压缩文件 cp.zip 中删除文件 a.c：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zip -dv cp.zip a.c </span><br></pre></td></tr></table></figure>
 
-<p>显示帮助信息：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# ftpwho -h</span><br></pre></td></tr></table></figure>
+<p>把/home目录下面的mydata目录压缩为mydata.zip：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zip -r mydata.zip mydata </span><br></pre></td></tr></table></figure>
+
+<p>把/home目录下面的abc文件夹和123.txt压缩成为abc123.zip：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zip -r abc123.zip abc 123.txt </span><br></pre></td></tr></table></figure>
+
+<p>将 logs目录打包成 log.zip：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zip -r log.zip ./logs </span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -1005,7 +364,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/lsblk%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%A3%81%E7%9B%98/">
+    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/zipinfo%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E7%9C%8B%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E4%BF%A1%E6%81%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/HexoBlog/images/avatar.png">
@@ -1019,7 +378,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/lsblk%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E7%9A%84%E7%A3%81%E7%9B%98/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/zipinfo%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E7%9C%8B%E5%8E%8B%E7%BC%A9%E6%96%87%E4%BB%B6%E4%BF%A1%E6%81%AF/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta">
@@ -1036,7 +395,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:13:25" itemprop="dateModified" datetime="2020-08-14T14:13:25+08:00">2020-08-14</time>
+                <time title="修改时间：2020-08-14 14:27:09" itemprop="dateModified" datetime="2020-08-14T14:27:09+08:00">2020-08-14</time>
               </span>
 
           
@@ -1050,317 +409,76 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="lsblk命令-–-查看系统的磁盘"><a href="#lsblk命令-–-查看系统的磁盘" class="headerlink" title="lsblk命令 – 查看系统的磁盘"></a>lsblk命令 – 查看系统的磁盘</h1><p>lsblk命令的英文是“list block”，即用于列出所有可用块设备的信息，而且还能显示他们之间的依赖关系，但是它不会列出RAM盘的信息。</p>
-<p>lsblk命令包含在util-linux-ng包中，现在该包改名为util-linux。</p>
-<p><strong>语法格式：</strong>lsblk [参数]</p>
+          <h1 id="zipinfo命令-–-查看压缩文件信息"><a href="#zipinfo命令-–-查看压缩文件信息" class="headerlink" title="zipinfo命令 – 查看压缩文件信息"></a>zipinfo命令 – 查看压缩文件信息</h1><p>zipinfo命令的全称为“zip information”，该命令用于列出压缩文件信息。执行zipinfo指令可得知zip压缩文件的详细信息。</p>
+<p><strong>语法格式：</strong>zipinfo [参数]</p>
 <p><strong>常用参数：</strong></p>
 <table>
 <thead>
 <tr>
-<th>-a</th>
-<th>显示所有设备</th>
+<th>-1</th>
+<th>只列出文件名称</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>-b</td>
-<td>以bytes方式显示设备大小</td>
-</tr>
-<tr>
-<td>-d</td>
-<td>不显示 slaves 或 holders</td>
-</tr>
-<tr>
-<td>-D</td>
-<td>print discard capabilities</td>
-</tr>
-<tr>
-<td>-e</td>
-<td>排除设备</td>
-</tr>
-<tr>
-<td>-f</td>
-<td>显示文件系统信息</td>
+<td>-2</td>
+<td>此参数的效果和指定”-1″参数类似，但可搭配”-h”,”-t”和”-z”参数使用</td>
 </tr>
 <tr>
 <td>-h</td>
-<td>显示帮助信息</td>
+<td>只列出压缩文件的文件名称</td>
 </tr>
 <tr>
-<td>-i</td>
-<td>use ascii characters only</td>
+<td>-l</td>
+<td>此参数的效果和指定”-m”参数类似，但会列出原始文件的大小而非每个文件的压缩率</td>
 </tr>
 <tr>
 <td>-m</td>
-<td>显示权限信息</td>
+<td>此参数的效果和指定”-s”参数类似，但多会列出每个文件的压缩率</td>
 </tr>
 <tr>
-<td>-l</td>
-<td>使用列表格式显示</td>
-</tr>
-<tr>
-<td>-n</td>
-<td>不显示标题</td>
-</tr>
-<tr>
-<td>-o</td>
-<td>输出列</td>
-</tr>
-<tr>
-<td>-P</td>
-<td>使用key=”value”格式显示</td>
-</tr>
-<tr>
-<td>-r</td>
-<td>使用原始格式显示</td>
-</tr>
-<tr>
-<td>-t</td>
-<td>显示拓扑结构信息</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>lsblk命令默认情况下将以树状列出所有块设备：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~ ]# lsblk</span><br><span class="line">lsblk NAME   MAJ:MIN rm  SIZE RO type mountpoint</span><br><span class="line">sda      8:0    0 232.9G  0 disk </span><br><span class="line">├─sda1   8:1    0  46.6G  0 part / </span><br><span class="line">├─sda2   8:2    0     1K  0 part  </span><br><span class="line">├─sda5   8:5    0   190M  0 part /boot </span><br><span class="line">├─sda6   8:6    0   3.7G  0 part [SWAP] </span><br><span class="line">├─sda7   8:7    0  93.1G  0 part /data </span><br><span class="line">└─sda8   8:8    0  89.2G  0 part /personal </span><br><span class="line">sr0     11:0    1  1024M  0 rom</span><br></pre></td></tr></table></figure>
-
-<p>默认选项不会列出所有空设备：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lsblk -a </span><br></pre></td></tr></table></figure>
-
-<p>也可以用于列出一个特定设备的拥有关系，同时也可以列出组和模式：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lsblk -m </span><br></pre></td></tr></table></figure>
-
-<p>要获取SCSI设备的列表，你只能使用-S选项，该选项是用来以颠倒的顺序打印依赖的：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lsblk -S</span><br></pre></td></tr></table></figure>
-
-<p>例如，你也许想要以列表格式列出设备，而不是默认的树状格式。可以将两个不同的选项组合，以获得期望的输出：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# lsblk -nl</span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/fdisk%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/HexoBlog/images/avatar.png">
-      <meta itemprop="name" content="哒哒哒">
-      <meta itemprop="description" content="个人博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="维多利亚骚年">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/fdisk%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:11:24" itemprop="dateModified" datetime="2020-08-14T14:11:24+08:00">2020-08-14</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="fdisk命令-–-磁盘分区"><a href="#fdisk命令-–-磁盘分区" class="headerlink" title="fdisk命令 – 磁盘分区"></a>fdisk命令 – 磁盘分区</h1><p>fdisk命令的英文全称是“Partition table manipulator for Linux”，即作为磁盘的分区工具。进行硬盘分区从实质上说就是对硬盘的一种格式化， 用一个形象的比喻，分区就好比在一张白纸上画一个大方框，而格式化好比在方框里打上格子。</p>
-<p><strong>语法格式：</strong>fdisk [参数]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-b</th>
-<th>指定每个分区的大小</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-l</td>
-<td>列出指定的外围设备的分区表状况</td>
+<td>-M</td>
+<td>若信息内容超过一个画面，则采用类似more指令的方式列出信息</td>
 </tr>
 <tr>
 <td>-s</td>
-<td>将指定的分区大小输出到标准输出上，单位为区块</td>
+<td>用类似执行”ls -l”指令的效果列出压缩文件内容</td>
 </tr>
 <tr>
-<td>-u</td>
-<td>搭配”-l”参数列表，会用分区数目取代柱面数目，来表示每个分区的起始地址</td>
-</tr>
-<tr>
-<td>-v</td>
-<td>显示版本信息</td>
-</tr>
-</tbody></table>
-<p><strong>参考实例</strong></p>
-<p>查看所有分区情况：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fdisk -l</span><br></pre></td></tr></table></figure>
-
-<p>选择分区磁盘：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fdisk /dev/sdb</span><br></pre></td></tr></table></figure>
-
-<p>在当前磁盘上建立扩展分区：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fdisk /ext</span><br></pre></td></tr></table></figure>
-
-<p>不检查磁盘表面加快分区操作：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fdisk /actok</span><br></pre></td></tr></table></figure>
-
-<p>重建主引导记录：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# fdisk /cmbr </span><br></pre></td></tr></table></figure>
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/df%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/HexoBlog/images/avatar.png">
-      <meta itemprop="name" content="哒哒哒">
-      <meta itemprop="description" content="个人博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="维多利亚骚年">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/df%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5/" class="post-title-link" itemprop="url">未命名</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
-            </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:10:28" itemprop="dateModified" datetime="2020-08-14T14:10:28+08:00">2020-08-14</time>
-              </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h1 id="df命令-–-显示磁盘空间使用情况"><a href="#df命令-–-显示磁盘空间使用情况" class="headerlink" title="df命令 – 显示磁盘空间使用情况"></a>df命令 – 显示磁盘空间使用情况</h1><p>df命令的英文全称即“Disk Free”，顾名思义功能是用于显示系统上可使用的磁盘空间。默认显示单位为KB，建议使用“df -h”的参数组合，根据磁盘容量自动变换合适的单位，更利于阅读。</p>
-<p>日常普遍用该命令可以查看磁盘被占用了多少空间、还剩多少空间等信息。</p>
-<p><strong>语法格式：</strong> df [参数] [指定文件]</p>
-<p><strong>常用参数：</strong></p>
-<table>
-<thead>
-<tr>
-<th>-a</th>
-<th>显示所有系统文件</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>-B &lt;块大小&gt;</td>
-<td>指定显示时的块大小</td>
-</tr>
-<tr>
-<td>-h</td>
-<td>以容易阅读的方式显示</td>
-</tr>
-<tr>
-<td>-H</td>
-<td>以1000字节为换算单位来显示</td>
-</tr>
-<tr>
-<td>-i</td>
-<td>显示索引字节信息</td>
-</tr>
-<tr>
-<td>-k</td>
-<td>指定块大小为1KB</td>
-</tr>
-<tr>
-<td>-l</td>
-<td>只显示本地文件系统</td>
-</tr>
-<tr>
-<td>-t &lt;文件系统类型&gt;</td>
-<td>只显示指定类型的文件系统</td>
+<td>-t</td>
+<td>只列出压缩文件内所包含的文件数目，压缩前后的文件大小及压缩率</td>
 </tr>
 <tr>
 <td>-T</td>
-<td>输出时显示文件系统类型</td>
+<td>将压缩文件内每个文件的日期时间用年，月，日，时，分，秒的顺序列出</td>
 </tr>
 <tr>
-<td>– -sync</td>
-<td>在取得磁盘使用信息前，先执行sync命令</td>
+<td>-v</td>
+<td>详细显示压缩文件内每一个文件的信息</td>
+</tr>
+<tr>
+<td>-x&lt;范本样式&gt;</td>
+<td>不列出符合条件的文件的信息</td>
+</tr>
+<tr>
+<td>-z</td>
+<td>如果压缩文件内含有注释，就将注释显示出来</td>
 </tr>
 </tbody></table>
 <p><strong>参考实例</strong></p>
-<p>显示磁盘分区使用情况：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# df</span><br><span class="line">文件系统                             1K-块    已用     可用   已用% 挂载点</span><br><span class="line">devtmpfs                           1980612       0  1980612    0% /dev</span><br><span class="line">tmpfs                              1994756       0  1994756    0% /dev/shm</span><br><span class="line">tmpfs                              1994756    1040  1993716    1% /run</span><br><span class="line">tmpfs                              1994756       0  1994756    0% /sys/fs/cgroup</span><br><span class="line">/dev/mapper/fedora_linuxhell-root 15718400 2040836 13677564   13% /</span><br><span class="line">tmpfs                              1994756       4  1994752    1% /tmp</span><br><span class="line">/dev/sda1                           999320  128264   802244   14% /boot</span><br><span class="line">tmpfs                               398948       0   398948   0% /run/user/0</span><br></pre></td></tr></table></figure>
+<p>显示压缩文件信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zipinfo file.zip </span><br><span class="line">Archive: file.zip  486 bytes  3 files</span><br><span class="line">-rw-r--r-- 2.3 unx    0 bx stor 24-May-10 18:54 a.c</span><br><span class="line">-rw-r--r-- 2.3 unx    0 bx stor 24-May-10 18:54 b.c</span><br><span class="line">-rw-r--r-- 2.3 unx    0 bx stor 24-May-10 18:54 c.c</span><br><span class="line">3 files, 0 bytes uncompressed, 0 bytes compressed: 0.0%</span><br></pre></td></tr></table></figure>
 
-<p>以容易阅读的方式显示磁盘分区使用情况：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# df -h 文件系统                           容量   已用   可用  已用% 挂载点 devtmpfs                           1.9G     0  1.9G    0% /dev </span><br><span class="line">tmpfs                              2.0G     0  2.0G    0% /dev/shm </span><br><span class="line">tmpfs                              2.0G  1.1M  2.0G    1% /run </span><br><span class="line">tmpfs                              2.0G     0  2.0G    0% /sys/fs/cgroup </span><br><span class="line">/dev/mapper/fedora_linuxhell-root   15G  2.0G   14G   13% / </span><br><span class="line">tmpfs                              2.0G  4.0K  2.0G    1% /tmp </span><br><span class="line">/dev/sda1                          976M  126M  784M   14% /boot </span><br><span class="line">tmpfs                              390M     0  390M    0% /run/user/0</span><br></pre></td></tr></table></figure>
+<p>显示压缩文件中每个文件的信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zipinfo -v file.zip </span><br></pre></td></tr></table></figure>
 
-<p>显示指定文件所在分区的磁盘使用情况：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# df /etc/dhcp</span><br><span class="line">文件系统                             1K-块    已用     可用   已用% 挂载点/dev/mapper/fedora_linuxcool-root 15718400 2040836 13677564   13% /</span><br></pre></td></tr></table></figure>
+<p>只显示压缩包大小、文件数目：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zipinfo -h file.zip             </span><br><span class="line">Archive:  file.zip</span><br><span class="line">Zip file size: 907 bytes, number of entries: 3</span><br></pre></td></tr></table></figure>
 
-<p>显示文件类型为ext4的磁盘使用情况：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# df -t ext4</span><br><span class="line">文件系统        1K-块   已用   可用    已用% 挂载点</span><br><span class="line">/dev/sda1      999320 128264 802244   14% /boot</span><br></pre></td></tr></table></figure>
+<p>生成一个基本的、长格式的列表(而不是冗长的)，包括标题和总计行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zipinfo -l file</span><br></pre></td></tr></table></figure>
+
+<p>查看存档中最近修改的文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# zipinfo -T file | sort –nr -k 7 | sed 15q</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -1379,7 +497,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/#%20vgextend%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%89%A9%E5%B1%95%E5%8D%B7%E7%BB%84/">
+    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/unzip%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E8%A7%A3%E5%8E%8B%E7%BC%A9zip%E6%96%87%E4%BB%B6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/HexoBlog/images/avatar.png">
@@ -1393,7 +511,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/4%E3%80%81%E7%A3%81%E7%9B%98%E7%AE%A1%E7%90%86/#%20vgextend%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%89%A9%E5%B1%95%E5%8D%B7%E7%BB%84/" class="post-title-link" itemprop="url">未命名</a>
+            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/unzip%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E8%A7%A3%E5%8E%8B%E7%BC%A9zip%E6%96%87%E4%BB%B6/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta">
@@ -1410,7 +528,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-08-14 14:13:53" itemprop="dateModified" datetime="2020-08-14T14:13:53+08:00">2020-08-14</time>
+                <time title="修改时间：2020-08-14 14:28:52" itemprop="dateModified" datetime="2020-08-14T14:28:52+08:00">2020-08-14</time>
               </span>
 
           
@@ -1424,26 +542,150 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="vgextend命令-–-扩展卷组"><a href="#vgextend命令-–-扩展卷组" class="headerlink" title="vgextend命令 – 扩展卷组"></a>vgextend命令 – 扩展卷组</h1><p>vgextend命令用于动态扩展LVM卷组，它通过向卷组中添加物理卷来增加卷组的容量。LVM卷组中的物理卷可以在使用vgcreate命令创建卷组时添加，也可以使用vgextend命令动态的添加。</p>
-<p><strong>语法格式：</strong>vgextend [参数]</p>
+          <h1 id="unzip命令-–-解压缩zip文件"><a href="#unzip命令-–-解压缩zip文件" class="headerlink" title="unzip命令 – 解压缩zip文件"></a>unzip命令 – 解压缩zip文件</h1><p>unzip命令是用于.zip格式文件的解压缩工具 ，unzip命令将列出、测试或从zip格式存档中提取文件，这些文件通常位于MS-DOS系统上。</p>
+<p>默认行为（就是没有选项）是从指定的ZIP存档中提取所有的文件到当前目录（及其下面的子目录）。一个配套程序zip（1L）创建ZIP存档；这两个程序都与PKWARE的PKZIP和PKUNZIP为MS-DOS创建的存档文件兼容，但许多情况下，程序选项或默认行为是不同的。</p>
+<p><strong>语法格式：</strong>unzip [参数] [文件]</p>
 <p><strong>常用参数：</strong></p>
 <table>
 <thead>
 <tr>
-<th>-d</th>
-<th>调试模式</th>
+<th>-l</th>
+<th>显示压缩文件内所包含的文件</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>-t</td>
-<td>仅测试</td>
+<td>-v</td>
+<td>执行时显示详细的信息</td>
+</tr>
+<tr>
+<td>-c</td>
+<td>将解压缩的结果显示到屏幕上，并对字符做适当的转换</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>解压缩时不要覆盖原有的文件</td>
+</tr>
+<tr>
+<td>-j</td>
+<td>不处理压缩文件中原有的目录路径</td>
 </tr>
 </tbody></table>
 <p><strong>参考实例</strong></p>
-<p>将物理卷/dev/sdb1加入卷组vglinuxprobe:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# vgextend vglinuxprobe /dev/sdb1</span><br></pre></td></tr></table></figure>
+<p>把/home目录下面的mydata.zip解压到mydatabak目录里面：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unzip mydata.zip -d mydatabak </span><br></pre></td></tr></table></figure>
 
+<p>把/home目录下面的wwwroot.zip直接解压到/home目录里面：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unzip wwwroot.zip </span><br></pre></td></tr></table></figure>
 
+<p>把/home目录下面的abc12.zip、abc23.zip、abc34.zip同时解压到/home目录里面：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unzip abc\*.zip </span><br></pre></td></tr></table></figure>
+
+<p>查看把/home目录下面的wwwroot.zip里面的内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unzip -v wwwroot.zip </span><br></pre></td></tr></table></figure>
+
+<p>验证/home目录下面的wwwroot.zip是否完整：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unzip -t wwwroot.zip  </span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/unarj%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E8%A7%A3%E5%8E%8B.arj%E6%96%87%E4%BB%B6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/HexoBlog/images/avatar.png">
+      <meta itemprop="name" content="哒哒哒">
+      <meta itemprop="description" content="个人博客">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="维多利亚骚年">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/8%E3%80%81%E5%A4%87%E4%BB%BD%E5%8E%8B%E7%BC%A9/unarj%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E8%A7%A3%E5%8E%8B.arj%E6%96%87%E4%BB%B6/" class="post-title-link" itemprop="url">未命名</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-08-14 14:28:00" itemprop="dateModified" datetime="2020-08-14T14:28:00+08:00">2020-08-14</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="unarj命令-–-解压-arj文件"><a href="#unarj命令-–-解压-arj文件" class="headerlink" title="unarj命令 – 解压.arj文件"></a>unarj命令 – 解压.arj文件</h1><p>unarj命令用于解压缩.arj文件。</p>
+<p><strong>语法格式：</strong>unarj [参数] [.arj压缩文件]</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>-e</th>
+<th>解压缩.arj文件</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-l</td>
+<td>显示压缩文件内所包含的文件</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>检查压缩文件是否正确</td>
+</tr>
+<tr>
+<td>-x</td>
+<td>解压缩时保留原有的路径</td>
+</tr>
+</tbody></table>
+<p><strong>参考实例</strong></p>
+<p>解压缩.arj文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unarj -e test.arj</span><br></pre></td></tr></table></figure>
+
+<p>显示压缩文件内所包含的文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unarj -l test.arj</span><br></pre></td></tr></table></figure>
+
+<p>检查压缩文件是否正确：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unarj -t test.arj</span><br></pre></td></tr></table></figure>
+
+<p>解压缩时保留原有的路径：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unarj -x test.arj</span><br></pre></td></tr></table></figure>
+
+<p>把文件解压到当前路径：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# unarj -ex test.arj</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -1461,7 +703,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/HexoBlog/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/HexoBlog/">1</a><a class="page-number" href="/HexoBlog/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/HexoBlog/page/4/">4</a><a class="extend next" rel="next" href="/HexoBlog/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/HexoBlog/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/HexoBlog/">1</a><a class="page-number" href="/HexoBlog/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/HexoBlog/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/HexoBlog/page/10/">10</a><a class="extend next" rel="next" href="/HexoBlog/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 

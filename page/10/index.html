@@ -23,14 +23,14 @@
   <meta name="description" content="个人博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="维多利亚骚年">
-<meta property="og:url" content="https://jeffrey1994.github.io/HexoBlog/index.html">
+<meta property="og:url" content="https://jeffrey1994.github.io/HexoBlog/page/10/index.html">
 <meta property="og:site_name" content="维多利亚骚年">
 <meta property="og:description" content="个人博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="哒哒哒">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://jeffrey1994.github.io/HexoBlog/">
+<link rel="canonical" href="https://jeffrey1994.github.io/HexoBlog/page/10/">
 
 
 <script id="page-configurations">
@@ -163,7 +163,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
+    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/2.%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91/#%20tail%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%B0%BE%E9%83%A8%E5%86%85%E5%AE%B9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/HexoBlog/images/avatar.png">
@@ -177,7 +177,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="post-title-link" itemprop="url">linux常用命令</a>
+            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/2.%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91/#%20tail%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%B0%BE%E9%83%A8%E5%86%85%E5%AE%B9/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta">
@@ -186,19 +186,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-09-16 17:19:18 / 修改时间：15:57:31" itemprop="dateCreated datePublished" datetime="2021-09-16T17:19:18+08:00">2021-09-16</time>
+              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
             </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/HexoBlog/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
                 </span>
-            </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-08-14 11:41:00" itemprop="dateModified" datetime="2020-08-14T11:41:00+08:00">2020-08-14</time>
+              </span>
 
           
 
@@ -211,15 +208,60 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>linux常用命令汇总</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h1 id="tail命令-–-查看文件尾部内容"><a href="#tail命令-–-查看文件尾部内容" class="headerlink" title="tail命令 – 查看文件尾部内容"></a>tail命令 – 查看文件尾部内容</h1><p>tail用于显示文件尾部的内容，默认在屏幕上显示指定文件的末尾10行。如果给定的文件不止一个，则在显示的每个文件前面加一个文件名标题。如果没有指定文件或者文件名为“-”，则读取标准输入。</p>
+<p><strong>语法格式：</strong>tail [参数]</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>–retry</th>
+<th>即是在tail命令启动时，文件不可访问或者文件稍后变得不可访问，都始终尝试打开文件。使用此选项时需要与选项“——follow=name”连用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-c<N>或——bytes=<N></td>
+<td>输出文件尾部的N（N为整数）个字节内容</td>
+</tr>
+<tr>
+<td>-f&lt;name/descriptor&gt;</td>
+<td>–follow<nameldescript>：显示文件最新追加的内容</td>
+</tr>
+<tr>
+<td>-F</td>
+<td>与选项“-follow=name”和“–retry”连用时功能相同</td>
+</tr>
+<tr>
+<td>-n<N>或——line=<N></td>
+<td>输出文件的尾部N（N位数字）行内容</td>
+</tr>
+<tr>
+<td>–pid=&lt;进程号&gt;</td>
+<td>与“-f”选项连用，当指定的进程号的进程终止后，自动退出tail命令</td>
+</tr>
+<tr>
+<td>–help</td>
+<td>显示指令的帮助信息</td>
+</tr>
+<tr>
+<td>–version</td>
+<td>显示指令的版本信息</td>
+</tr>
+</tbody></table>
+<p><strong>参考实例</strong></p>
+<p>显示文件file的最后10行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~ ]  tail file</span><br></pre></td></tr></table></figure>
+
+<p>显示文件file的内容，从第20行至文件末尾：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~ ]  tail +20 file </span><br></pre></td></tr></table></figure>
+
+<p>显示文件file的最后10个字符：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~ ]  tail -c 10 file </span><br></pre></td></tr></table></figure>
+
+<p>一直变化的文件总是显示后10行：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~ ]  tail -f 10 file</span><br></pre></td></tr></table></figure>
+
+<p>显示帮助信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~ ]  tail --help</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -238,7 +280,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/cp%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95/">
+    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/2.%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91/#%20cat%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%9C%A8%E7%BB%88%E7%AB%AF%E8%AE%BE%E5%A4%87%E4%B8%8A%E6%98%BE%E7%A4%BA%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/HexoBlog/images/avatar.png">
@@ -252,7 +294,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/cp%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95/" class="post-title-link" itemprop="url">cp命令 – 复制文件或目录</a>
+            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/2.%E6%96%87%E6%A1%A3%E7%BC%96%E8%BE%91/#%20cat%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%9C%A8%E7%BB%88%E7%AB%AF%E8%AE%BE%E5%A4%87%E4%B8%8A%E6%98%BE%E7%A4%BA%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9/" class="post-title-link" itemprop="url">未命名</a>
         </h2>
 
         <div class="post-meta">
@@ -261,19 +303,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-09-16 17:19:18 / 修改时间：16:23:50" itemprop="dateCreated datePublished" datetime="2021-09-16T17:19:18+08:00">2021-09-16</time>
+              <time title="创建时间：2021-09-16 15:32:04" itemprop="dateCreated datePublished" datetime="2021-09-16T15:32:04+08:00">2021-09-16</time>
             </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/HexoBlog/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
                 </span>
-            </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-06-17 17:39:41" itemprop="dateModified" datetime="2021-06-17T17:39:41+08:00">2021-06-17</time>
+              </span>
 
           
 
@@ -286,15 +325,76 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>cp命令可以理解为英文单词copy的缩写，其功能为复制文件或目录。cp命令可以将多个文件复制到一个具体的文件名或一个已经存在的目录下，也可以同时复制多个文件到一个指定的目录中。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/cp%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
+          <h1 id="cat命令-–-在终端设备上显示文件内容"><a href="#cat命令-–-在终端设备上显示文件内容" class="headerlink" title="cat命令 – 在终端设备上显示文件内容"></a>cat命令 – 在终端设备上显示文件内容</h1><p>Linux系统中有很多个用于查看文件内容的命令，每个命令又都有自己的特点，比如这个cat命令就是用于查看内容较少的纯文本文件的。cat这个命令也很好记，因为cat在英语中是“猫”的意思，小猫咪是不是给您一种娇小、可爱的感觉呢？</p>
+<p>注意：当文件内容较大时，文本内容会在屏幕上快速闪动（滚屏），用户往往看不清所显示的具体内容。因此对于较长文件内容可以按Ctrl+S键，停止滚屏；以及Ctrl+Q键可以恢复滚屏；而按Ctrl+C（中断）键则可以终止该命令的执行。或者对于大文件，干脆用more命令吧！</p>
+<p><strong>语法格式：</strong>cat [参数] [文件]</p>
+<p><strong>常用参数：</strong></p>
+<table>
+<thead>
+<tr>
+<th>-n</th>
+<th>显示行数（空行也编号）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>-s</td>
+<td>显示行数（多个空行算一个编号）</td>
+</tr>
+<tr>
+<td>-b</td>
+<td>显示行数（空行不编号）</td>
+</tr>
+<tr>
+<td>-E</td>
+<td>每行结束处显示$符号</td>
+</tr>
+<tr>
+<td>-T</td>
+<td>将TAB字符显示为 ^I符号</td>
+</tr>
+<tr>
+<td>-v</td>
+<td>使用 ^ 和 M- 引用，除了 LFD 和 TAB 之外</td>
+</tr>
+<tr>
+<td>-e</td>
+<td>等价于”-vE”组合</td>
+</tr>
+<tr>
+<td>-t</td>
+<td>等价于”-vT”组合</td>
+</tr>
+<tr>
+<td>-A</td>
+<td>等价于 -vET组合</td>
+</tr>
+<tr>
+<td>–help</td>
+<td>显示帮助信息</td>
+</tr>
+<tr>
+<td>–version</td>
+<td>显示版本信息</td>
+</tr>
+</tbody></table>
+<p><strong>参考实例</strong></p>
+<p>查看文件的内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cat filename.txt</span><br></pre></td></tr></table></figure>
+
+<p>查看文件的内容，并显示行数编号：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cat -n filename.txt</span><br></pre></td></tr></table></figure>
+
+<p>查看文件的内容，并添加行数编号后输出到另外一个文件中：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cat -n linuxcool.log &gt; linuxprobe.log </span><br></pre></td></tr></table></figure>
+
+<p>清空文件的内容：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cat /dev/null &gt; /root/filename.txt</span><br></pre></td></tr></table></figure>
+
+<p>持续写入文件内容，碰到EOF符后结束并保存：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cat &gt; filename.txt &lt;&lt;EOF</span><br><span class="line">&gt; Hello, World </span><br><span class="line">&gt; Linux!</span><br><span class="line">&gt; EOF</span><br></pre></td></tr></table></figure>
+
+<p>将软盘设备制作成镜像文件：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@linuxcool ~]# cat /dev/fd0 &gt; fdisk.iso</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -313,7 +413,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/mkdir%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%9B%E5%BB%BA%E7%9B%AE%E5%BD%95/">
+    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/15/markdown%E8%AF%AD%E6%B3%95/markdown%E8%AF%AD%E6%B3%95%E8%AF%A6%E8%A7%A3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/HexoBlog/images/avatar.png">
@@ -327,7 +427,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/mkdir%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%9B%E5%BB%BA%E7%9B%AE%E5%BD%95/" class="post-title-link" itemprop="url">mkdir命令 – 创建目录</a>
+            <a href="/HexoBlog/2021/09/15/markdown%E8%AF%AD%E6%B3%95/markdown%E8%AF%AD%E6%B3%95%E8%AF%A6%E8%A7%A3/" class="post-title-link" itemprop="url">markdown语法详解</a>
         </h2>
 
         <div class="post-meta">
@@ -336,17 +436,23 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-09-16 17:19:18 / 修改时间：16:17:54" itemprop="dateCreated datePublished" datetime="2021-09-16T17:19:18+08:00">2021-09-16</time>
+              <time title="创建时间：2021-09-15 17:19:18" itemprop="dateCreated datePublished" datetime="2021-09-15T17:19:18+08:00">2021-09-15</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-09-16 15:19:02" itemprop="dateModified" datetime="2021-09-16T15:19:02+08:00">2021-09-16</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/HexoBlog/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
+                  <a href="/HexoBlog/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
                 </span>
             </span>
 
@@ -361,160 +467,10 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>mkdir命令是make directories的缩写，用来创建目录。注意：默认状态下，如果要创建的目录已经存在，则提示已存在，而不会继续创建目录。 所以在创建目录时，应保证新建的目录与它所在目录下的文件没有重名。 mkdir命令还可以同时创建多个目录，是不是很强大呢？</p>
+          <p>markdown语法详解</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/mkdir%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E5%88%9B%E5%BB%BA%E7%9B%AE%E5%BD%95/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/ls%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E6%8C%87%E5%AE%9A%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%E5%86%85%E5%AE%B9%E5%8F%8A%E5%B1%9E%E6%80%A7%E4%BF%A1%E6%81%AF/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/HexoBlog/images/avatar.png">
-      <meta itemprop="name" content="哒哒哒">
-      <meta itemprop="description" content="个人博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="维多利亚骚年">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/ls%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E6%8C%87%E5%AE%9A%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%E5%86%85%E5%AE%B9%E5%8F%8A%E5%B1%9E%E6%80%A7%E4%BF%A1%E6%81%AF/" class="post-title-link" itemprop="url">ls命令 – 显示指定工作目录下的内容及属性信息</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-09-16 17:19:18 / 修改时间：16:26:40" itemprop="dateCreated datePublished" datetime="2021-09-16T17:19:18+08:00">2021-09-16</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/HexoBlog/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>ls命令是Linux下最常用的指令之一。ls命令为英文单词 list 的缩写，正如英文单词 list 的意思，其功能是列出指定目录下的内容及其相关属性信息。默认状态下，ls命令会列出当前目录的内容。而带上参数后，我们可以用ls做更多的事情。作为最基础同时又是使用频率很高的命令，我们很有必要搞清楚ls命令的用法，那么接下来一起看看吧！</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/ls%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E6%98%BE%E7%A4%BA%E6%8C%87%E5%AE%9A%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%E5%86%85%E5%AE%B9%E5%8F%8A%E5%B1%9E%E6%80%A7%E4%BF%A1%E6%81%AF/">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://jeffrey1994.github.io/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/mv%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%A7%BB%E5%8A%A8%E6%88%96%E6%94%B9%E5%90%8D%E6%96%87%E4%BB%B6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/HexoBlog/images/avatar.png">
-      <meta itemprop="name" content="哒哒哒">
-      <meta itemprop="description" content="个人博客">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="维多利亚骚年">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/mv%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%A7%BB%E5%8A%A8%E6%88%96%E6%94%B9%E5%90%8D%E6%96%87%E4%BB%B6/" class="post-title-link" itemprop="url">mv命令 – 移动或改名文件</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2021-09-16 17:19:18 / 修改时间：16:26:50" itemprop="dateCreated datePublished" datetime="2021-09-16T17:19:18+08:00">2021-09-16</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/HexoBlog/categories/linux/" itemprop="url" rel="index"><span itemprop="name">linux</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>mv命令是move单词的缩写，其功能大致和英文含义一样，可以移动文件或对其改名。这是一个使用频率超高的文件管理命令，我们需要特别留意它与复制的区别：mv与cp的结果不同。mv命令好像文件搬家，文件名称发生改变，但个数并未增加。而cp命令是对文件进行复制操作，文件个数是有增加的。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/HexoBlog/2021/09/16/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E6%95%B4%E7%90%86/1.%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86/mv%E5%91%BD%E4%BB%A4%20%E2%80%93%20%E7%A7%BB%E5%8A%A8%E6%88%96%E6%94%B9%E5%90%8D%E6%96%87%E4%BB%B6/">
+              <a class="btn" href="/HexoBlog/2021/09/15/markdown%E8%AF%AD%E6%B3%95/markdown%E8%AF%AD%E6%B3%95%E8%AF%A6%E8%A7%A3/">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -537,7 +493,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/HexoBlog/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/HexoBlog/page/10/">10</a><a class="extend next" rel="next" href="/HexoBlog/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/HexoBlog/page/9/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/HexoBlog/">1</a><span class="space">&hellip;</span><a class="page-number" href="/HexoBlog/page/9/">9</a><span class="page-number current">10</span>
   </nav>
 
 
